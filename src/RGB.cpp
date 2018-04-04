@@ -14,7 +14,7 @@ RGB::RGB()
 
 // TODO: Calculate if a color is in a certain range by brick-pi interface
 bool RGB::in_range(unsigned int type_color){
-	this.reflected
+	//this.reflected
 	return false;
 }
 

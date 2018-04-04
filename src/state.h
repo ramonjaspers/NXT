@@ -4,13 +4,14 @@
 #include "init.h"
 #include "motion.h"
 #include "sensor.h"
-
+#include "log.h"
 //TODO: Doxygen generation
 
 class State
 {
 private:
 	Init init;
+	Log log;
 	Motion motion;
 	Sensor sensor;
 
@@ -21,6 +22,8 @@ public:
 	bool obstacle_avoid();
 	bool turn();
 	bool grid_travel();
+	Motion getMotion();
+	Sensor getSensor();
 
 };
 
