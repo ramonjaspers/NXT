@@ -7,6 +7,8 @@ IR::IR()
 	// initialize the port defaults
 }
 
+// define port number, struct naming
+
 // TODO: Calculate if a color is in a certain range by brick-pi interface
 bool IR::in_range(unsigned int type_color){
 	return false;

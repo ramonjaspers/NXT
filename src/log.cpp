@@ -4,11 +4,10 @@
 #include <string>
 #include <stdio.h>
 #include <time.h>
-\
-// ================================================== 
-// ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE
-// ==================================================
 
+// ======================================================
+// = ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE =
+// ======================================================
 
 // printing all the log data to a file for debugging purposes
 Log::Log()
@@ -16,6 +15,7 @@ Log::Log()
 	this->debugFile.open("debug.txt");
 	this->write_line("======= LOG START ========");
 }
+
 const std::string Log::currentDateTime() {
     time_t     now = time(0);
     struct tm  tstruct;
