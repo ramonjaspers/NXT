@@ -25,6 +25,9 @@ public:
 	int get_distance_object();
 	bool both_black();
 	bool both_white();
+	void initializeIR();
+	void initializeRGB();
+	void initializeUS();
 };
 
 #endif // SENSOR_H

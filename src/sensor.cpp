@@ -1,3 +1,4 @@
+#include <iostream>
 #include "sensor.h"
 #include "IR.h"
 #include "RGB.h"
@@ -7,8 +8,9 @@
 
 
 // initialize all the sensors 
-Sensor::Sensor()
-{
+Sensor::Sensor(){
+
+
 }
 
 Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US ){
@@ -21,11 +23,8 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
 	this->ir = ir;
 	this->rgb = rgb;
     this->ultrasonic = ultrasonic;
-	
-	
-	
-	
 }
+
 
 
 // checking the ultrasonic sensor if something is withing X range of the device.
@@ -58,20 +57,34 @@ bool Sensor::both_black(){
 }
 bool Sensor::both_white(){
 	
-	if(true == this->ir.is_black()){
+	if(this->ir.is_black()){
 		return false;
 	} 
 	
-	else if(true == this->rgb.is_black()){
+	else if(this->rgb.is_black()){
 		return false;
 	}
-	else if(true == this->ir.is_white() && true == this->rgb.is_white()){
+	else if(this->ir.is_white() && this->rgb.is_white()){
 		return true;
 	} else{
 		// exception thrown
 		return true;
 		// throw std::nested_exception ( "Sensor data has an unexpected return, neither black nor white even though white should be defined" );
 	}
+
+}
+
+void Sensor::initializeIR(){
+    // only the ranges are defined for now
+    this->ir.set_ranges();
+}
+
+void Sensor::initializeRGB(){
+    //duplicate of IR
+}
+
+void Sensor::initializeUS() {
+    // Ultrasonic sensor doesn't actually do a lot, here for consistency sake a.t.m
 
 }
 

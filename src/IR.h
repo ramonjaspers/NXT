@@ -7,15 +7,24 @@
 
 class IR
 {
+private:
+
+	// index [0] and index[1] both contain the white colors min and max
+	// index [2] and index[3] both contain the black colors min and max
+	std::vector<int> range;
+	//bool run = false;
+
+	// private variable that stores the detected value
+	unsigned int detected;
 public:
 	IR();
 	~IR();
-	
+	void set_current_value();
+	int get_current_value(bool rerun = false);
 	bool in_range(unsigned int type_color);
 	bool is_white();
 	bool is_black();
-	std::vector <int> get_black_range() ;
-	std::vector <int> get_white_range() ;
+	void set_ranges() ;
 };
 
 #endif // IR_H

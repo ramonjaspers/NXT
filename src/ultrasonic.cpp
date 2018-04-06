@@ -12,7 +12,7 @@ Ultrasonic::Ultrasonic(){
 
 bool Ultrasonic::object_in_range(){
 
-    return ( this->detected >= this->detection_range[0] && this->detected <= detection_range[1] );
+    return ( this->detected >= this->detection_range[0] && this->detected <= this->detection_range[1] );
 
 }
 

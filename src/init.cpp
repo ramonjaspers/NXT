@@ -6,7 +6,6 @@
 // Initialise the sensors and initialise the wheels
 Init::Init()
 {
-	
 	Sensor sn;
 	
 	Motion mt;
