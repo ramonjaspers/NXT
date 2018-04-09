@@ -26,7 +26,7 @@ Sensor State::getSensor() {
 
 // Driving straight, everything is going good
 void State::clear() {
-    if (this->sensor.both_white() && this->sensor.object_near()) {
+    if (this->sensor.both_white() && ! this->sensor.object_near()) {
         //drive along
     } else {
         object_or_turn();
@@ -34,8 +34,10 @@ void State::clear() {
 }
 
 
+
 // Driving slower and the ultrasonic sensor needs to be in 'avoid', 'check if I'm past' mode etc
 bool State::obstacle_avoid() {
+
     return true;
 }
 
