@@ -1,13 +1,17 @@
 #ifndef SERVO_H
 #define SERVO_H
+#include "BrickPi3.cpp" // for BrickPi3
 
 
 //TODO: Doxygen generation
 
 class Servo
 {
+private:
+	BrickPi3 PI;
+	unsigned int PORT;
 public:
-	Servo();
+	Servo(unsigned int PORT);
 	~Servo();
 
 
