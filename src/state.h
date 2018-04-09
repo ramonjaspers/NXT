@@ -20,8 +20,9 @@ public:
 	~State();
 	void clear();
 	bool obstacle_avoid();
-	bool turn();
+	void turn();
 	bool grid_travel();
+	void object_or_turn();
 	Motion getMotion();
 	Sensor getSensor();
 

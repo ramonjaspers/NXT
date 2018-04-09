@@ -1,0 +1,47 @@
+sudo: required
+before_install:
+  - sudo apt-get install libao-dev
+  - sudo apt-get install libcurl4-openssl-dev
+
+# Enable C++ support
+language: cpp
+
+# Compiler selection
+compiler:
+  - gcc
+
+
+# Build steps
+script:
+  - cd src
+  - cat CMakeLists.txt
+  - 'cmake_minimum_required(VERSION 3.9)
+     project(src)
+     set(CMAKE_CXX_STANDARD 11)
+     add_executable(src
+             BrickPi3.cpp
+             BrickPi3.h
+             init.cpp
+             init.h
+             IR.cpp
+             IR.h
+             log.cpp
+             log.h
+             main.cpp
+             motion.cpp
+             motion.h
+             notify.cpp
+             notify.h
+             RGB.cpp
+             RGB.h
+             sensor.cpp
+             sensor.h
+             servo.cpp
+             servo.h
+             state.cpp
+             state.h
+             ultrasonic.cpp
+             ultrasonic.h
+             )
+    '> CMakeLists.txt
+  - cmake ..

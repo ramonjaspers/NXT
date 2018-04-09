@@ -16,7 +16,7 @@ Servo::Servo(unsigned int PORT)
 void Servo::set_speed(int power){
 	this->PI.set_motor_power(this->PORT, power);
 }
-	
+
 void Servo::halt(){
 	this->PI.set_motor_power(this->PORT, 0);
 }
@@ -26,4 +26,3 @@ void Servo::halt(){
 Servo::~Servo()
 {
 }
-

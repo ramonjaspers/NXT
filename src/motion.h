@@ -1,13 +1,17 @@
 #ifndef MOTION_H
 #define MOTION_H
 #include <vector>
+#include "servo.h"
 class Motion
 {
 private:
+
 	int power;
-	Servo right;
-    Servo left;
-    Servo top;
+  Servo right;
+  Servo left;
+  Servo top;
+
+
 public:
 	Motion(int speed);
 	~Motion();

@@ -2,3 +2,5 @@ Debug/
 src/Debug/
 src/Release/
 src/src.*
+src/cmake-build-debug/
+src/.idea

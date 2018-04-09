@@ -3,15 +3,16 @@
 #include <vector>
 
 
+
 Motion::Motion(int speed){
 	// initializing the servo configuration, passing by reference ideally for vector
     Servo servo_right;
     Servo servo_left;
     Servo servo_sensor;
 	
-	this->power = speed;
+	  this->power = speed;
 
-	this->right = servo_right;
+	  this->right = servo_right;
     this->left  = servo_left;
     this->top   = servo_sensor;
 }
