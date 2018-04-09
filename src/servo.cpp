@@ -1,23 +1,28 @@
-#ifndef MOTION_H
-#define MOTION_H
-#include <vector>
-class Motion
+#include "servo.h"
+#include "BrickPi3.cpp" // for BrickPi3
+#include <iostream>
+#include <unistd.h>     // for usleep
+#include <signal.h>     // for catching exit signals
+
+using namespace std;
+
+Servo::Servo(unsigned int PORT)
 {
-private:
-	int power;
-	Servo right;
-    Servo left;
-    Servo top;
-public:
-	Motion(int speed);
-	~Motion();
-	void turn(char direction);
-	void emergency_stop();
-	void drive();
-	void drive_reverse();
-	void turn_reverse(char directie)
-	
+	BrickPi3 BP;
+	this->PORT = PORT;
+	this->PI = BP;
+}
 
-};
+void Servo::set_speed(int power){
+	this->PI.set_motor_power(this->PORT, power);
+}
 
-#endif // MOTION_H
+void Servo::halt(){
+	this->PI.set_motor_power(this->PORT, 0);
+}
+
+
+
+Servo::~Servo()
+{
+}

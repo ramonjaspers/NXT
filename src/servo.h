@@ -13,14 +13,12 @@ private:
 public:
 	Servo(unsigned int PORT);
 	~Servo();
-
-
 	void set_speed(int gradient);
 	void execute_speed(int speed);
 	void halt();
 
 
-	
+
 };
 
 #endif // SERVO_H
