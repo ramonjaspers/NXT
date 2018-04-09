@@ -1,11 +1,13 @@
 #ifndef MOTION_H
 #define MOTION_H
 #include <vector>
+#include "servo.h"
 class Motion
 {
 private:
-	unsigned int left;
-	unsigned int right;
+	Servo up;
+	Servo left;
+	Servo right;
 public:
 	Motion();
 	Motion(unsigned int left, unsigned int right);

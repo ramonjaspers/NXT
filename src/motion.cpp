@@ -3,13 +3,15 @@
 #include <vector>
 
 
-Motion::Motion(){};
-
-Motion::Motion(unsigned int left, unsigned int right)
-{
+Motion::Motion(){
 	// initializing the servo configuration, passing by reference ideally for vector
+    Servo up;
+    Servo left;
+    Servo right;
+
 	this->right = right;
-	this->left = left;
+    this->left  = left;
+    this->up    = up;
 }
 
 
