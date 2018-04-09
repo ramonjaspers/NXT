@@ -1,21 +1,24 @@
 #include "servo.h"
+#include "BrickPi3.cpp" // for BrickPi3
+#include <iostream>
+#include <unistd.h>     // for usleep
+#include <signal.h>     // for catching exit signals
 
-Servo::Servo()
+using namespace std;
+
+Servo::Servo(unsigned int PORT)
 {
-	// initialize the port defaults
+	BrickPi3 BP;
+	this->PORT = PORT;
+	this->PI = BP;
 }
 
-void Servo::set_speed(int gradient){
-	// setting a speed
-}
-
-void Servo::execute_speed(int speed){
-	// use the current set speed and running it.
-	
+void Servo::set_speed(int power){
+	this->PI.set_motor_power(this->PORT, power);
 }
 	
 void Servo::halt(){
-	// forcefully updating the speed to 0 for an emergency break.
+	this->PI.set_motor_power(this->PORT, 0);
 }
 
 
