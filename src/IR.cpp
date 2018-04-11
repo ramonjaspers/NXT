@@ -2,9 +2,16 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <unistd.h>
 
-IR::IR() {
-    // initialize the port defaults
+IR::IR(uint8_t port) {
+    BrickPi3 BP;
+    this->Brick = BP;
+    this->PORT = port;
+    this->Brick.set_sensor_type(this->PORT, SENSOR_TYPE_NXT_LIGHT_ON);
+    sensor_light_t Light1;
+    this->Light = Light1;
+
 }
 
 // define port number, struct naming
@@ -20,7 +27,9 @@ bool IR::is_white() {
 
 void IR::set_current_value() {
     // refreshing the current value and acquiring a new one
-    this->detected = 10;
+    this->Brick.get_sensor(this->PORT, this->Light);
+    //std::cout << this->Light.reflected << std::endl;
+    this->detected = this->Light.reflected;
 }
 
 int IR::get_current_value(bool rerun) {
@@ -28,7 +37,6 @@ int IR::get_current_value(bool rerun) {
         this->set_current_value();
     }
     return this->detected;
-
 }
 
 
@@ -39,31 +47,30 @@ bool IR::is_black() {
 
 void IR::set_ranges() {
 
-    // while loop for 5 seconds? determine the appropriate time or perhaps using a limit amount of loops
-    int p = 0;
-    int l = 0;
-
-    std::vector<int> min_max = {};
-    while (l < 3) {
-        std::vector<int> detected_values = {};
-        while (p < 10) {
-            //acquiring the value
-            this->set_current_value();
-
-            detected_values.push_back(this->get_current_value(true));
-
-            p++;
-        }
-
-        // acquiring minimum and maximum values for the range
-        signed int minimum_range = *std::min_element(detected_values.begin(), detected_values.end());
-        signed int maximum_range = *std::max_element(detected_values.begin(), detected_values.end());
-        std::cout << "run" << std::endl;
-        min_max[0 + l] = minimum_range;
-        min_max[1 + l] = maximum_range;
-        l += 2;
+    // TODO: dynamic allocation
+    std::vector<uint16_t> values;
+    usleep(1*1000);
+    for(unsigned int a=0; a<10; a++){
+        values.push_back(this->get_current_value(true));
     }
 
+    uint16_t min_tmp = values[0];
+    uint16_t max_tmp = values[0];
+
+    for(unsigned int i=1; i<values.size(); i++){
+        std::cout << values[i] << std::endl;
+        if(min_tmp >= values[i]){
+            min_tmp = values[i];
+        }
+        if(max_tmp <= values[i]){
+            max_tmp = values[i];
+        }
+    }
+    this->range.push_back(min_tmp);
+    this->range.push_back(max_tmp);
+}
+std::vector<uint16_t> IR::get_ranges(){
+    return this->range;
 }
 
 
