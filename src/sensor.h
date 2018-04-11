@@ -1,37 +1,33 @@
-#ifndef SENSOR_H
-#define SENSOR_H
+#ifndef SRC_ULTRASONIC_H
+#define SRC_ULTRASONIC_H
 
-#include "IR.h"
-#include "RGB.h"
-#include "ultrasonic.h"
+#include <vector>
 
 
-//TODO: Doxygen generation
+#include "BrickPi3.h"
 
-class Sensor
-{
+
+class Ultrasonic {
 
 private:
-    IR ir;
-    RGB rgb;
-    Ultrasonic ultrasonic;
+    // TODO: cast to 8 bit
+    BrickPi3 Brick;
+    uint8_t PORT;
+    sensor_ultrasonic_t Sonic;
+    float detected;
+    std::vector <int> detection_range;
 
-// TODO: Update the header file
 public:
-    Sensor();
-    Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US );
-    ~Sensor();
-    bool object_near();
-    int get_distance_object();
-    bool both_black();
-    bool both_white();
+    Ultrasonic();
+    int set_port(uint8_t port);
+    Ultrasonic(const uint8_t port);
+    bool object_in_range();
+    void set_distance();
+    int get_distance();
+    ~Ultrasonic();
+    uint8_t get_port();
 
-    bool IR_black_RGB_white();
-    bool RGB_black_IR_white();
-
-    void initializeIR();
-    void initializeRGB();
-    void initializeUS();
 };
 
-#endif // SENSOR_H
+
+#endif //SRC_ULTRASONIC_H
