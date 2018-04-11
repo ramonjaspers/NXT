@@ -6,10 +6,11 @@ class Motion
 {
 private:
 
-	int power;
-  Servo right;
-  Servo left;
-  Servo top;
+	int speed;
+
+    Servo right;
+    Servo left;
+    Servo top;
 
 
 public:
@@ -19,9 +20,7 @@ public:
 	void emergency_stop();
 	void drive();
 	void drive_reverse();
-	void turn_reverse(char directie)
-	
-
+	void turn_reverse(char directie);
 };
 
 #endif // MOTION_H
