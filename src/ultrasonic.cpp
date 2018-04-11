@@ -18,11 +18,11 @@ Ultrasonic::Ultrasonic(uint8_t port){
 
 bool Ultrasonic::object_in_range(){
         // TODO: own detection
-    return ( this->detected >= this->detection_range[0] && this->detected <= this->detection_range[1] );
+    return ( this->detected <= 50 );
 
 }
 
-void Ultrasonic::get_distance(){
+void Ultrasonic::set_distance(){
     // code that extracts the range, stores it in detected
     //return this->detected;
     this->Brick.get_sensor(this->PORT, this->Sonic);
@@ -30,6 +30,10 @@ void Ultrasonic::get_distance(){
     std::cout << this->Sonic.cm << std::endl;
 }
 
+
+int Ultrasonic::get_distance(){
+ return this->detected;
+}
 Ultrasonic::~Ultrasonic(){
 
 }
