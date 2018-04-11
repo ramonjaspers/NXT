@@ -1,6 +1,6 @@
 #ifndef SERVO_H
 #define SERVO_H
-#include "BrickPi3.cpp" // for BrickPi3
+#include "BrickPi3.h" // for BrickPi3
 
 
 //TODO: Doxygen generation
@@ -11,10 +11,11 @@ private:
 	BrickPi3 PI;
 	unsigned int PORT;
 public:
-	Servo(unsigned int PORT);
+	Servo(uint8_t PORT);
+	Servo();
 	~Servo();
 	void set_speed(int gradient);
-	void execute_speed(int speed);
+	void set_port(uint8_t port);
 	void halt();
 
 
