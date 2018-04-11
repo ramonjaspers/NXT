@@ -1,5 +1,8 @@
 #include <iostream>
 #include "sensor.h"
+
+#include "BrickPi3.h"
+#include <unistd.h>
 #include "IR.h"
 #include "RGB.h"
 #include "ultrasonic.h"
@@ -7,18 +10,22 @@
 
 
 
-// initialize all the sensors 
+// initialize all the sensors
 Sensor::Sensor(){
-
-
-}
-
-Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US ){
-
     IR ir;
     RGB rgb;
     Ultrasonic ultrasonic;
-    // Ultrasonic us;
+
+    std::cout << PORT_1 << std::endl;
+    std::cout << PORT_2 << std::endl;
+    std::cout << PORT_3 << std::endl;
+
+    ir.set_port(PORT_1);
+    rgb.set_port(PORT_2);
+    ultrasonic.set_port(PORT_3);
+    ultrasonic.set_port(PORT_3);
+    std::cout << ir.get_port()<< std::endl;
+    std::cout << ultrasonic.get_port() << std::endl;
 
     this->ir = ir;
     this->rgb = rgb;
@@ -29,7 +36,13 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
 
 // checking the ultrasonic sensor if something is withing X range of the device.
 bool Sensor::object_near(){
-    return false;
+    this->ultrasonic.set_distance();
+    std::cout << this->ultrasonic.get_port() << std::endl;
+    usleep(1000000 * 5);
+   this->ultrasonic.set_distance();
+    std::cout << this->ultrasonic.get_distance() << std::endl;
+
+    return this->ultrasonic.object_in_range();
 }
 
 // requesting the sonic sensor to tell us how far away we are from an object.
@@ -80,7 +93,7 @@ void Sensor::initializeIR(){
 }
 
 void Sensor::initializeRGB(){
-    //duplicate of IR
+    this->rgb.set_ranges();
 }
 
 void Sensor::initializeUS() {
@@ -96,8 +109,10 @@ bool Sensor::RGB_black_IR_white(){
 }
 
 
+
 // shutting down, resetting all brick pi i/o
 Sensor::~Sensor()
 {
 }
+
 
