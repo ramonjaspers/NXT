@@ -3,17 +3,26 @@
 #include <iostream>
 #include <algorithm>
 
+//TODO: Doxygen generation
+
 IR::IR() {
     // initialize the port defaults
 }
 
 // define port number, struct naming
-
+/**
+ *
+ * @param type_color
+ * @return
+ */
 bool IR::in_range(unsigned int type_color = 0) {
     return (this->detected >= this->range[0 + type_color] && this->detected <= this->range[1 + type_color]);
 }
 
-
+/**
+ *
+ * @return
+ */
 bool IR::is_white() {
     return this->in_range(0);
 }
@@ -23,6 +32,11 @@ void IR::set_current_value() {
     this->detected = 10;
 }
 
+/**
+ *
+ * @param rerun
+ * @return
+ */
 int IR::get_current_value(bool rerun) {
     if (rerun) {
         this->set_current_value();
@@ -31,7 +45,10 @@ int IR::get_current_value(bool rerun) {
 
 }
 
-
+/**
+ *
+ * @return
+ */
 bool IR::is_black() {
     return this->in_range(2);
 }
@@ -65,7 +82,6 @@ void IR::set_ranges() {
     }
 
 }
-
 
 IR::~IR() {
 }

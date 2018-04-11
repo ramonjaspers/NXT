@@ -2,6 +2,7 @@
 #include "servo.h"
 #include <vector>
 
+//TODO: Doxygen generation
 
 Motion::Motion(){
 	// initializing the servo configuration, passing by reference ideally for vector
@@ -14,7 +15,11 @@ Motion::Motion(){
     this->up    = up;
 }
 
-
+/**
+ *
+ * @param left [in] this is a test text << VERVANG DIT
+ * @param right
+ */
 void Motion::turn(unsigned int left, unsigned int right){
 	// decreasing the left increasing the right
 	// logging if left > right -> going left

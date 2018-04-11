@@ -1,0 +1,165 @@
+/*!
+ * @mainpage
+ *
+ *  <A NAME="Contents"></A>
+ * @section contents_sec Table of Contents
+ * <A HREF="#Introduction">Introduction</A><br>
+ * <A HREF="#VersionLog">Version Log</A><br>
+ * <A HREF="#Libraries">Libraries</A><br>
+ * <A HREF="#CodingStandard">Coding Standard</A><br>
+ *
+ * <HR>
+ *
+ *  <A NAME="Introduction"></A>
+ * @section intro_sec Introduction
+ *
+ *  This document serves the purpose of providing the background and details of the embedded software that was developed for the TI group project.
+ *
+ *  The main purpose of this project was to automate a robot which drives on 4 wheels to follow a line with specific tasks on his way to the end.<br> The robot must be able to follow a line by himself.
+ *
+ *
+ * <br><A HREF="#Contents">Table of Contents</A><br>
+ *
+ *
+ * <hr>
+ *
+ *
+ * <A NAME="VersionLog"></A>
+ *
+ * @section Version Version Log
+ *
+ * @subsection Release1 Release 1
+ *  - added Initial Program Structure
+ *  - added Spi Driver
+ *  - added Dio Driver
+ *  - added Task Scheduler
+ *  - added Adc driver
+ *  - added Canbus Driver
+ *  - added CAN Application Layer
+ *
+ *  Final build capable of detecting an event through Adc and storing the event to RAM.  RAM data can be retrieved through the CAN bus.
+ *
+ *
+ *
+ * <br><A HREF="#Contents">Table of Contents</A><br>
+ * <hr>
+ *
+ *
+ *  <A NAME="Libraries"></A>
+ * @section intro_sec Libraries
+ *
+ *  List of the used libraries:
+ * <ul>
+ * <li>a</li>
+ * <li>b</li>
+ * <li>c</li>
+ * <li>d</li>
+ * <li>e</li>
+ * <li>f</li>
+ * <li>g</li>
+ *</ul>
+ *
+ * <br><A HREF="#Contents">Table of Contents</A><br>
+ *
+ *
+ * <hr>
+ *
+ * <A NAME="CodingStandard"></A>
+ *
+ *
+ * @subsection CNC Code Naming Convention
+ * Function names should conform to the following standard, <br>
+ * - Function names should start with a three letter sub-system name followed by an
+ *   under-score. <br>
+ * - The first character of the sub-system name shall be capitalized.    <br>
+ * - The rest of the function name should not have any under-scores.     <br>
+ * - The rest of the function name should describe what the function does.<br>
+ * - The first character of each word should be capitalized. <br>
+ * - Global variables and variables that are static to a module should have their
+ *   names conform to the same standard as function names. <br>
+ * - Sub-system names aren't required, but use them if you can.<br><br>
+ *
+ * For example,
+ * - Spi_Init(&Spi_Config), where "Spi_" is the sub-system and "Init" describes the
+ * action to be performed.<br><br>
+ *
+ * Common first words after the sub-system name,
+ * - Init
+ * - Motion
+ * - Sensor
+ * - Servo
+ *
+ * For function prototype parameters,
+ * - The sub-system shall not be used.
+ * - The first character of each word shall be non-capitalized.
+ * - There should be no under-scores in the name.
+ * - If the name contains more than one word, each word after the first shall
+ *   have its first character capitalized.
+ *
+ * For local variables (to a function),
+ * - The sub-system shall not be used.
+ * - The first character of the first word shall not be capitalized.
+ * - If the name contains more than one word, each word after the first shall
+ *   have its first character capitalized.
+ *
+ * For example,<br><br>
+ *
+ * @code
+ * uint16 Spi_Read(uint8 *charptr){
+ *   uint8 i;
+ *   uint8 myVariable;
+ *
+ *   // Some code
+ *   statements;
+ * }
+ * @endcode<br>
+ *
+ * - The parameter "Charptr" has the first character un-capitalized and does not start
+ *   with a sub-system name because it is a parameter.
+ * - The variable "i" is not capitalized and does not start with a sub-system name
+ *   because it is a local variable.
+ * - The variable "myVariable" has it's first word un-capitalized, it's second word
+ *   capitalized, and does not start with a sub-system name because it is a local
+ *   variable.
+ *
+ * @subsection CF Code Formatting/Style
+ * Code formatting and style shall conform to the following guidelines.
+ *
+ * - Indentation shall be 2 spaces (not tabs).
+ * - Opening braces shall be placed on the same code lines.
+ * - Closing braces shall be placed on separate lines.
+ * - If, for, switch, and while statements shall always use braces.
+ * - A comment block shall be placed before every function definition describing
+ *   what the function does, any paramaters passed to it, any return value, and
+ *   anything else that would be relevant or useful to someone that has to
+ *   maintain it.
+ *
+ * For example,		<br>
+ * @code
+ * // This is correct.
+ * if (condition){
+ *   statement;
+ * }else{
+ *   statement2;
+ * }
+ *
+ * // This is <b>NOT</b> correct.
+ * if (condition)
+ * {
+ *   statement;
+ * }
+ * else
+ * {
+ *   statement2;
+ * }
+ *
+ * // Neither this is correct.
+ * if (condition)
+ *   statement;
+ * else
+ *   statement2;
+ * @endcode
+ *
+ * <br><A HREF="#Contents">Table of Contents</A><br>
+ * <hr>
+ */

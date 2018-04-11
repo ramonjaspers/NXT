@@ -16,17 +16,25 @@ State::State() {
     this->sensor = this->init.get_sensor();
 }
 
+/**
+ *
+ * @return
+ */
 Motion State::getMotion() {
     return this->motion;
 }
 
+/**
+ *
+ * @return
+ */
 Sensor State::getSensor() {
     return this->sensor;
 }
 
 // Driving straight, everything is going good
 void State::clear() {
-    if (! this->sensor.both_white() && !this->sensor.object_near()) {
+    if (!this->sensor.both_white() && !this->sensor.object_near()) {
         object_or_turn();
     }
 
@@ -43,8 +51,11 @@ void State::object_or_turn() {
 }
 
 // Driving slower and the ultrasonic sensor needs to be in 'avoid', 'check if I'm past' mode etc
+/**
+ *
+ * @return
+ */
 bool State::obstacle_avoid() {
-
     return true;
 }
 
@@ -66,6 +77,10 @@ void State::turn() {
 }
 
 // driving through a grid storing the directions driven.
+/**
+ *
+ * @return
+ */
 bool State::grid_travel() {
     return true;
 }

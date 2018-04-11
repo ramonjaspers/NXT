@@ -15,16 +15,20 @@
 
 
 
-class Log
-{
+class Log {
 private:
-	std::ofstream debugFile;
+    std::ofstream debugFile;
 public:
-	Log();
-	const std::string currentDateTime();
-	void write_line(std::string ln);
-	~Log();
-	
+    Log();
+
+/**
+ *
+ * @return
+ */
+    const std::string currentDateTime();
+    void write_line(std::string ln);
+    ~Log();
+
 };
 
 #endif // LOG_H

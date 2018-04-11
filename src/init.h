@@ -6,18 +6,23 @@
 
 
 //TODO: Doxygen generation
-
-class Init
-{
+class Init {
 private:
-	Sensor sensor;
-	Motion motion;
+    Sensor sensor;
+    Motion motion;
 public:
-	Init();
-	~Init();
-	Sensor get_sensor();
-	Motion get_motion();
-	
+    Init();
+    ~Init();
+/**
+ *
+ * @return
+ */
+    Sensor get_sensor();
+/**
+ *
+ * @return
+ */
+    Motion get_motion();
 };
 
 #endif // INIT_H

@@ -10,29 +10,38 @@
 // ======================================================
 
 // printing all the log data to a file for debugging purposes
-Log::Log()
-{
-	this->debugFile.open("debug.txt");
-	this->write_line("======= LOG START ========");
+//TODO: Doxygen generation
+
+Log::Log() {
+    this->debugFile.open("debug.txt");
+    this->write_line("======= LOG START ========");
 }
 
+/**
+ *
+ * @return
+ */
 const std::string Log::currentDateTime() {
-    time_t     now = time(0);
-    struct tm  tstruct;
-    char       buf[80];
+    time_t now = time(0);
+    struct tm tstruct;
+    char buf[80];
     tstruct = *localtime(&now);
     strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
 
     return buf;
 }
 
-void Log::write_line(std::string ln){
-	std::string temp_ln = currentDateTime() + " || " + ln;
-	this->debugFile << temp_ln;
+/**
+ *
+ * @param ln
+ */
+void Log::write_line(std::string ln) {
+    std::string temp_ln = currentDateTime() + " || " + ln;
+    this->debugFile << temp_ln;
 }
-Log::~Log()
-{
-	this->debugFile.close();
+
+Log::~Log() {
+    this->debugFile.close();
 }
 
 

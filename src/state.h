@@ -19,11 +19,27 @@ public:
 	State();
 	~State();
 	void clear();
+	/**
+	 *
+	 * @return
+	 */
 	bool obstacle_avoid();
 	void turn();
+	/**
+	 *
+	 * @return
+	 */
 	bool grid_travel();
 	void object_or_turn();
+	/**
+	 *
+	 * @return
+	 */
 	Motion getMotion();
+	/**
+	 *
+	 * @return
+	 */
 	Sensor getSensor();
 
 };

@@ -10,6 +10,12 @@ class Notify
 public:
 	Notify();
 	~Notify();
+/**
+ *
+ * @param st
+ * @param type
+ * @return
+ */
 	std::string screen_render(std::string st, unsigned int type = 0);
 
 };

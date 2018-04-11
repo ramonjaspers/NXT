@@ -6,13 +6,19 @@
 
 
 
+//TODO: Doxygen generation
 
 // initialize all the sensors 
 Sensor::Sensor(){
 
 
 }
-
+/**
+ *
+ * @param PORT_IR
+ * @param PORT_RGB
+ * @param PORT_US
+ */
 Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US ){
 
     IR ir;
@@ -28,15 +34,26 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
 
 
 // checking the ultrasonic sensor if something is withing X range of the device.
+/**
+ *
+ * @return
+ */
 bool Sensor::object_near(){
     return false;
 }
 
 // requesting the sonic sensor to tell us how far away we are from an object.
+/**
+ *
+ * @return
+ */
 int Sensor::get_distance_object(){
     return 100;
 }
-
+/**
+ *
+ * @return
+ */
 bool Sensor::both_black(){
     if(this->ir.is_white()){
         return false;
@@ -55,6 +72,10 @@ bool Sensor::both_black(){
     }
 
 }
+/**
+ *
+ * @return
+ */
 bool Sensor::both_white(){
 
     if(this->ir.is_black()){
@@ -87,10 +108,17 @@ void Sensor::initializeUS() {
     // Ultrasonic sensor doesn't actually do a lot, here for consistency sake a.t.m
 
 }
-
+/**
+ *
+ * @return
+ */
 bool Sensor::IR_black_RGB_white(){
     return (this->ir.is_black() && this->rgb.is_white());
 }
+/**
+ *
+ * @return
+ */
 bool Sensor::RGB_black_IR_white(){
     return (this->ir.is_white() && this->rgb.is_black());
 }
