@@ -22,7 +22,8 @@ private:
 public:
     Ultrasonic(uint8_t port);
     bool object_in_range();
-    void get_distance();
+    void set_distance();
+    int get_distance();
     ~Ultrasonic();
 
 };
