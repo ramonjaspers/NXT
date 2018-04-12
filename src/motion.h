@@ -5,17 +5,22 @@
 class Motion
 {
 private:
-	Servo up;
-	Servo left;
-	Servo right;
-public:
-	Motion();
-	Motion(unsigned int left, unsigned int right);
-	~Motion();
-	void turn(unsigned int left, unsigned int right);
-	void emergency_stop();
-	void default_speed();
 
+	int speed;
+
+    Servo right;
+    Servo left;
+    Servo top;
+
+
+public:
+	Motion(int speed);
+	~Motion();
+	void turn(char direction);
+	void emergency_stop();
+	void drive();
+	void drive_reverse();
+	void turn_reverse(char directie);
 };
 
 #endif // MOTION_H
