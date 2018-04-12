@@ -1,12 +1,8 @@
-//
-// Created by brand on 4/6/2018.
-//
-
 #include "ultrasonic.h"
 #include <iostream>
 #include <unistd.h>
 
-Ultrasonic::Ultrasonic(uint8_t port){
+Ultrasonic::Ultrasonic(uint8_t port) {
     BrickPi3 BP;
     this->Brick = BP;
     this->PORT = port;
@@ -15,14 +11,17 @@ Ultrasonic::Ultrasonic(uint8_t port){
     this->Sonic = Sonic3;
 }
 
-
-bool Ultrasonic::object_in_range(){
-        // TODO: own detection
-    return ( this->detected <= 50 );
-
+/**
+ * @return bool if the value is below the expected range
+ */
+bool Ultrasonic::object_in_range() {
+    return (this->detected <= 50);
 }
 
-void Ultrasonic::set_distance(){
+/**
+ * acquires sensor data and stores in member variable
+ */
+void Ultrasonic::set_distance() {
     // code that extracts the range, stores it in detected
     //return this->detected;
     this->Brick.get_sensor(this->PORT, this->Sonic);
@@ -30,10 +29,13 @@ void Ultrasonic::set_distance(){
     std::cout << this->Sonic.cm << std::endl;
 }
 
-
-int Ultrasonic::get_distance(){
- return this->detected;
+/**
+ * @return sensor value
+ */
+int Ultrasonic::get_distance() {
+    return this->detected;
 }
-Ultrasonic::~Ultrasonic(){
+
+Ultrasonic::~Ultrasonic() {
 
 }

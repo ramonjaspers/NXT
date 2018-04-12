@@ -5,15 +5,18 @@
 #include "ultrasonic.h"
 
 
-
-
-// initialize all the sensors 
-Sensor::Sensor(){
+// initialize all the sensors
+Sensor::Sensor() {
 
 
 }
-
-Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US ){
+/**
+ *
+ * @param PORT_IR port for the IR sensor
+ * @param PORT_RGB port for the RGB sensor
+ * @param PORT_US  port for the ultrasonic sensor
+ */
+Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US) {
 
     IR ir;
     RGB rgb;
@@ -26,28 +29,34 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
 }
 
 
-
 // checking the ultrasonic sensor if something is withing X range of the device.
-bool Sensor::object_near(){
-    return false;
+/**
+ *
+ * @return bool if an object is within the minimum range
+ */
+bool Sensor::object_near() {
+    return this->ultrasonic.object_in_range();
 }
 
-// requesting the sonic sensor to tell us how far away we are from an object.
-int Sensor::get_distance_object(){
-    return 100;
+/**
+ *
+ * @return requesting the sonic sensor to tell us how far away we are from an object.
+ */
+int Sensor::get_distance_object() {
+    return this->ultrasonic.get_distance();
 }
-
-bool Sensor::both_black(){
-    if(this->ir.is_white()){
+/**
+ *  Tells us if we passed a crossroad
+ * @return if both sensors are black, return true
+ */
+bool Sensor::both_black() {
+    if (this->ir.is_white()) {
         return false;
-    }
-
-    else if(this->rgb.is_white()){
+    } else if (this->rgb.is_white()) {
         return false;
-    }
-    else if(this->ir.is_black() && this->rgb.is_black()){
+    } else if (this->ir.is_black() && this->rgb.is_black()) {
         return true;
-    } else{
+    } else {
 
         // exception should be thrown
         return true;
@@ -55,18 +64,19 @@ bool Sensor::both_black(){
     }
 
 }
-bool Sensor::both_white(){
+/**
+ *  Tells us if we're in the clear
+ * @return if both sensors are white, return true
+ */
+bool Sensor::both_white() {
 
-    if(this->ir.is_black()){
+    if (this->ir.is_black()) {
         return false;
-    }
-
-    else if(this->rgb.is_black()){
+    } else if (this->rgb.is_black()) {
         return false;
-    }
-    else if(this->ir.is_white() && this->rgb.is_white()){
+    } else if (this->ir.is_white() && this->rgb.is_white()) {
         return true;
-    } else{
+    } else {
         //  TODO: exception throw
         return true;
         // throw std::nested_exception ( "Sensor data has an unexpected return, neither black nor white even though white should be defined" );
@@ -74,30 +84,45 @@ bool Sensor::both_white(){
 
 }
 
-void Sensor::initializeIR(){
+/**
+ * Sets ranges for IR sensor
+ */
+void Sensor::initializeIR() {
     // only the ranges are defined for now
     this->ir.set_ranges();
 }
-
-void Sensor::initializeRGB(){
-    //duplicate of IR
+/**
+ * Sets ranges for RGB sensor
+ */
+void Sensor::initializeRGB() {
+    this->rgb.set_ranges();
 }
 
+/**
+ * TODO: Delete
+ */
 void Sensor::initializeUS() {
     // Ultrasonic sensor doesn't actually do a lot, here for consistency sake a.t.m
-
 }
 
-bool Sensor::IR_black_RGB_white(){
+/**
+ *
+ * @return bool IR black RGB white
+ */
+bool Sensor::IR_black_RGB_white() {
     return (this->ir.is_black() && this->rgb.is_white());
 }
-bool Sensor::RGB_black_IR_white(){
+
+/**
+ *
+ * @return bool RGB black IR white
+ */
+bool Sensor::RGB_black_IR_white() {
     return (this->ir.is_white() && this->rgb.is_black());
 }
 
 
 // shutting down, resetting all brick pi i/o
-Sensor::~Sensor()
-{
+Sensor::~Sensor() {
 }
 
