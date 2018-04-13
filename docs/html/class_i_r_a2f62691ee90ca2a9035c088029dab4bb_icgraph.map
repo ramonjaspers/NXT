@@ -1,0 +1,8 @@
+<map id="IR::is_black" name="IR::is_black">
+<area shape="rect" id="node2" href="$class_sensor.html#a32ebdbb3ba6fbe19739a10b17dc11cba" title="Sensor::both_black" alt="" coords="155,5,289,32"/>
+<area shape="rect" id="node3" href="$class_sensor.html#add2279da6d407ed7678064ab1fe7d02d" title="Sensor::both_white" alt="" coords="155,56,289,83"/>
+<area shape="rect" id="node7" href="$class_sensor.html#a03b8f6886c672badadfeef89d069e1ea" title="Sensor::IR_black_RGB\l_white" alt="" coords="144,107,300,149"/>
+<area shape="rect" id="node4" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="669,35,759,61"/>
+<area shape="rect" id="node5" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="479,60,621,87"/>
+<area shape="rect" id="node6" href="$class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="State::turn" alt="" coords="348,111,431,137"/>
+</map>

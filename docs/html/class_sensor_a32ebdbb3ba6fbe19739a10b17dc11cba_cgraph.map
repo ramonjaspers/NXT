@@ -1,0 +1,7 @@
+<map id="Sensor::both_black" name="Sensor::both_black">
+<area shape="rect" id="node2" href="$class_i_r.html#ae05cf1ad5888262586007946f21ac14e" title="IR::is_white" alt="" coords="197,5,286,32"/>
+<area shape="rect" id="node4" href="$class_r_g_b.html#aa8289d37cc58a81e02b857fb91bfca5c" title="RGB::is_white" alt="" coords="189,56,294,83"/>
+<area shape="rect" id="node5" href="$class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb" title="IR::is_black" alt="" coords="196,107,287,133"/>
+<area shape="rect" id="node6" href="$class_r_g_b.html#a6d5013f3b077886a1a92fa2b16628d22" title="RGB::is_black" alt="" coords="188,157,295,184"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5" title="IR::in_range" alt="" coords="343,56,433,83"/>
+</map>

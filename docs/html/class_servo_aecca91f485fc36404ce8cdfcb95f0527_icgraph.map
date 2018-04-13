@@ -1,0 +1,6 @@
+<map id="Servo::set_speed" name="Servo::set_speed">
+<area shape="rect" id="node2" href="$class_motion.html#af922ccbd27054420dd1ff679d48f588d" title="Motion::turn" alt="" coords="202,5,293,32"/>
+<area shape="rect" id="node3" href="$class_motion.html#a343e5cef901d8309b64735b3a0923728" title="Motion::drive" alt="" coords="200,56,295,83"/>
+<area shape="rect" id="node4" href="$class_motion.html#a3bc12224ab575f75c71054d547ae0add" title="Motion::drive_reverse" alt="" coords="176,107,319,133"/>
+<area shape="rect" id="node5" href="$class_motion.html#a73524a9eb0bf44b4956622fcea759fd0" title="Motion::turn_reverse" alt="" coords="178,157,317,184"/>
+</map>
