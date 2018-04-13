@@ -1,0 +1,14 @@
+<map id="State::clear" name="State::clear">
+<area shape="rect" id="node2" href="$class_sensor.html#add2279da6d407ed7678064ab1fe7d02d" title="Sensor::both_white" alt="" coords="475,173,609,200"/>
+<area shape="rect" id="node8" href="$class_sensor.html#a4f797e3f6a549cfdefab639eb6a86787" title="Sensor::object_near" alt="" coords="473,5,611,32"/>
+<area shape="rect" id="node9" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="143,85,285,112"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb" title="IR::is_black" alt="" coords="676,249,767,276"/>
+<area shape="rect" id="node5" href="$class_r_g_b.html#a6d5013f3b077886a1a92fa2b16628d22" title="RGB::is_black" alt="" coords="668,148,775,175"/>
+<area shape="rect" id="node6" href="$class_i_r.html#ae05cf1ad5888262586007946f21ac14e" title="IR::is_white" alt="" coords="677,97,766,124"/>
+<area shape="rect" id="node7" href="$class_r_g_b.html#aa8289d37cc58a81e02b857fb91bfca5c" title="RGB::is_white" alt="" coords="669,199,774,225"/>
+<area shape="rect" id="node4" href="$class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5" title="IR::in_range" alt="" coords="823,173,913,200"/>
+<area shape="rect" id="node10" href="$class_state.html#a975afaa8e6091654888d7ed58b8c29c1" title="State::obstacle_avoid" alt="" coords="469,56,615,83"/>
+<area shape="rect" id="node11" href="$class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="State::turn" alt="" coords="333,111,416,137"/>
+<area shape="rect" id="node12" href="$class_sensor.html#a03b8f6886c672badadfeef89d069e1ea" title="Sensor::IR_black_RGB\l_white" alt="" coords="464,225,620,266"/>
+<area shape="rect" id="node13" href="$class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285" title="Sensor::RGB_black_IR\l_white" alt="" coords="464,107,620,149"/>
+</map>
