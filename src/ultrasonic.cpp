@@ -22,8 +22,8 @@ bool Ultrasonic::object_in_range() {
  * acquires sensor data and stores in member variable
  */
 void Ultrasonic::set_distance() {
-    // code that extracts the range, stores it in detected
-    //return this->detected;
+    /// code that extracts the range, stores it in detected
+    ///return this->detected;
     this->Brick.get_sensor(this->PORT, this->Sonic);
     this->detected = this->Sonic.cm;
     std::cout << this->Sonic.cm << std::endl;

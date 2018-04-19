@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Waarde Luitjes</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespacestd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="class_brick_pi3.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_init.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_i_r.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_log.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_motion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_notify.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_sensor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_servo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_state.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_ultrasonic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="_brick_pi3_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_brick_pi3_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="init_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="init_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_i_r_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_i_r_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="log_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="log_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="motion_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="motion_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="notify_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="notify_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_r_g_b_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_r_g_b_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="sensor_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="sensor_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="servo_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="servo_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="state_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="state_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="ultrasonic_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="ultrasonic_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

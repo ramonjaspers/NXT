@@ -1,0 +1,8 @@
+<map id="Init" name="Init">
+<area shape="rect" id="node2" href="$class_motion.html" title="{Motion\n|&#45; speed\l|+ Motion()\l+ ~Motion()\l+ turn()\l+ emergency_stop()\l+ drive()\l+ drive_reverse()\l+ turn_reverse()\l}" alt="" coords="5,527,144,693"/>
+<area shape="rect" id="node3" href="$class_servo.html" title="for BrickPi3 " alt="" coords="23,204,126,355"/>
+<area shape="rect" id="node4" href="$class_brick_pi3.html" title="{BrickPi3\n||+ BrickPi3()\l+ ~BrickPi3()\l}" alt="" coords="168,5,267,97"/>
+<area shape="rect" id="node6" href="$class_ultrasonic.html" title="{Ultrasonic\n|&#45; PORT\l&#45; Sonic\l&#45; detected\l&#45; detection_range\l|+ Ultrasonic()\l+ object_in_range()\l+ set_distance()\l+ get_distance()\l+ ~Ultrasonic()\l}" alt="" coords="151,189,284,369"/>
+<area shape="rect" id="node7" href="$class_i_r.html" title="TODO: Doxygen generation. " alt="" coords="309,160,451,399"/>
+<area shape="rect" id="node5" href="$class_sensor.html" title="TODO: Doxygen generation. " alt="" coords="169,491,333,729"/>
+</map>

@@ -1,9 +1,9 @@
 #ifndef SERVO_H
 #define SERVO_H
-#include "BrickPi3.h" // for BrickPi3
+#include "BrickPi3.h" /// for BrickPi3
 
 
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class Servo
 {
@@ -22,4 +22,4 @@ public:
 
 };
 
-#endif // SERVO_H
+#endif /// SERVO_H

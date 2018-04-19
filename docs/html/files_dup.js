@@ -26,9 +26,7 @@ var files_dup =
       [ "Notify", "class_notify.html", "class_notify" ]
     ] ],
     [ "RGB.cpp", "_r_g_b_8cpp.html", null ],
-    [ "RGB.h", "_r_g_b_8h.html", [
-      [ "RGB", "class_r_g_b.html", "class_r_g_b" ]
-    ] ],
+    [ "RGB.h", "_r_g_b_8h.html", null ],
     [ "sensor.cpp", "sensor_8cpp.html", null ],
     [ "sensor.h", "sensor_8h.html", [
       [ "Sensor", "class_sensor.html", "class_sensor" ]

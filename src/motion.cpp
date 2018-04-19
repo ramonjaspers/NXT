@@ -10,7 +10,7 @@
  * @param speed default speed that will be set for servo control
  */
 Motion::Motion(int speed) {
-    // initializing the servo configuration, passing by reference ideally for vector
+    /// initializing the servo configuration, passing by reference ideally for vector
 
     Servo servo_right;
     servo_right.set_port(PORT_B);
@@ -32,7 +32,7 @@ Motion::Motion(int speed) {
  * @param direction char that contains first letter of direction l or r in lowercase
  */
 void Motion::turn(char direction) {
-    // decreasing the left increasing the right and in reverse
+    /// decreasing the left increasing the right and in reverse
     if (direction == 'r') {
         for (unsigned int i = 0; i < (3 * (this->speed / 10)); i += (this->speed / 10)) {
             this->left.set_speed(this->speed + i);
@@ -46,8 +46,8 @@ void Motion::turn(char direction) {
             usleep(20000);
         }
     }
-    // logging if left > right -> going left
-    // logging if right > left -> going right
+    /// logging if left > right -> going left
+    /// logging if right > left -> going right
 
 }
 
@@ -57,7 +57,7 @@ void Motion::emergency_stop() {
 }
 
 void Motion::drive() {
-    // setting both motion values the drive straight on
+    /// setting both motion values the drive straight on
     std::cout << this->speed;
     left.set_speed(this->speed);
     right.set_speed(this->speed);
@@ -69,7 +69,7 @@ void Motion::drive_reverse() {
 }
 
 void Motion::turn_reverse(char directie) {
-    // decreasing the left increasing the right and in reverse
+    /// decreasing the left increasing the right and in reverse
     if (directie == 'l') {
         for (unsigned int i = 0; i < (3 * (-this->speed / 10)); i -= (-this->speed / 10)) {
             left.set_speed(-this->speed + i);
@@ -85,8 +85,8 @@ void Motion::turn_reverse(char directie) {
     } else {
         std::cout << "Geen gelding karakter opgegeven.";
     }
-    // logging if left > right -> going left
-    // logging if right > left -> going right
+    /// logging if left > right -> going left
+    /// logging if right > left -> going right
 }
 
 Motion::~Motion() {

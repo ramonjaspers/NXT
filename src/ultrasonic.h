@@ -1,7 +1,7 @@
 #include <vector>
-//
-// Created by brand on 4/6/2018.
-//
+///
+/// Created by brand on 4/6/2018.
+///
 
 #ifndef SRC_ULTRASONIC_H
 #define SRC_ULTRASONIC_H
@@ -12,7 +12,7 @@
 class Ultrasonic {
 
 private:
-    // TODO: cast to 8 bit
+    /// TODO: cast to 8 bit
     BrickPi3 Brick;
     uint8_t PORT;
     sensor_ultrasonic_t Sonic;
@@ -29,4 +29,4 @@ public:
 };
 
 
-#endif //SRC_ULTRASONIC_H
+#endif ///SRC_ULTRASONIC_H

@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_motion">
+<title>Motion class Reference</title>
+<para>
+    <programlisting>#include <link linkend="motion_8h">&lt;motion.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Motion</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_motion__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Motion</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_motion__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int speed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Servo right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Servo left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Servo top</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4">Motion</link> (
+int speed)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6">~Motion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_motion_1af922ccbd27054420dd1ff679d48f588d">turn</link> (
+char direction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_motion_1a44ce916fa9aad6277f0990b14a4259ef">emergency_stop</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_motion_1a343e5cef901d8309b64735b3a0923728">drive</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_motion_1a3bc12224ab575f75c71054d547ae0add">drive_reverse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_motion_1a73524a9eb0bf44b4956622fcea759fd0">turn_reverse</link> (
+char directie)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4">
+                <title>Motion::Motion (int speed)</title> <emphasis></emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>speed</entry>
+                                <entry>
+<para>default speed that will be set for servo control </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6">
+                <title>Motion::~Motion ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_motion_1af922ccbd27054420dd1ff679d48f588d">
+                <title>void Motion::turn (char direction)</title> <emphasis></emphasis>
+                
+<para>Decides which way to turn and attempts to do so slowly 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>direction</entry>
+                                <entry>
+<para>char that contains first letter of direction l or r in lowercase </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_motion_1a44ce916fa9aad6277f0990b14a4259ef">
+                <title>void Motion::emergency_stop ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_motion_1a343e5cef901d8309b64735b3a0923728">
+                <title>void Motion::drive ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_motion_1a3bc12224ab575f75c71054d547ae0add">
+                <title>void Motion::drive_reverse ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_motion_1a73524a9eb0bf44b4956622fcea759fd0">
+                <title>void Motion::turn_reverse (char directie)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

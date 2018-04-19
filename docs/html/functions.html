@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WaardeLuitjes: Class Members</title>
+<title>Waarde Luitjes: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WaardeLuitjes
+   <div id="projectname">Waarde Luitjes
    </div>
   </td>
  </tr>
@@ -94,6 +94,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>both_white()
 : <a class="el" href="class_sensor.html#add2279da6d407ed7678064ab1fe7d02d">Sensor</a>
 </li>
+<li>Brick
+: <a class="el" href="class_i_r.html#a6fa7e04f917540a79e3c8c2ef1372506">IR</a>
+, <a class="el" href="class_ultrasonic.html#ac2998a44e4be52fe704b1e90ab39b2f7">Ultrasonic</a>
+</li>
 <li>BrickPi3()
 : <a class="el" href="class_brick_pi3.html#abd966c52f01fcc176bf613bd993ea793">BrickPi3</a>
 </li>
@@ -111,6 +115,16 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>debugFile
+: <a class="el" href="class_log.html#ae05ae05ecdb8091ca2b3f847ce869b05">Log</a>
+</li>
+<li>detected
+: <a class="el" href="class_i_r.html#a91cec92a0153ddb09bdfa7f6422db448">IR</a>
+, <a class="el" href="class_ultrasonic.html#ac4a422dd82447c177423748fb7b8b97e">Ultrasonic</a>
+</li>
+<li>detection_range
+: <a class="el" href="class_ultrasonic.html#abeb14fe56e8130ce077d7419948c8776">Ultrasonic</a>
+</li>
 <li>drive()
 : <a class="el" href="class_motion.html#a343e5cef901d8309b64735b3a0923728">Motion</a>
 </li>
@@ -128,14 +142,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>get_black_range()
-: <a class="el" href="class_r_g_b.html#aa745e7dff1d7b49c78fa12da0c6e0835">RGB</a>
-</li>
 <li>get_current_value()
 : <a class="el" href="class_i_r.html#a5b71d10f57e8dbb76cdf01e043cfdda1">IR</a>
 </li>
 <li>get_distance()
-: <a class="el" href="class_ultrasonic.html#a3d4ff1956578fb0bec95ee140d30b751">Ultrasonic</a>
+: <a class="el" href="class_ultrasonic.html#a07cc45fda7cd672acd96320500d31ec6">Ultrasonic</a>
 </li>
 <li>get_distance_object()
 : <a class="el" href="class_sensor.html#a118f38dcb8a695ad78b7c7d94f508d4f">Sensor</a>
@@ -143,11 +154,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>get_motion()
 : <a class="el" href="class_init.html#a2f0137392b84da9c02d9c4d892e44534">Init</a>
 </li>
+<li>get_ranges()
+: <a class="el" href="class_i_r.html#ad9c48a5f015b51dbffbdf23534d062c8">IR</a>
+</li>
 <li>get_sensor()
 : <a class="el" href="class_init.html#a8d5597fb9e9bfb192a235cdee32ede2d">Init</a>
-</li>
-<li>get_white_range()
-: <a class="el" href="class_r_g_b.html#a96764f94cfd38f38b0e975c3c77ffaa5">RGB</a>
 </li>
 <li>getMotion()
 : <a class="el" href="class_state.html#adcabc610335b5bd9efdf7f908de7dacb">State</a>
@@ -171,10 +182,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>in_range()
 : <a class="el" href="class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5">IR</a>
-, <a class="el" href="class_r_g_b.html#a61239b0df41eba4c53a2a7c6feaff698">RGB</a>
 </li>
 <li>Init()
 : <a class="el" href="class_init.html#a06a43f2bcb930e7ebec7d383efc15fd9">Init</a>
+</li>
+<li>init
+: <a class="el" href="class_state.html#a2c157e70b0d158e0a9460dbb332c7c01">State</a>
 </li>
 <li>initializeIR()
 : <a class="el" href="class_sensor.html#a7065fe2dff6107b89d162e59271a9491">Sensor</a>
@@ -186,32 +199,48 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_sensor.html#a77a538443f5e024bbd144cc56eed3319">Sensor</a>
 </li>
 <li>IR()
-: <a class="el" href="class_i_r.html#aa4098d98350ff7f6fa1d58ef97283946">IR</a>
+: <a class="el" href="class_i_r.html#ab286975dd7dc48113ae5189b6c8fa0ba">IR</a>
+</li>
+<li>ir
+: <a class="el" href="class_sensor.html#a0b30ca0918f6b808c8e147a3996c47d6">Sensor</a>
 </li>
 <li>IR_black_RGB_white()
 : <a class="el" href="class_sensor.html#a03b8f6886c672badadfeef89d069e1ea">Sensor</a>
 </li>
 <li>is_black()
 : <a class="el" href="class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb">IR</a>
-, <a class="el" href="class_r_g_b.html#a6d5013f3b077886a1a92fa2b16628d22">RGB</a>
 </li>
 <li>is_white()
 : <a class="el" href="class_i_r.html#ae05cf1ad5888262586007946f21ac14e">IR</a>
-, <a class="el" href="class_r_g_b.html#aa8289d37cc58a81e02b857fb91bfca5c">RGB</a>
 </li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
+<li>left
+: <a class="el" href="class_motion.html#abf349487522a73a4741790d668399f2d">Motion</a>
+</li>
+<li>Light
+: <a class="el" href="class_i_r.html#ad923e4bc11ac29c695e95210e1d98ff3">IR</a>
+</li>
 <li>Log()
 : <a class="el" href="class_log.html#af6071a60aa52b6c1b511f99b4bc1b8fe">Log</a>
+</li>
+<li>log
+: <a class="el" href="class_state.html#a1b411401c4bf5691317227067545823d">State</a>
 </li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>motion
+: <a class="el" href="class_init.html#ab4680a10867c4cbb1b6ab597afc6c341">Init</a>
+</li>
 <li>Motion()
 : <a class="el" href="class_motion.html#a3ac2f89dcb6ec279fa36ed38b12be3b4">Motion</a>
+</li>
+<li>motion
+: <a class="el" href="class_state.html#a32c7a0c466fe37889b4053d83046b63e">State</a>
 </li>
 </ul>
 
@@ -239,12 +268,30 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>PI
+: <a class="el" href="class_servo.html#ae4cb4af62094196c894f565b74f5d235">Servo</a>
+</li>
+<li>PORT
+: <a class="el" href="class_i_r.html#ae2dc8682b6fadbf02132cc70e5d70911">IR</a>
+, <a class="el" href="class_servo.html#a56ab5ba316afabb22fba5a3633337ad5">Servo</a>
+, <a class="el" href="class_ultrasonic.html#a063ddbf2b01528ca6d693ff06ca5bc73">Ultrasonic</a>
+</li>
+</ul>
+
+
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>RGB()
-: <a class="el" href="class_r_g_b.html#ac82f37558b845c294de41eb2558c6619">RGB</a>
+<li>range
+: <a class="el" href="class_i_r.html#ab5f0a0cee6a950f6362be1ee686c28d5">IR</a>
+</li>
+<li>rgb
+: <a class="el" href="class_sensor.html#abe74066f5bf9554608d9611390c8cc18">Sensor</a>
 </li>
 <li>RGB_black_IR_white()
 : <a class="el" href="class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285">Sensor</a>
+</li>
+<li>right
+: <a class="el" href="class_motion.html#acd3818dff69ef7855db3eb03152940ac">Motion</a>
 </li>
 </ul>
 
@@ -253,14 +300,23 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>screen_render()
 : <a class="el" href="class_notify.html#a7055e1a2409ac4f55021e171ce6942e1">Notify</a>
 </li>
+<li>sensor
+: <a class="el" href="class_init.html#a88d70f49371941495c78f10f2a0a5912">Init</a>
+</li>
 <li>Sensor()
-: <a class="el" href="class_sensor.html#a342d6d11ef572c8cba92cb76fb1a294b">Sensor</a>
+: <a class="el" href="class_sensor.html#a47122c90fb62cd4510af51161058953d">Sensor</a>
+</li>
+<li>sensor
+: <a class="el" href="class_state.html#adee9d7ef7c6a6946eaa5db31b7959ed3">State</a>
 </li>
 <li>Servo()
 : <a class="el" href="class_servo.html#a55cadfeaac34e6efa14bc03a9b6a82c7">Servo</a>
 </li>
 <li>set_current_value()
 : <a class="el" href="class_i_r.html#a2d60cbf66f48bad8167e2c4231ed3f95">IR</a>
+</li>
+<li>set_distance()
+: <a class="el" href="class_ultrasonic.html#aef69078732d3b74569955c039f50af54">Ultrasonic</a>
 </li>
 <li>set_port()
 : <a class="el" href="class_servo.html#a9986e323bf68602b56654a4eb44c683c">Servo</a>
@@ -271,6 +327,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>set_speed()
 : <a class="el" href="class_servo.html#aecca91f485fc36404ce8cdfcb95f0527">Servo</a>
 </li>
+<li>Sonic
+: <a class="el" href="class_ultrasonic.html#a8e063e8780aa696f2636a38571c35d3a">Ultrasonic</a>
+</li>
+<li>speed
+: <a class="el" href="class_motion.html#a29e058cf19991e101d2b74a6327031c3">Motion</a>
+</li>
 <li>State()
 : <a class="el" href="class_state.html#ab91bb1dd5aa6260ab2a456581daf9ec2">State</a>
 </li>
@@ -278,6 +340,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>top
+: <a class="el" href="class_motion.html#a846d064099e60104276ed386a7712864">Motion</a>
+</li>
 <li>turn()
 : <a class="el" href="class_motion.html#af922ccbd27054420dd1ff679d48f588d">Motion</a>
 , <a class="el" href="class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5">State</a>
@@ -289,8 +354,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>ultrasonic
+: <a class="el" href="class_sensor.html#a3d4cefeea113bbd14a8e3b53198b6943">Sensor</a>
+</li>
 <li>Ultrasonic()
-: <a class="el" href="class_ultrasonic.html#aca6777e380e8df649cc547e0a5fdd417">Ultrasonic</a>
+: <a class="el" href="class_ultrasonic.html#a780b97f3357351da4e4f2716feff5d05">Ultrasonic</a>
 </li>
 </ul>
 
@@ -320,9 +388,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>~Notify()
 : <a class="el" href="class_notify.html#a621d36ca663f0c8460c82611c708b51e">Notify</a>
-</li>
-<li>~RGB()
-: <a class="el" href="class_r_g_b.html#aba3fa8736bbef986a77b56613ddc6275">RGB</a>
 </li>
 <li>~Sensor()
 : <a class="el" href="class_sensor.html#aee8c70e7ef05ce65e7ee33686b5d7db2">Sensor</a>

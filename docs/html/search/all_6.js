@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['in_5frange',['in_range',['../class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5',1,'IR::in_range()'],['../class_r_g_b.html#a61239b0df41eba4c53a2a7c6feaff698',1,'RGB::in_range()']]],
-  ['init',['Init',['../class_init.html',1,'Init'],['../class_init.html#a06a43f2bcb930e7ebec7d383efc15fd9',1,'Init::Init()']]],
+  ['in_5frange',['in_range',['../class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5',1,'IR']]],
+  ['init',['Init',['../class_init.html',1,'Init'],['../class_state.html#a2c157e70b0d158e0a9460dbb332c7c01',1,'State::init()'],['../class_init.html#a06a43f2bcb930e7ebec7d383efc15fd9',1,'Init::Init()']]],
   ['init_2ecpp',['init.cpp',['../init_8cpp.html',1,'']]],
   ['init_2eh',['init.h',['../init_8h.html',1,'']]],
   ['initializeir',['initializeIR',['../class_sensor.html#a7065fe2dff6107b89d162e59271a9491',1,'Sensor']]],
   ['initializergb',['initializeRGB',['../class_sensor.html#a1684cc490c5dd360890d2c0cdfd23fd3',1,'Sensor']]],
   ['initializeus',['initializeUS',['../class_sensor.html#a77a538443f5e024bbd144cc56eed3319',1,'Sensor']]],
-  ['ir',['IR',['../class_i_r.html',1,'IR'],['../class_i_r.html#aa4098d98350ff7f6fa1d58ef97283946',1,'IR::IR()']]],
+  ['ir',['IR',['../class_i_r.html',1,'IR'],['../class_sensor.html#a0b30ca0918f6b808c8e147a3996c47d6',1,'Sensor::ir()'],['../class_i_r.html#ab286975dd7dc48113ae5189b6c8fa0ba',1,'IR::IR()']]],
   ['ir_2ecpp',['IR.cpp',['../_i_r_8cpp.html',1,'']]],
   ['ir_2eh',['IR.h',['../_i_r_8h.html',1,'']]],
   ['ir_5fblack_5frgb_5fwhite',['IR_black_RGB_white',['../class_sensor.html#a03b8f6886c672badadfeef89d069e1ea',1,'Sensor']]],
-  ['is_5fblack',['is_black',['../class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb',1,'IR::is_black()'],['../class_r_g_b.html#a6d5013f3b077886a1a92fa2b16628d22',1,'RGB::is_black()']]],
-  ['is_5fwhite',['is_white',['../class_i_r.html#ae05cf1ad5888262586007946f21ac14e',1,'IR::is_white()'],['../class_r_g_b.html#aa8289d37cc58a81e02b857fb91bfca5c',1,'RGB::is_white()']]]
+  ['is_5fblack',['is_black',['../class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb',1,'IR']]],
+  ['is_5fwhite',['is_white',['../class_i_r.html#ae05cf1ad5888262586007946f21ac14e',1,'IR']]]
 ];
