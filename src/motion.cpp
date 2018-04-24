@@ -4,92 +4,214 @@
 #include "BrickPi3.h"
 #include <unistd.h>
 #include <iostream>
+#include <cmath>
+
+
 
 /**
+
  *
+
  * @param speed default speed that will be set for servo control
+
  */
+
 Motion::Motion(int speed) {
+
     // initializing the servo configuration, passing by reference ideally for vector
 
+
+
     Servo servo_right;
+
     servo_right.set_port(PORT_B);
+
     Servo servo_left;
+
     servo_left.set_port(PORT_C);
+
     Servo servo_sensor;
+
     servo_sensor.set_port(PORT_D);
+
+
 
     this->speed = speed;
 
+
+
     this->right = servo_right;
+
     this->left = servo_left;
+
     this->top = servo_sensor;
 
+
+
 }
+
+
 
 /**
+
  * Decides which way to turn and attempts to do so slowly
+
  * @param direction char that contains first letter of direction l or r in lowercase
+
  */
-void Motion::turn(char direction) {
+
+void Motion::turn(char direction, int last) {
+
+
     // decreasing the left increasing the right and in reverse
-    if (direction == 'r') {
-        for (unsigned int i = 0; i < (3 * (this->speed / 10)); i += (this->speed / 10)) {
-            this->left.set_speed(this->speed + i);
-            this->right.set_speed(this->speed - i);
-            usleep(20000);
-        }
-    } else {
-        for (unsigned int i = 0; i < (3 * (this->speed / 10)); i += (this->speed / 10)) {
-            left.set_speed(this->speed - i);
-            right.set_speed(this->speed + i);
-            usleep(20000);
-        }
+
+    if (direction == 'l'){
+        this->execute_speed(last, 'l');
+        usleep(100);
     }
+    else if (direction == 'r'){
+        this->execute_speed(last, 'r');
+        usleep(100);
+    }
+ //   }
+        /*
+
+    if (direction == 'l') {
+
+        for (unsigned int i = 0; i < (3 * (this->speed / 10)); i += (this->speed / 10)) {
+
+        }
+    }   else if (direction == 'r') {
+
+        for (unsigned int i = 0; i < (3 * (this->speed / 10)); i += (this->speed / 10)) {
+
+            left.set_speed(this->speed - i);
+
+            right.set_speed(this->speed + i);
+
+            usleep(20000);
+
+        }
+
+    }
+    */
+
     // logging if left > right -> going left
+
     // logging if right > left -> going right
 
+
+
 }
+
+
 
 void Motion::emergency_stop() {
+
     left.halt();
+
     right.halt();
+
 }
+
+
 
 void Motion::drive() {
+
     // setting both motion values the drive straight on
-    std::cout << this->speed;
+
     left.set_speed(this->speed);
+
     right.set_speed(this->speed);
+
 }
 
+
+
 void Motion::drive_reverse() {
+
     left.set_speed(-this->speed);
+
     right.set_speed(-this->speed);
+
+}
+
+float Motion::degreesTimeC(float degree){
+    return ((2.6/180) * abs(degree));
+}
+
+void Motion::turnDeg(float degree){          //Positief: Rechts, Negatief: Links
+    if(degree == 0){
+        std::cout << "Degree:    " << degree << std::endl;
+    }else if(degree < 0){
+        float t = degreesTimeC(degree);
+        left.set_speed(this->speed);
+        right.set_speed(-this->speed);
+        usleep(t*1000000);
+    }else{
+        float t = degreesTimeC(degree-1);
+        left.set_speed(-this->speed);
+        right.set_speed(this->speed);
+        usleep(t*1000000);
+    }
 }
 
 void Motion::turn_reverse(char directie) {
+
     // decreasing the left increasing the right and in reverse
+
     if (directie == 'l') {
+
         for (unsigned int i = 0; i < (3 * (-this->speed / 10)); i -= (-this->speed / 10)) {
+
             left.set_speed(-this->speed + i);
+
             right.set_speed(-this->speed - i);
+
             usleep(20000);
+
         }
+
     } else if (directie == 'r') {
+
         for (unsigned int i = 0; i < (3 * (-this->speed / 10)); i -= (-this->speed / 10)) {
+
             left.set_speed(-this->speed - i);
+
             right.set_speed(-this->speed + i);
+
             usleep(20000);
+
         }
+
     } else {
+
         std::cout << "Geen gelding karakter opgegeven.";
+
     }
+
     // logging if left > right -> going left
+
     // logging if right > left -> going right
+
 }
+
+void Motion::execute_speed(int adj_speed, char direction){
+
+    if (direction == 'l'){
+                this->left.set_speed(adj_speed);
+
+    }else{
+                this->right.set_speed(adj_speed);
+    }
+
+}
+
+void Motion::sensorTurn(int degree){   //Positief: Rechts, Negatief: Links
+    this->top.motor_position(degree);
+}
+
 
 Motion::~Motion() {
+
 }
-
-
