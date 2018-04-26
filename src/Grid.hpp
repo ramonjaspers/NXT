@@ -1,6 +1,3 @@
-//
-// Created by Ramon Jaspers on 4/25/2018.
-//
 
 #ifndef V1GP_GRID_HPP
 #define V1GP_GRID_HPP
