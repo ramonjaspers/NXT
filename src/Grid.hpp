@@ -1,9 +1,10 @@
 //
-// Created by Derk van den Bergh and Ramon Jaspers on 4/20/2018.
+// Created by Ramon Jaspers on 4/25/2018.
 //
 
-#ifndef MATRIX_GRID_HPP
-#define MATRIX_GRID_HPP
+#ifndef V1GP_GRID_HPP
+#define V1GP_GRID_HPP
+
 
 #include <iostream>
 #include <vector>
@@ -35,10 +36,10 @@ private:
 
 
     struct neighbor {
-        int target;
-        int weight;
+        vertex_t target;
+        weight_t weight;
 
-        neighbor(int arg_target, int arg_weight)
+        neighbor(vertex_t arg_target, weight_t arg_weight)
                 : target(arg_target), weight(arg_weight) {}
     };
 
@@ -49,8 +50,6 @@ private:
     std::vector<int> instruction_list;
     std::vector<int> matrix;
     adjacency_list_t adjacency_list;
-
-
 
 public:
     Grid();
@@ -69,8 +68,10 @@ public:
     int actionExecute();
     void objectDetected();
     void initMatrix(int start);
-    void update_weight(int node);
+    void updateWeight(vertex_t node);
+    void updateStatus(int current, int next);
 };
 
 
-#endif //MATRIX_GRID_HPP
+
+#endif //V1GP_GRID_HPP

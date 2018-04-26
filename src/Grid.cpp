@@ -18,8 +18,8 @@ Grid::Grid() {
     /*
      * Predefined status starting at 0, orientation default
      */
-    this->status = 's';
     this->counter = 0;
+    this->status = 's';
 };
 
 
@@ -55,6 +55,7 @@ void Grid::DijkstraComputePaths(vertex_t source) {
     vertex_queue.insert(std::make_pair(this->min_distance[source], source));
 
     while (!vertex_queue.empty()) {
+        std::cout << "vertex queue size: " << vertex_queue.size() << "\n";
         weight_t dist = vertex_queue.begin()->first;
         vertex_t u = vertex_queue.begin()->second;
         vertex_queue.erase(vertex_queue.begin());
@@ -66,6 +67,7 @@ void Grid::DijkstraComputePaths(vertex_t source) {
              neighbor_iter++) {
             vertex_t v = neighbor_iter->target;
             weight_t weight = neighbor_iter->weight;
+            std::cout << neighbor_iter->target << " - " << neighbor_iter->weight << std::endl;
             weight_t distance_through_u = dist + weight;
             if (distance_through_u < this->min_distance[v]) {
                 vertex_queue.erase(std::make_pair(this->min_distance[v], v));
@@ -73,7 +75,6 @@ void Grid::DijkstraComputePaths(vertex_t source) {
                 this->min_distance[v] = distance_through_u;
                 this->previous[v] = u;
                 vertex_queue.insert(std::make_pair(this->min_distance[v], v));
-
             }
         }
     }
@@ -188,7 +189,10 @@ void Grid::generate_matrix() {
  * @return [out] returns the fastest path in a readable vector int
  */
 std::vector<int> Grid::new_path(int start) {
-    this->generate_matrix();
+    this->bestPath.clear();
+    if (!this->objectDetectedBool) {
+        this->generate_matrix();
+    }
     this->DijkstraComputePaths(start);
     std::list<vertex_t> path = this->DijkstraGetShortestPathTo(24);
     std::copy(path.begin(), path.end(), std::back_inserter(this->bestPath));
@@ -201,30 +205,29 @@ std::vector<int> Grid::new_path(int start) {
  * @param direction [in] character; generates the current action based on his current position and facing direction.
  */
 int Grid::turnDirection() {
-    std::cout << "De directie is: " << this->direction << std::endl;
     std::cout << "De huidige status is: " << this->status << std::endl;
     std::cout << "De gewenste status is: " << this->direction << std::endl;
 
     // Kijk welke kant de robot op moet draaien als de directie "zuid" is.
-    if (this->direction  == 's') {
+    if (this->direction == 's') {
         if (this->status == 'n') {
             this->status = 's';
             return 2;
-        } else if (this->status == 'e') {
-            this->status = 's';
-            return 1;
-        } else if (this->status == 's') {
-            this->status = 's';
-            return 4;
         } else if (this->status == 'w') {
             this->status = 's';
             return 3;
+        } else if (this->status == 's') {
+            this->status = 's';
+            return 4;
+        } else if (this->status == 'e') {
+            this->status = 's';
+            return 1;
         } else {
             return 5;
         }
     }
     // Kijk welke kant de robot op moet draaien als de directie "noord" is.
-    if (this->direction   == 'n') {
+    if (this->direction == 'n') {
         if (this->status == 'n') {
             this->status = 'n';
             return 4;
@@ -243,16 +246,16 @@ int Grid::turnDirection() {
 
     }
     // Kijk welke kant de robot op moet draaien als de directie "oost" is.
-    if (this->direction   == 'e') {
-        if (this->status == 'n') {
+    if (this->direction == 'e') {
+        if (this->status == 's') {
             this->status = 'e';
-            return 1;
+            return 3;
         } else if (this->status == 'e') {
             this->status = 'e';
             return 4;
-        } else if (this->status == 's') {
+        } else if (this->status == 'n') {
             this->status = 'e';
-            return 3;
+            return 1;
         } else if (this->status == 'w') {
             this->status = 'e';
             return 2;
@@ -262,16 +265,16 @@ int Grid::turnDirection() {
 
     }
     // Kijk welke kant de robot op moet draaien als de directie "west" is.
-    if (this->direction   == 'w') {
+    if (this->direction == 'w') {
         if (this->status == 'n') {
             this->status = 'w';
-            return 3;
+            return 1;
         } else if (this->status == 'e') {
             this->status = 'w';
             return 2;
         } else if (this->status == 's') {
             this->status = 'w';
-            return 1;
+            return 3;
         } else if (this->status == 'w') {
             this->status = 'w';
             return 4;
@@ -290,16 +293,16 @@ int Grid::turnDirection() {
  */
 std::vector<int> Grid::calculateNextPosition(int current, int next) {
 
-    if (current == (next - 5)) {
-        this->direction =   's';
-    } else if (current == (next + 5)) {
-        this->direction =   'n';
+    if (next == (current + 5)) {
+        this->direction = 's';
+    } else if (next == (current - 5)) {
+        this->direction = 'n';
 
-    } else if (current == (next + 1)) {
-        this->direction =   'e';
+    } else if (next == (current + 1)) {
+        this->direction = 'e';
 
-    } else if (current == (next - 1)) {
-        this->direction =   'w';
+    } else if (next == (current - 1)) {
+        this->direction = 'w';
 
     } else {
         std::cout << "Error" << std::endl;
@@ -310,25 +313,53 @@ std::vector<int> Grid::calculateNextPosition(int current, int next) {
     std::cout << "Gegeven instructie: " << instruction << std::endl << std::endl;
     return {next, instruction};
 }
+
+void Grid::updateStatus(int current, int next) {
+
+    if (next == (current + 5)) {
+        this->status = 's';
+    } else if (next == (current - 5)) {
+        this->status = 'n';
+
+    } else if (next == (current + 1)) {
+        this->status = 'e';
+
+    } else if (next == (current - 1)) {
+        this->status = 'w';
+
+    } else {
+        std::cout << "Error" << std::endl;
+    }
+}
+
 /**
  * generates next action integer. e.g.: 1 -> 6
  */
 
 void Grid::initMatrix(int start) {
+    for (unsigned int i = 0; i < this->matrix.size(); i++) {
+        std::cout << "index " << i << " in oude matrix: " << matrix[i] << std::endl;
+    }
+    std::cout << "start: " << start << std::endl;
     this->matrix = this->new_path(start);
+    for (unsigned int i = 0; i < this->matrix.size(); i++) {
+        std::cout << "index " << i << " in nieuwe matrix: " << matrix[i] << std::endl;
+    }
 }
+
 void Grid::calculateNextAction() {
-    if(!this->objectDetectedBool) {
-        initMatrix(0);
+    if (!this->objectDetectedBool) {
+        this->initMatrix(0);
     } else {
-        this->initMatrix(position);
+        this->initMatrix(this->position);
         std::cout << "Generating new instruction list due to detection object" << std::endl;
     }
     for (unsigned int i = 0; i < this->matrix.size(); i++) {
         this->currentPosition = this->matrix[i];
         this->nextPosition = this->matrix[i + 1];
         if (this->currentPosition != 24) {
-            std::cout << "Volgende positie: " << this->nextPosition << ", huidige positie: " << this->currentPosition << std::endl << std::endl;
+            std::cout << "Volgende positie: " << this->nextPosition << ", huidige positie: " << this->currentPosition
+                      << std::endl << std::endl;
             std::vector<int> data_list = calculateNextPosition(this->currentPosition, this->nextPosition);
             this->nextAction = data_list[0];
             this->nextInstruction = data_list[1];
@@ -336,11 +367,12 @@ void Grid::calculateNextAction() {
             this->pathHistory.push_back(this->nextAction);
             this->instruction_list.push_back(this->nextInstruction);
             std::cout << "Rijden naar positie " << this->nextAction << '\n';
+
         } else {
             std::cout << "Einde bereikt!" << std::endl;
             this->instruction_list.push_back(6);
-            for(unsigned int i = 0; i < this->instruction_list.size(); i++) {
-                std::cout << "Instructie degree " << i+1 << ": " << instruction_list[i] << std::endl;
+            for (unsigned int i = 0; i < this->instruction_list.size(); i++) {
+                std::cout << "Instructie degree " << i + 1 << ": " << instruction_list[i] << std::endl;
             }
             break;
         }
@@ -349,27 +381,36 @@ void Grid::calculateNextAction() {
 
 int Grid::actionExecute() {
     int index = this->counter;
-    if(this->counter < instruction_list.size()) {
+    if (this->counter < instruction_list.size()) {
+        std::cout << counter <<std::endl;
         this->counter++;
         return this->instruction_list[index];
     } else {
-    return 5;
+        return 5;
     }
 
 }
 
-void Grid::update_weight(int node) {
-    for(unsigned int i = 0; i < this->adjacency_list.size(); i++) {
-        if(adjacency_list[i].data()->target == node)
-            adjacency_list[i].data()->weight = 99999;
+void Grid::updateWeight(vertex_t node) {
+    for (unsigned int i = 0; i < adjacency_list.size(); i++) {
+        for (unsigned int j = 0; j < adjacency_list[i].size(); j++) {
+            if (this->adjacency_list[i][j].target == node) {
+                this->adjacency_list[i][j].weight = 99999;
+            }
+        }
     }
 }
 
 void Grid::objectDetected() {
-    // reverse
-    this->update_weight(matrix[counter]+1);
-    this->position = matrix[counter];
+    // reverse 1 pos
+    this->instruction_list.clear();
+    std::cout << "Huidige positie: " << this->counter << std::endl;
+    this->position = this->matrix[this->counter];
+    this->updateWeight(this->matrix[this->counter] + 1);
+    this->updateStatus(this->matrix[this->counter], this->matrix[this->counter+1]);
+    this->objectDetectedBool = true;
     this->calculateNextAction();
+    this->counter = 0;
 }
 
 
