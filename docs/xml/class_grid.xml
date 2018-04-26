@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_grid" kind="class" language="C++" prot="public">
+    <compoundname>Grid</compoundname>
+    <includes refid="_grid_8hpp" local="no">Grid.hpp</includes>
+    <innerclass refid="struct_grid_1_1neighbor" prot="private">Grid::neighbor</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_grid_1a3b0ef9b59acb432528119aa3a13f2e90" prot="private" static="no">
+        <type>std::vector&lt; std::vector&lt; neighbor &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::vector&lt;neighbor&gt; &gt; Grid::adjacency_list_t</definition>
+        <argsstring></argsstring>
+        <name>adjacency_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="46" column="1" bodyfile="Grid.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_grid_1a92e72f67e1c962cf855660e26ab91bc2" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Grid::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="28" column="1" bodyfile="Grid.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a045f0d44946c9f77caccdafbdc42f54b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="29" column="1" bodyfile="Grid.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a77bacf4c7dc862051118bf863a24bbd5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::currentPosition</definition>
+        <argsstring></argsstring>
+        <name>currentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="30" column="1" bodyfile="Grid.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a98e47596802f26b9f0530da588d88378" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::nextPosition</definition>
+        <argsstring></argsstring>
+        <name>nextPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="31" column="1" bodyfile="Grid.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1ab87ada393b03b007012357b434c6f262" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::nextAction</definition>
+        <argsstring></argsstring>
+        <name>nextAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="32" column="1" bodyfile="Grid.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1ad4f7157dd7336e6fa61b5dd74e4e58d4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::nextInstruction</definition>
+        <argsstring></argsstring>
+        <name>nextInstruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="33" column="1" bodyfile="Grid.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1aa060378d94522365054be43e77983eb5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Grid::objectDetectedBool</definition>
+        <argsstring></argsstring>
+        <name>objectDetectedBool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="34" column="1" bodyfile="Grid.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a0c2f7d56a1801e1a39bac59f935c3f07" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="35" column="1" bodyfile="Grid.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a313d83f6bc2bb98b76c3317bd7a6aeaa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="_grid_8cpp_1ac7889bf9b3596f63c57011af217212dd" kindref="member">weight_t</ref> &gt;</type>
+        <definition>std::vector&lt;weight_t&gt; Grid::min_distance</definition>
+        <argsstring></argsstring>
+        <name>min_distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="47" column="1" bodyfile="Grid.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1aadb5c928ee6aae583ba861e8cc4bae04" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref> &gt;</type>
+        <definition>std::vector&lt;vertex_t&gt; Grid::previous</definition>
+        <argsstring></argsstring>
+        <name>previous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="48" column="1" bodyfile="Grid.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a683a3b3d1ceee1728ad35a1d8aee7900" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Grid::bestPath</definition>
+        <argsstring></argsstring>
+        <name>bestPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="49" column="1" bodyfile="Grid.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a87c5857cbca6ddee171317e0e33b1930" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Grid::instruction_list</definition>
+        <argsstring></argsstring>
+        <name>instruction_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="50" column="1" bodyfile="Grid.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a7c6f3a5b81f452a423f94e7ee193d159" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Grid::matrix</definition>
+        <argsstring></argsstring>
+        <name>matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="51" column="1" bodyfile="Grid.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a5321d2e7fcf7d7f9a25ae1aef379e4df" prot="private" static="no" mutable="no">
+        <type>adjacency_list_t</type>
+        <definition>adjacency_list_t Grid::adjacency_list</definition>
+        <argsstring></argsstring>
+        <name>adjacency_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="52" column="1" bodyfile="Grid.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_grid_1a408ce5639cb1d8d336addd4e24670f96" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Grid::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="58" column="1" bodyfile="Grid.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_grid_1a4ac9ff4f63552b4c61ff90fcb35ad66c" compoundref="_grid_8cpp" startline="17" endline="23">Grid</referencedby>
+        <referencedby refid="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" compoundref="_grid_8cpp" startline="194" endline="273">turnDirection</referencedby>
+        <referencedby refid="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" compoundref="_grid_8cpp" startline="304" endline="320">updateStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a9c46a396042f6fbad8c90db9298457d3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Grid::pathHistory</definition>
+        <argsstring></argsstring>
+        <name>pathHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="59" column="1" bodyfile="Grid.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" compoundref="_grid_8cpp" startline="337" endline="367">calculateNextAction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_grid_1a4ac9ff4f63552b4c61ff90fcb35ad66c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Grid::Grid</definition>
+        <argsstring>()</argsstring>
+        <name>Grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate <ref refid="class_grid" kindref="compound">Grid</ref> Object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="55" column="1" bodyfile="Grid.cpp" bodystart="17" bodyend="23"/>
+        <references refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" compoundref="_grid_8hpp" startline="58">status</references>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a3661d0a7f998caaaf8627d7a67072116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Grid::~Grid</definition>
+        <argsstring>()</argsstring>
+        <name>~Grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="56" column="1" bodyfile="Grid.cpp" bodystart="408" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1ae19d3aca505020b32ea388999221e827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::DijkstraComputePaths</definition>
+        <argsstring>(vertex_t source)</argsstring>
+        <name>DijkstraComputePaths</name>
+        <param>
+          <type><ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref></type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>generates the fastest route from the given input source </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="61" column="1" bodyfile="Grid.cpp" bodystart="33" bodyend="68"/>
+        <references refid="_grid_8cpp_1a0cc7c862d53eee6d6984163e657032c9" compoundref="_grid_8cpp" startline="11">max_weight</references>
+        <referencedby refid="class_grid_1a186191d8931c904feedbcfefa2c16105" compoundref="_grid_8cpp" startline="178" endline="188">new_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1abebcd16be30b3df71ec1005b8dc77153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::generate_matrix</definition>
+        <argsstring>()</argsstring>
+        <name>generate_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates possible positions based on current matrix positions (positions 0 to 24) </para>        </detaileddescription>
+        <inbodydescription>
+<para>5x5 matrix generated </para>        </inbodydescription>
+        <location file="Grid.hpp" line="62" column="1" bodyfile="Grid.cpp" bodystart="85" bodyend="172"/>
+        <referencedby refid="class_grid_1a186191d8931c904feedbcfefa2c16105" compoundref="_grid_8cpp" startline="178" endline="188">new_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a186191d8931c904feedbcfefa2c16105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Grid::new_path</definition>
+        <argsstring>(int start)</argsstring>
+        <name>new_path</name>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>[out] returns the fastest path in a readable vector int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="63" column="1" bodyfile="Grid.cpp" bodystart="178" bodyend="188"/>
+        <references refid="class_grid_1abebcd16be30b3df71ec1005b8dc77153" compoundref="_grid_8cpp" startline="85" endline="172">generate_matrix</references>
+        <references refid="class_grid_1ae19d3aca505020b32ea388999221e827" compoundref="_grid_8cpp" startline="33" endline="68">DijkstraComputePaths</references>
+        <references refid="class_grid_1a2c1dabbb5d95058e3c7f9962c8724a08" compoundref="_grid_8cpp" startline="75" endline="80">DijkstraGetShortestPathTo</references>
+        <referencedby refid="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" compoundref="_grid_8cpp" startline="326" endline="335">initMatrix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a2c1dabbb5d95058e3c7f9962c8724a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref> &gt;</type>
+        <definition>std::list&lt; vertex_t &gt; Grid::DijkstraGetShortestPathTo</definition>
+        <argsstring>(vertex_t vertex)</argsstring>
+        <name>DijkstraGetShortestPathTo</name>
+        <param>
+          <type><ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref></type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vertex;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains values created by dijkstra algorithm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[out] vertex; returns the created vector of the dijkstra algorithm </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="64" column="1" bodyfile="Grid.cpp" bodystart="75" bodyend="80"/>
+        <referencedby refid="class_grid_1a186191d8931c904feedbcfefa2c16105" compoundref="_grid_8cpp" startline="178" endline="188">new_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a8301f35a531a5226aedd2df3f7860675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Grid::calculateNextPosition</definition>
+        <argsstring>(int current, int next)</argsstring>
+        <name>calculateNextPosition</name>
+        <param>
+          <type>int</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function holds currren facing direction. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] integer of Current matrix position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] integer of next position goal </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[out] integer of next calculated position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="65" column="1" bodyfile="Grid.cpp" bodystart="281" bodyend="302"/>
+        <references refid="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" compoundref="_grid_8cpp" startline="194" endline="273">turnDirection</references>
+        <referencedby refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" compoundref="_grid_8cpp" startline="337" endline="367">calculateNextAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grid::turnDirection</definition>
+        <argsstring>()</argsstring>
+        <name>turnDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] character; generates the current action based on his current position and facing direction. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Kijk welke kant de robot op moet draaien als de directie &quot;noord&quot; is.</para><para>Kijk welke kant de robot op moet draaien als de directie &quot;oost&quot; is.</para><para>Kijk welke kant de robot op moet draaien als de directie &quot;west&quot; is. </para>        </inbodydescription>
+        <location file="Grid.hpp" line="66" column="1" bodyfile="Grid.cpp" bodystart="194" bodyend="273"/>
+        <references refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" compoundref="_grid_8hpp" startline="58">status</references>
+        <referencedby refid="class_grid_1a8301f35a531a5226aedd2df3f7860675" compoundref="_grid_8cpp" startline="281" endline="302">calculateNextPosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::calculateNextAction</definition>
+        <argsstring>()</argsstring>
+        <name>calculateNextAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="67" column="1" bodyfile="Grid.cpp" bodystart="337" bodyend="367"/>
+        <references refid="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" compoundref="_grid_8cpp" startline="326" endline="335">initMatrix</references>
+        <references refid="class_grid_1a8301f35a531a5226aedd2df3f7860675" compoundref="_grid_8cpp" startline="281" endline="302">calculateNextPosition</references>
+        <references refid="class_grid_1a9c46a396042f6fbad8c90db9298457d3" compoundref="_grid_8hpp" startline="59">pathHistory</references>
+        <referencedby refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" compoundref="_grid_8cpp" startline="395" endline="405">objectDetected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a1c09fd1fee8413e9967742682861b282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grid::actionExecute</definition>
+        <argsstring>()</argsstring>
+        <name>actionExecute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="68" column="1" bodyfile="Grid.cpp" bodystart="369" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::objectDetected</definition>
+        <argsstring>()</argsstring>
+        <name>objectDetected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="69" column="1" bodyfile="Grid.cpp" bodystart="395" bodyend="405"/>
+        <references refid="class_grid_1ae698dfc1435020c3486a79bd3b7f0fb6" compoundref="_grid_8cpp" startline="385" endline="393">updateWeight</references>
+        <references refid="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" compoundref="_grid_8cpp" startline="304" endline="320">updateStatus</references>
+        <references refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" compoundref="_grid_8cpp" startline="337" endline="367">calculateNextAction</references>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::initMatrix</definition>
+        <argsstring>(int start)</argsstring>
+        <name>initMatrix</name>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>generates next action integer. e.g.: 1 -&gt; 6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="70" column="1" bodyfile="Grid.cpp" bodystart="326" bodyend="335"/>
+        <references refid="class_grid_1a186191d8931c904feedbcfefa2c16105" compoundref="_grid_8cpp" startline="178" endline="188">new_path</references>
+        <referencedby refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" compoundref="_grid_8cpp" startline="337" endline="367">calculateNextAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1ae698dfc1435020c3486a79bd3b7f0fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::updateWeight</definition>
+        <argsstring>(vertex_t node)</argsstring>
+        <name>updateWeight</name>
+        <param>
+          <type><ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[in] gives current position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="71" column="1" bodyfile="Grid.cpp" bodystart="385" bodyend="393"/>
+        <referencedby refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" compoundref="_grid_8cpp" startline="395" endline="405">objectDetected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::updateStatus</definition>
+        <argsstring>(int current, int next)</argsstring>
+        <name>updateStatus</name>
+        <param>
+          <type>int</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="72" column="1" bodyfile="Grid.cpp" bodystart="304" bodyend="320"/>
+        <references refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" compoundref="_grid_8hpp" startline="58">status</references>
+        <referencedby refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" compoundref="_grid_8cpp" startline="395" endline="405">objectDetected</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Grid.hpp" line="26" column="1" bodyfile="Grid.hpp" bodystart="26" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_grid_1a1c09fd1fee8413e9967742682861b282" prot="public" virt="non-virtual"><scope>Grid</scope><name>actionExecute</name></member>
+      <member refid="class_grid_1a5321d2e7fcf7d7f9a25ae1aef379e4df" prot="private" virt="non-virtual"><scope>Grid</scope><name>adjacency_list</name></member>
+      <member refid="class_grid_1a3b0ef9b59acb432528119aa3a13f2e90" prot="private" virt="non-virtual"><scope>Grid</scope><name>adjacency_list_t</name></member>
+      <member refid="class_grid_1a683a3b3d1ceee1728ad35a1d8aee7900" prot="private" virt="non-virtual"><scope>Grid</scope><name>bestPath</name></member>
+      <member refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" prot="public" virt="non-virtual"><scope>Grid</scope><name>calculateNextAction</name></member>
+      <member refid="class_grid_1a8301f35a531a5226aedd2df3f7860675" prot="public" virt="non-virtual"><scope>Grid</scope><name>calculateNextPosition</name></member>
+      <member refid="class_grid_1a045f0d44946c9f77caccdafbdc42f54b" prot="private" virt="non-virtual"><scope>Grid</scope><name>counter</name></member>
+      <member refid="class_grid_1a77bacf4c7dc862051118bf863a24bbd5" prot="private" virt="non-virtual"><scope>Grid</scope><name>currentPosition</name></member>
+      <member refid="class_grid_1ae19d3aca505020b32ea388999221e827" prot="public" virt="non-virtual"><scope>Grid</scope><name>DijkstraComputePaths</name></member>
+      <member refid="class_grid_1a2c1dabbb5d95058e3c7f9962c8724a08" prot="public" virt="non-virtual"><scope>Grid</scope><name>DijkstraGetShortestPathTo</name></member>
+      <member refid="class_grid_1a92e72f67e1c962cf855660e26ab91bc2" prot="private" virt="non-virtual"><scope>Grid</scope><name>direction</name></member>
+      <member refid="class_grid_1abebcd16be30b3df71ec1005b8dc77153" prot="public" virt="non-virtual"><scope>Grid</scope><name>generate_matrix</name></member>
+      <member refid="class_grid_1a4ac9ff4f63552b4c61ff90fcb35ad66c" prot="public" virt="non-virtual"><scope>Grid</scope><name>Grid</name></member>
+      <member refid="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" prot="public" virt="non-virtual"><scope>Grid</scope><name>initMatrix</name></member>
+      <member refid="class_grid_1a87c5857cbca6ddee171317e0e33b1930" prot="private" virt="non-virtual"><scope>Grid</scope><name>instruction_list</name></member>
+      <member refid="class_grid_1a7c6f3a5b81f452a423f94e7ee193d159" prot="private" virt="non-virtual"><scope>Grid</scope><name>matrix</name></member>
+      <member refid="class_grid_1a313d83f6bc2bb98b76c3317bd7a6aeaa" prot="private" virt="non-virtual"><scope>Grid</scope><name>min_distance</name></member>
+      <member refid="class_grid_1a186191d8931c904feedbcfefa2c16105" prot="public" virt="non-virtual"><scope>Grid</scope><name>new_path</name></member>
+      <member refid="class_grid_1ab87ada393b03b007012357b434c6f262" prot="private" virt="non-virtual"><scope>Grid</scope><name>nextAction</name></member>
+      <member refid="class_grid_1ad4f7157dd7336e6fa61b5dd74e4e58d4" prot="private" virt="non-virtual"><scope>Grid</scope><name>nextInstruction</name></member>
+      <member refid="class_grid_1a98e47596802f26b9f0530da588d88378" prot="private" virt="non-virtual"><scope>Grid</scope><name>nextPosition</name></member>
+      <member refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" prot="public" virt="non-virtual"><scope>Grid</scope><name>objectDetected</name></member>
+      <member refid="class_grid_1aa060378d94522365054be43e77983eb5" prot="private" virt="non-virtual"><scope>Grid</scope><name>objectDetectedBool</name></member>
+      <member refid="class_grid_1a9c46a396042f6fbad8c90db9298457d3" prot="public" virt="non-virtual"><scope>Grid</scope><name>pathHistory</name></member>
+      <member refid="class_grid_1a0c2f7d56a1801e1a39bac59f935c3f07" prot="private" virt="non-virtual"><scope>Grid</scope><name>position</name></member>
+      <member refid="class_grid_1aadb5c928ee6aae583ba861e8cc4bae04" prot="private" virt="non-virtual"><scope>Grid</scope><name>previous</name></member>
+      <member refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" prot="public" virt="non-virtual"><scope>Grid</scope><name>status</name></member>
+      <member refid="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" prot="public" virt="non-virtual"><scope>Grid</scope><name>turnDirection</name></member>
+      <member refid="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" prot="public" virt="non-virtual"><scope>Grid</scope><name>updateStatus</name></member>
+      <member refid="class_grid_1ae698dfc1435020c3486a79bd3b7f0fb6" prot="public" virt="non-virtual"><scope>Grid</scope><name>updateWeight</name></member>
+      <member refid="class_grid_1a3661d0a7f998caaaf8627d7a67072116" prot="public" virt="non-virtual"><scope>Grid</scope><name>~Grid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

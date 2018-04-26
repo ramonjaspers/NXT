@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_grid_8hpp" kind="file" language="C++">
+    <compoundname>Grid.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">list</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">set</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="_grid_8cpp" local="yes">Grid.cpp</includedby>
+    <incdepgraph>
+      <node id="38">
+        <label>list</label>
+      </node>
+      <node id="39">
+        <label>limits</label>
+      </node>
+      <node id="43">
+        <label>iterator</label>
+      </node>
+      <node id="37">
+        <label>string</label>
+      </node>
+      <node id="44">
+        <label>unistd.h</label>
+      </node>
+      <node id="36">
+        <label>vector</label>
+      </node>
+      <node id="41">
+        <label>utility</label>
+      </node>
+      <node id="34">
+        <label>Grid.hpp</label>
+        <link refid="_grid_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>iostream</label>
+      </node>
+      <node id="40">
+        <label>set</label>
+      </node>
+      <node id="42">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="45">
+        <label>Grid.hpp</label>
+        <link refid="_grid_8hpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Grid.cpp</label>
+        <link refid="_grid_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_grid" prot="public">Grid</innerclass>
+    <innerclass refid="struct_grid_1_1neighbor" prot="private">Grid::neighbor</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_grid_8hpp_1af4d7cdf2478501dc15b627a84f3f4073" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int vertex_t</definition>
+        <argsstring></argsstring>
+        <name>vertex_t</name>
+        <briefdescription>
+<para>for numeric_limits </para>        </briefdescription>
+        <detaileddescription>
+<para>for pair </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="23" column="1" bodyfile="Grid.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_grid_8hpp_1ac7889bf9b3596f63c57011af217212dd" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double weight_t</definition>
+        <argsstring></argsstring>
+        <name>weight_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Grid.hpp" line="24" column="1" bodyfile="Grid.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Ramon<sp/>Jaspers<sp/>on<sp/>4/25/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>V1GP_GRID_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V1GP_GRID_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_grid_8hpp_1af4d7cdf2478501dc15b627a84f3f4073" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_grid_8hpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref>;</highlight></codeline>
+<codeline lineno="24" refid="_grid_8hpp_1ac7889bf9b3596f63c57011af217212dd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_grid_8hpp_1ac7889bf9b3596f63c57011af217212dd" kindref="member">weight_t</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_grid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_grid" kindref="compound">Grid</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>direction;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currentPosition;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextPosition;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextAction;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextInstruction;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>objectDetectedBool;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">neighbor<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref><sp/>target;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_grid_8cpp_1ac7889bf9b3596f63c57011af217212dd" kindref="member">weight_t</ref><sp/>weight;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbor(<ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref><sp/>arg_target,<sp/><ref refid="_grid_8cpp_1ac7889bf9b3596f63c57011af217212dd" kindref="member">weight_t</ref><sp/>arg_weight)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>target(arg_target),<sp/>weight(arg_weight)<sp/>{}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;neighbor&gt;<sp/>&gt;<sp/>adjacency_list_t;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;weight_t&gt;<sp/>min_distance;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;vertex_t&gt;<sp/>previous;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>bestPath;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>instruction_list;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>matrix;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>adjacency_list_t<sp/>adjacency_list;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_grid_1a4ac9ff4f63552b4c61ff90fcb35ad66c" kindref="member">Grid</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_grid_1a3661d0a7f998caaaf8627d7a67072116" kindref="member">~Grid</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" kindref="member">status</ref>;</highlight></codeline>
+<codeline lineno="59" refid="class_grid_1a9c46a396042f6fbad8c90db9298457d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_grid_1a9c46a396042f6fbad8c90db9298457d3" kindref="member">pathHistory</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1ae19d3aca505020b32ea388999221e827" kindref="member">DijkstraComputePaths</ref>(<ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref><sp/>source);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1abebcd16be30b3df71ec1005b8dc77153" kindref="member">generate_matrix</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_grid_1a186191d8931c904feedbcfefa2c16105" kindref="member">new_path</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;vertex_t&gt;<sp/><ref refid="class_grid_1a2c1dabbb5d95058e3c7f9962c8724a08" kindref="member">DijkstraGetShortestPathTo</ref>(<ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref><sp/>vertex);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_grid_1a8301f35a531a5226aedd2df3f7860675" kindref="member">calculateNextPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>current,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>next);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" kindref="member">turnDirection</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" kindref="member">calculateNextAction</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a1c09fd1fee8413e9967742682861b282" kindref="member">actionExecute</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" kindref="member">objectDetected</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" kindref="member">initMatrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1ae698dfc1435020c3486a79bd3b7f0fb6" kindref="member">updateWeight</ref>(<ref refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kindref="member">vertex_t</ref><sp/>node);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" kindref="member">updateStatus</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>current,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>next);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="Grid.hpp"/>
+  </compounddef>
+</doxygen>

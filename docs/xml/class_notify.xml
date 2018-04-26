@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_notify" kind="class" language="C++" prot="public">
+    <compoundname>Notify</compoundname>
+    <includes refid="notify_8h" local="no">notify.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_notify_1a76566a48401667bd9382a169c2a76ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Notify::Notify</definition>
+        <argsstring>()</argsstring>
+        <name>Notify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="notify.h" line="8" column="1" bodyfile="notify.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_notify_1a621d36ca663f0c8460c82611c708b51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Notify::~Notify</definition>
+        <argsstring>()</argsstring>
+        <name>~Notify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="notify.h" line="9" column="1" bodyfile="notify.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_notify_1a7055e1a2409ac4f55021e171ce6942e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Notify::screen_render</definition>
+        <argsstring>(std::string st, unsigned int type=0)</argsstring>
+        <name>screen_render</name>
+        <param>
+          <type>std::string</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="notify.h" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="notify.h" line="6" column="1" bodyfile="notify.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_notify_1a76566a48401667bd9382a169c2a76ed2" prot="public" virt="non-virtual"><scope>Notify</scope><name>Notify</name></member>
+      <member refid="class_notify_1a7055e1a2409ac4f55021e171ce6942e1" prot="public" virt="non-virtual"><scope>Notify</scope><name>screen_render</name></member>
+      <member refid="class_notify_1a621d36ca663f0c8460c82611c708b51e" prot="public" virt="non-virtual"><scope>Notify</scope><name>~Notify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

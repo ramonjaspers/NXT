@@ -1,0 +1,120 @@
+.TH "State" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+State
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <state\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBState\fP ()"
+.br
+.RI "The different types of states are\&. "
+.ti -1c
+.RI "\fB~State\fP ()"
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "bool \fBobstacle_avoid\fP ()"
+.br
+.ti -1c
+.RI "void \fBturn\fP ()"
+.br
+.RI "Driving slower and taking a turn\&. "
+.ti -1c
+.RI "bool \fBgrid_travel\fP ()"
+.br
+.RI "driving through a grid storing the directions driven\&. "
+.ti -1c
+.RI "void \fBobject_or_turn\fP ()"
+.br
+.ti -1c
+.RI "\fBMotion\fP \fBgetMotion\fP ()"
+.br
+.ti -1c
+.RI "\fBSensor\fP \fBgetSensor\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file state\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "State::State ()"
+
+.PP
+The different types of states are\&. 
+.PP
+Definition at line 9 of file state\&.cpp\&.
+.SS "State::~State ()"
+
+.PP
+Definition at line 135 of file state\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void State::clear ()"
+When the system is proceeding as expected 
+.PP
+Definition at line 38 of file state\&.cpp\&.
+.SS "\fBMotion\fP State::getMotion ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+motion object that contains the control of the servo's 
+.RE
+.PP
+
+.PP
+Definition at line 23 of file state\&.cpp\&.
+.SS "\fBSensor\fP State::getSensor ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+sensor object that contains the control of the RGB, \fBIR\fP and \fBUltrasonic\fP 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file state\&.cpp\&.
+.SS "bool State::grid_travel ()"
+
+.PP
+driving through a grid storing the directions driven\&. 
+.PP
+Definition at line 131 of file state\&.cpp\&.
+.SS "void State::object_or_turn ()"
+Decides whether or not the turns should be made or if the obstacle avoid run needs to be made 
+.PP
+Definition at line 49 of file state\&.cpp\&.
+.SS "bool State::obstacle_avoid ()"
+Function that will try to run around an obstacle 
+.PP
+\fBReturns:\fP
+.RS 4
+if the obstacle has been avoided 
+.RE
+.PP
+45 naar graden rechts
+.PP
+50 graden naar links 
+.PP
+Definition at line 61 of file state\&.cpp\&.
+.SS "void State::turn ()"
+
+.PP
+Driving slower and taking a turn\&. \fBIR\fP Left RGB Right 
+.PP
+Definition at line 115 of file state\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

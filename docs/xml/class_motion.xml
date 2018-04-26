@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_motion" kind="class" language="C++" prot="public">
+    <compoundname>Motion</compoundname>
+    <includes refid="motion_8h" local="no">motion.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_motion_1a29e058cf19991e101d2b74a6327031c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Motion::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="11" column="1" bodyfile="motion.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motion_1acd3818dff69ef7855db3eb03152940ac" prot="private" static="no" mutable="no">
+        <type><ref refid="class_servo" kindref="compound">Servo</ref></type>
+        <definition>Servo Motion::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="12" column="1" bodyfile="motion.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motion_1abf349487522a73a4741790d668399f2d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_servo" kindref="compound">Servo</ref></type>
+        <definition>Servo Motion::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="13" column="1" bodyfile="motion.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motion_1a846d064099e60104276ed386a7712864" prot="private" static="no" mutable="no">
+        <type><ref refid="class_servo" kindref="compound">Servo</ref></type>
+        <definition>Servo Motion::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="14" column="1" bodyfile="motion.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motion::Motion</definition>
+        <argsstring>(int speed)</argsstring>
+        <name>Motion</name>
+        <param>
+          <type>int</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default speed that will be set for servo control </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>initializing the servo configuration, passing by reference ideally for vector </para>        </inbodydescription>
+        <location file="motion.h" line="16" column="1" bodyfile="motion.cpp" bodystart="19" bodyend="32"/>
+        <references refid="class_servo_1a9986e323bf68602b56654a4eb44c683c" compoundref="servo_8cpp" startline="36" endline="38">Servo::set_port</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motion::~Motion</definition>
+        <argsstring>()</argsstring>
+        <name>~Motion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="17" column="1" bodyfile="motion.cpp" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1af922ccbd27054420dd1ff679d48f588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::turn</definition>
+        <argsstring>(char direction)</argsstring>
+        <name>turn</name>
+        <param>
+          <type>char</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decides which way to turn and attempts to do so slowly <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char that contains first letter of direction l or r in lowercase </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>decreasing the left increasing the right and in reverse</para><para>logging if left &gt; right -&gt; going left logging if right &gt; left -&gt; going right </para>        </inbodydescription>
+        <location file="motion.h" line="18" column="1" bodyfile="motion.cpp" bodystart="39" bodyend="58"/>
+        <references refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" compoundref="servo_8cpp" startline="28" endline="31">Servo::set_speed</references>
+        <referencedby refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" compoundref="state_8cpp" startline="115" endline="128">State::turn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a44ce916fa9aad6277f0990b14a4259ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::emergency_stop</definition>
+        <argsstring>()</argsstring>
+        <name>emergency_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="19" column="1" bodyfile="motion.cpp" bodystart="60" bodyend="63"/>
+        <references refid="class_servo_1a2219362602b79927b5fbd6343799f217" compoundref="servo_8cpp" startline="41" endline="43">Servo::halt</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a343e5cef901d8309b64735b3a0923728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::drive</definition>
+        <argsstring>()</argsstring>
+        <name>drive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>setting both motion values the drive straight on </para>        </inbodydescription>
+        <location file="motion.h" line="20" column="1" bodyfile="motion.cpp" bodystart="67" bodyend="72"/>
+        <references refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" compoundref="servo_8cpp" startline="28" endline="31">Servo::set_speed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a3bc12224ab575f75c71054d547ae0add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::drive_reverse</definition>
+        <argsstring>()</argsstring>
+        <name>drive_reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="21" column="1" bodyfile="motion.cpp" bodystart="76" bodyend="80"/>
+        <references refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" compoundref="servo_8cpp" startline="28" endline="31">Servo::set_speed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a73524a9eb0bf44b4956622fcea759fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::turn_reverse</definition>
+        <argsstring>(char directie)</argsstring>
+        <name>turn_reverse</name>
+        <param>
+          <type>char</type>
+          <declname>directie</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>decreasing the left increasing the right and in reverse</para><para>logging if left &gt; right -&gt; going left logging if right &gt; left -&gt; going right </para>        </inbodydescription>
+        <location file="motion.h" line="26" column="1" bodyfile="motion.cpp" bodystart="110" bodyend="132"/>
+        <references refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" compoundref="servo_8cpp" startline="28" endline="31">Servo::set_speed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a92d8f75b0b1343c99fe59a6712ee3eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motion::degreesTimeC</definition>
+        <argsstring>(float degree)</argsstring>
+        <name>degreesTimeC</name>
+        <param>
+          <type>float</type>
+          <declname>degree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="motion.h" line="32" column="1" bodyfile="motion.cpp" bodystart="86" bodyend="88"/>
+        <referencedby refid="class_motion_1a8f028fb35644215e4c073772a9c2532d" compoundref="motion_8cpp" startline="94" endline="108">turnDeg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_motion_1a8f028fb35644215e4c073772a9c2532d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motion::turnDeg</definition>
+        <argsstring>(float degree)</argsstring>
+        <name>turnDeg</name>
+        <param>
+          <type>float</type>
+          <declname>degree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>degree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Positief: Rechts, Negatief: Links </para>        </inbodydescription>
+        <location file="motion.h" line="37" column="1" bodyfile="motion.cpp" bodystart="94" bodyend="108"/>
+        <references refid="class_motion_1a92d8f75b0b1343c99fe59a6712ee3eb3" compoundref="motion_8cpp" startline="86" endline="88">degreesTimeC</references>
+        <references refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" compoundref="servo_8cpp" startline="28" endline="31">Servo::set_speed</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="motion.h" line="8" column="1" bodyfile="motion.h" bodystart="6" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_motion_1a92d8f75b0b1343c99fe59a6712ee3eb3" prot="public" virt="non-virtual"><scope>Motion</scope><name>degreesTimeC</name></member>
+      <member refid="class_motion_1a343e5cef901d8309b64735b3a0923728" prot="public" virt="non-virtual"><scope>Motion</scope><name>drive</name></member>
+      <member refid="class_motion_1a3bc12224ab575f75c71054d547ae0add" prot="public" virt="non-virtual"><scope>Motion</scope><name>drive_reverse</name></member>
+      <member refid="class_motion_1a44ce916fa9aad6277f0990b14a4259ef" prot="public" virt="non-virtual"><scope>Motion</scope><name>emergency_stop</name></member>
+      <member refid="class_motion_1abf349487522a73a4741790d668399f2d" prot="private" virt="non-virtual"><scope>Motion</scope><name>left</name></member>
+      <member refid="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4" prot="public" virt="non-virtual"><scope>Motion</scope><name>Motion</name></member>
+      <member refid="class_motion_1acd3818dff69ef7855db3eb03152940ac" prot="private" virt="non-virtual"><scope>Motion</scope><name>right</name></member>
+      <member refid="class_motion_1a29e058cf19991e101d2b74a6327031c3" prot="private" virt="non-virtual"><scope>Motion</scope><name>speed</name></member>
+      <member refid="class_motion_1a846d064099e60104276ed386a7712864" prot="private" virt="non-virtual"><scope>Motion</scope><name>top</name></member>
+      <member refid="class_motion_1af922ccbd27054420dd1ff679d48f588d" prot="public" virt="non-virtual"><scope>Motion</scope><name>turn</name></member>
+      <member refid="class_motion_1a73524a9eb0bf44b4956622fcea759fd0" prot="public" virt="non-virtual"><scope>Motion</scope><name>turn_reverse</name></member>
+      <member refid="class_motion_1a8f028fb35644215e4c073772a9c2532d" prot="public" virt="non-virtual"><scope>Motion</scope><name>turnDeg</name></member>
+      <member refid="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6" prot="public" virt="non-virtual"><scope>Motion</scope><name>~Motion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

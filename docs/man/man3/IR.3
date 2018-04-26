@@ -1,0 +1,147 @@
+.TH "IR" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IR
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IR\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIR\fP (uint8_t port)"
+.br
+.ti -1c
+.RI "\fB~IR\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_current_value\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_current_value\fP (bool rerun=false)"
+.br
+.ti -1c
+.RI "bool \fBin_range\fP (unsigned int type_color)"
+.br
+.ti -1c
+.RI "bool \fBis_white\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_black\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_ranges\fP ()"
+.br
+.ti -1c
+.RI "std::vector< uint16_t > \fBget_ranges\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file IR\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "IR::IR (uint8_t port)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIport\fP is the port corresponding to the brick-pi port 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file IR\&.cpp\&.
+.SS "IR::~IR ()"
+
+.PP
+Definition at line 101 of file IR\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int IR::get_current_value (bool rerun = \fCfalse\fP)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrerun\fP allow a new set to be run for receiving data from sensor 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the found color value 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file IR\&.cpp\&.
+.SS "std::vector< uint16_t > IR::get_ranges ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+the minimum and maximum ranges for colors 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file IR\&.cpp\&.
+.SS "bool IR::in_range (unsigned int type_color = \fC0\fP)"
+returns if the detected color is within the range of the requested color 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype_color\fP is an int that contains 0 for white and 1 for black 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 27 of file IR\&.cpp\&.
+.SS "bool IR::is_black ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool whether color is black or not 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file IR\&.cpp\&.
+.SS "bool IR::is_white ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool whether color is white or not 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file IR\&.cpp\&.
+.SS "void IR::set_current_value ()"
+sets the current value to the current sensor data refreshing the current value and acquiring a new one
+.PP
+std::cout << this->Light\&.reflected << std::endl; 
+.PP
+Definition at line 41 of file IR\&.cpp\&.
+.SS "void IR::set_ranges ()"
+Set's the default ranges of colors minimum value found from all the measurements
+.PP
+maximum value found from all the measurements
+.PP
+assigning to the ranges vector[0] min
+.PP
+assigning to the ranges vector[1] max 
+.PP
+Definition at line 70 of file IR\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ultrasonic_8h" kind="file" language="C++">
+    <compoundname>ultrasonic.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="_brick_pi3_8h" local="yes">BrickPi3.h</includes>
+    <includedby refid="sensor_8h" local="yes">sensor.h</includedby>
+    <includedby refid="sensor_8cpp" local="yes">sensor.cpp</includedby>
+    <includedby refid="ultrasonic_8cpp" local="yes">ultrasonic.cpp</includedby>
+    <incdepgraph>
+      <node id="282">
+        <label>ultrasonic.h</label>
+        <link refid="ultrasonic_8h"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>BrickPi3.h</label>
+        <link refid="_brick_pi3_8h"/>
+      </node>
+      <node id="283">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="286">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>init.cpp</label>
+        <link refid="init_8cpp"/>
+      </node>
+      <node id="293">
+        <label>ultrasonic.cpp</label>
+        <link refid="ultrasonic_8cpp"/>
+      </node>
+      <node id="292">
+        <label>sensor.cpp</label>
+        <link refid="sensor_8cpp"/>
+      </node>
+      <node id="285">
+        <label>ultrasonic.h</label>
+        <link refid="ultrasonic_8h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>state.cpp</label>
+        <link refid="state_8cpp"/>
+      </node>
+      <node id="290">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="289">
+        <label>state.h</label>
+        <link refid="state_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ultrasonic" prot="public">Ultrasonic</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SRC_ULTRASONIC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SRC_ULTRASONIC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_brick_pi3_8h" kindref="compound">BrickPi3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_ultrasonic" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ultrasonic" kindref="compound">Ultrasonic</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_brick_pi3" kindref="compound">BrickPi3</ref><sp/>Brick;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>PORT;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_ultrasonic_t<sp/>Sonic;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>detected;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector<sp/>&lt;int&gt;<sp/>detection_range;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05" kindref="member">Ultrasonic</ref>(uint8_t<sp/>port);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201" kindref="member">object_in_range</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1aef69078732d3b74569955c039f50af54" kindref="member">set_distance</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6" kindref="member">get_distance</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad" kindref="member">~Ultrasonic</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="ultrasonic.h"/>
+  </compounddef>
+</doxygen>

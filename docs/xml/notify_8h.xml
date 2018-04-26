@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="notify_8h" kind="file" language="C++">
+    <compoundname>notify.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="notify_8cpp" local="yes">notify.cpp</includedby>
+    <incdepgraph>
+      <node id="171">
+        <label>string</label>
+      </node>
+      <node id="170">
+        <label>notify.h</label>
+        <link refid="notify_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="172">
+        <label>notify.h</label>
+        <link refid="notify_8h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>notify.cpp</label>
+        <link refid="notify_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_notify" prot="public">Notify</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NOTIFY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_notify" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_notify" kindref="compound">Notify</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_notify_1a76566a48401667bd9382a169c2a76ed2" kindref="member">Notify</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_notify_1a621d36ca663f0c8460c82611c708b51e" kindref="member">~Notify</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_notify_1a7055e1a2409ac4f55021e171ce6942e1" kindref="member">screen_render</ref>(std::string<sp/>st,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="notify.h"/>
+  </compounddef>
+</doxygen>

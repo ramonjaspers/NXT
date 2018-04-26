@@ -1,0 +1,5 @@
+<map id="State::turn" name="State::turn">
+<area shape="rect" id="node2" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="136,56,279,83"/>
+<area shape="rect" id="node4" href="$class_state.html#a975afaa8e6091654888d7ed58b8c29c1" title="State::obstacle_avoid" alt="" coords="464,88,611,115"/>
+<area shape="rect" id="node3" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="327,5,416,32"/>
+</map>

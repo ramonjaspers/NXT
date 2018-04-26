@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="motion_8h" kind="file" language="C++">
+    <compoundname>motion.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="servo_8h" local="yes">servo.h</includes>
+    <includedby refid="init_8h" local="yes">init.h</includedby>
+    <includedby refid="init_8cpp" local="yes">init.cpp</includedby>
+    <includedby refid="state_8h" local="yes">state.h</includedby>
+    <includedby refid="motion_8cpp" local="yes">motion.cpp</includedby>
+    <includedby refid="state_8cpp" local="yes">state.cpp</includedby>
+    <incdepgraph>
+      <node id="153">
+        <label>BrickPi3.h</label>
+        <link refid="_brick_pi3_8h"/>
+      </node>
+      <node id="152">
+        <label>servo.h</label>
+        <link refid="servo_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>vector</label>
+      </node>
+      <node id="150">
+        <label>motion.h</label>
+        <link refid="motion_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="155">
+        <label>init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>init.cpp</label>
+        <link refid="init_8cpp"/>
+      </node>
+      <node id="159">
+        <label>state.cpp</label>
+        <link refid="state_8cpp"/>
+      </node>
+      <node id="160">
+        <label>motion.cpp</label>
+        <link refid="motion_8cpp"/>
+      </node>
+      <node id="154">
+        <label>motion.h</label>
+        <link refid="motion_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="157">
+        <label>state.h</label>
+        <link refid="state_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motion" prot="public">Motion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MOTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="servo_8h" kindref="compound">servo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_motion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motion" kindref="compound">Motion</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo" kindref="compound">Servo</ref><sp/>right;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo" kindref="compound">Servo</ref><sp/>left;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo" kindref="compound">Servo</ref><sp/>top;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4" kindref="member">Motion</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6" kindref="member">~Motion</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1af922ccbd27054420dd1ff679d48f588d" kindref="member">turn</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>direction);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a44ce916fa9aad6277f0990b14a4259ef" kindref="member">emergency_stop</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a343e5cef901d8309b64735b3a0923728" kindref="member">drive</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a3bc12224ab575f75c71054d547ae0add" kindref="member">drive_reverse</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a73524a9eb0bf44b4956622fcea759fd0" kindref="member">turn_reverse</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>directie);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a92d8f75b0b1343c99fe59a6712ee3eb3" kindref="member">degreesTimeC</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degree);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motion_1a8f028fb35644215e4c073772a9c2532d" kindref="member">turnDeg</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degree);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="motion.h"/>
+  </compounddef>
+</doxygen>

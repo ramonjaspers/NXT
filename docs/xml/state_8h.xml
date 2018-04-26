@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="state_8h" kind="file" language="C++">
+    <compoundname>state.h</compoundname>
+    <includes refid="init_8h" local="yes">init.h</includes>
+    <includes refid="motion_8h" local="yes">motion.h</includes>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+    <includes refid="log_8h" local="yes">log.h</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="state_8cpp" local="yes">state.cpp</includedby>
+    <incdepgraph>
+      <node id="267">
+        <label>log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>string</label>
+      </node>
+      <node id="264">
+        <label>ultrasonic.h</label>
+        <link refid="ultrasonic_8h"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>fstream</label>
+      </node>
+      <node id="260">
+        <label>BrickPi3.h</label>
+        <link refid="_brick_pi3_8h"/>
+      </node>
+      <node id="261">
+        <label>RGB.h</label>
+        <link refid="_r_g_b_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>unistd.h</label>
+      </node>
+      <node id="266">
+        <label>servo.h</label>
+        <link refid="servo_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>vector</label>
+      </node>
+      <node id="265">
+        <label>motion.h</label>
+        <link refid="motion_8h"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>time.h</label>
+      </node>
+      <node id="263">
+        <label>iostream</label>
+      </node>
+      <node id="270">
+        <label>stdio.h</label>
+      </node>
+      <node id="255">
+        <label>state.h</label>
+        <link refid="state_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>IR.h</label>
+        <link refid="_i_r_8h"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="274">
+        <label>state.cpp</label>
+        <link refid="state_8cpp"/>
+      </node>
+      <node id="273">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="272">
+        <label>state.h</label>
+        <link refid="state_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_state" prot="public">State</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="init_8h" kindref="compound">init.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="motion_8h" kindref="compound">motion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sensor_8h" kindref="compound">sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="log_8h" kindref="compound">log.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_state" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_state" kindref="compound">State</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_init" kindref="compound">Init</ref><sp/>init;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log" kindref="compound">Log</ref><sp/>log;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion" kindref="compound">Motion</ref><sp/>motion;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/>sensor;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_state_1ab91bb1dd5aa6260ab2a456581daf9ec2" kindref="member">State</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_state_1afab438d92b90dc18d194dbd9c9c8bab3" kindref="member">~State</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_state_1a975afaa8e6091654888d7ed58b8c29c1" kindref="member">obstacle_avoid</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" kindref="member">turn</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_state_1a4e9d67c11218113bfa282ddccfd6326a" kindref="member">grid_travel</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_state_1ae03eae00675106f8b6b9481c4b0e50dc" kindref="member">object_or_turn</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion" kindref="compound">Motion</ref><sp/><ref refid="class_state_1adcabc610335b5bd9efdf7f908de7dacb" kindref="member">getMotion</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/><ref refid="class_state_1a9195abef447816fe4830f875f0b1dda2" kindref="member">getSensor</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="state.h"/>
+  </compounddef>
+</doxygen>
