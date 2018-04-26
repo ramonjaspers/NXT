@@ -1,0 +1,15 @@
+<map id="State::turn" name="State::turn">
+<area shape="rect" id="node2" href="$class_sensor.html#add2279da6d407ed7678064ab1fe7d02d" title="Sensor::both_white" alt="" coords="741,226,875,253"/>
+<area shape="rect" id="node6" href="$class_sensor.html#a4f797e3f6a549cfdefab639eb6a86787" title="checking the ultrasonic sensor if something is withing X range of the device. " alt="" coords="739,125,877,151"/>
+<area shape="rect" id="node8" href="$class_state.html#a975afaa8e6091654888d7ed58b8c29c1" title="State::obstacle_avoid" alt="" coords="136,201,283,227"/>
+<area shape="rect" id="node11" href="$class_sensor.html#a03b8f6886c672badadfeef89d069e1ea" title="Sensor::IR_black_RGB\l_white" alt="" coords="331,328,487,369"/>
+<area shape="rect" id="node12" href="$class_motion.html#af922ccbd27054420dd1ff679d48f588d" title="Motion::turn" alt="" coords="164,390,255,417"/>
+<area shape="rect" id="node14" href="$class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285" title="Sensor::RGB_black_IR\l_white" alt="" coords="535,8,691,49"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb" title="IR::is_black" alt="" coords="941,255,1032,282"/>
+<area shape="rect" id="node5" href="$class_i_r.html#ae05cf1ad5888262586007946f21ac14e" title="IR::is_white" alt="" coords="942,205,1031,231"/>
+<area shape="rect" id="node4" href="$class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5" title="IR::in_range" alt="" coords="1096,230,1187,257"/>
+<area shape="rect" id="node7" href="$class_ultrasonic.html#aae6ae7ff42f37a52835dc66bba7e0201" title="Ultrasonic::object\l_in_range" alt="" coords="925,117,1048,159"/>
+<area shape="rect" id="node9" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="364,226,453,253"/>
+<area shape="rect" id="node10" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="541,125,684,151"/>
+<area shape="rect" id="node13" href="$class_servo.html#aecca91f485fc36404ce8cdfcb95f0527" title="Servo::set_speed" alt="" coords="347,394,470,421"/>
+</map>

@@ -7,11 +7,11 @@
 #include <string>
 #include <stdio.h>
 #include <time.h>
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
-// ================================================== 
-// ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE
-// ==================================================
+/// ==================================================
+/// ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE
+/// ==================================================
 
 
 
@@ -27,4 +27,4 @@ public:
 	
 };
 
-#endif // LOG_H
+#endif /// LOG_H

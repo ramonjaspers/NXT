@@ -1,0 +1,131 @@
+.TH "Motion" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Motion
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <motion\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMotion\fP (int speed)"
+.br
+.ti -1c
+.RI "\fB~Motion\fP ()"
+.br
+.ti -1c
+.RI "void \fBturn\fP (char direction)"
+.br
+.ti -1c
+.RI "void \fBemergency_stop\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrive\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrive_reverse\fP ()"
+.br
+.ti -1c
+.RI "void \fBturn_reverse\fP (char directie)"
+.br
+.ti -1c
+.RI "float \fBdegreesTimeC\fP (float degree)"
+.br
+.ti -1c
+.RI "void \fBturnDeg\fP (float degree)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 6 of file motion\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Motion::Motion (int speed)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspeed\fP default speed that will be set for servo control 
+.RE
+.PP
+initializing the servo configuration, passing by reference ideally for vector 
+.PP
+Definition at line 19 of file motion\&.cpp\&.
+.SS "Motion::~Motion ()"
+
+.PP
+Definition at line 134 of file motion\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "float Motion::degreesTimeC (float degree)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdegree\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 86 of file motion\&.cpp\&.
+.SS "void Motion::drive ()"
+setting both motion values the drive straight on 
+.PP
+Definition at line 67 of file motion\&.cpp\&.
+.SS "void Motion::drive_reverse ()"
+
+.PP
+Definition at line 76 of file motion\&.cpp\&.
+.SS "void Motion::emergency_stop ()"
+
+.PP
+Definition at line 60 of file motion\&.cpp\&.
+.SS "void Motion::turn (char direction)"
+Decides which way to turn and attempts to do so slowly 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdirection\fP char that contains first letter of direction l or r in lowercase 
+.RE
+.PP
+decreasing the left increasing the right and in reverse
+.PP
+logging if left > right -> going left logging if right > left -> going right 
+.PP
+Definition at line 39 of file motion\&.cpp\&.
+.SS "void Motion::turn_reverse (char directie)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdirectie\fP 
+.RE
+.PP
+decreasing the left increasing the right and in reverse
+.PP
+logging if left > right -> going left logging if right > left -> going right 
+.PP
+Definition at line 110 of file motion\&.cpp\&.
+.SS "void Motion::turnDeg (float degree)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdegree\fP 
+.RE
+.PP
+Positief: Rechts, Negatief: Links 
+.PP
+Definition at line 94 of file motion\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

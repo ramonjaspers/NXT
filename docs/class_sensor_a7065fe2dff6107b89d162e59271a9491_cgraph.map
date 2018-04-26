@@ -1,0 +1,5 @@
+<map id="Sensor::initializeIR" name="Sensor::initializeIR">
+<area shape="rect" id="node2" href="$class_i_r.html#a8bcc5c0570384da5a39e395b91bc2d2b" title="IR::set_ranges" alt="" coords="184,5,291,32"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a5b71d10f57e8dbb76cdf01e043cfdda1" title="IR::get_current_value" alt="" coords="339,5,481,32"/>
+<area shape="rect" id="node4" href="$class_i_r.html#a2d60cbf66f48bad8167e2c4231ed3f95" title="IR::set_current_value" alt="" coords="529,5,672,32"/>
+</map>

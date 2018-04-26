@@ -5,11 +5,11 @@
 #include <stdio.h>
 #include <time.h>
 
-// ======================================================
-// = ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE =
-// ======================================================
+/// ======================================================
+/// = ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE =
+/// ======================================================
 
-// printing all the log data to a file for debugging purposes
+/// printing all the log data to a file for debugging purposes
 Log::Log()
 {
 	this->debugFile.open("debug.txt");

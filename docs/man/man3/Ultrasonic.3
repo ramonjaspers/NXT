@@ -1,0 +1,83 @@
+.TH "Ultrasonic" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ultrasonic
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ultrasonic\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUltrasonic\fP (uint8_t port)"
+.br
+.ti -1c
+.RI "bool \fBobject_in_range\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_distance\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_distance\fP ()"
+.br
+.ti -1c
+.RI "\fB~Ultrasonic\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Created by brand on 4/6/2018\&. 
+.PP
+Definition at line 12 of file ultrasonic\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Ultrasonic::Ultrasonic (uint8_t port)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIport\fP 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file ultrasonic\&.cpp\&.
+.SS "Ultrasonic::~Ultrasonic ()"
+
+.PP
+Definition at line 43 of file ultrasonic\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int Ultrasonic::get_distance ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+sensor value 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file ultrasonic\&.cpp\&.
+.SS "bool Ultrasonic::object_in_range ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool if the value is below the expected range 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file ultrasonic\&.cpp\&.
+.SS "void Ultrasonic::set_distance ()"
+acquires sensor data and stores in member variable code that extracts the range, stores it in detected return this->detected; 
+.PP
+Definition at line 28 of file ultrasonic\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

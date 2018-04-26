@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "BrickPi3.h"
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class IR
 {
@@ -11,12 +11,12 @@ private:
     BrickPi3 Brick;
     uint8_t PORT;
     sensor_light_t Light;
-	// index [0] and index[1] both contain the white colors min and max
-	// index [2] and index[3] both contain the black colors min and max
+	/// index [0] and index[1] both contain the white colors min and max
+	/// index [2] and index[3] both contain the black colors min and max
 	std::vector<uint16_t> range;
-	//bool run = false;
+	///bool run = false;
 
-	// private variable that stores the detected value
+	/// private variable that stores the detected value
 	unsigned int detected;
 public:
 	IR(uint8_t port);
@@ -30,4 +30,4 @@ public:
 	std::vector<uint16_t> get_ranges();
 };
 
-#endif // IR_H
+#endif /// IR_H

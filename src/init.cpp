@@ -3,7 +3,7 @@
 #include "motion.h"
 #include "log.h"
 
-// Initialise the sensors and initialise the wheels
+/// Initialise the sensors and initialise the wheels
 /*
  * Initializes the sensors and motion class
  *

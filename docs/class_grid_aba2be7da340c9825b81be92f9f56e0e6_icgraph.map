@@ -1,0 +1,5 @@
+<map id="Grid::turnDirection" name="Grid::turnDirection">
+<area shape="rect" id="node2" href="$class_grid.html#a8301f35a531a5226aedd2df3f7860675" title="Grid::calculateNextPosition" alt="" coords="180,5,360,32"/>
+<area shape="rect" id="node3" href="$class_grid.html#ad63a2853e95d965f1b6dd62987c51b9e" title="Grid::calculateNextAction" alt="" coords="408,5,579,32"/>
+<area shape="rect" id="node4" href="$class_grid.html#a3baa5137232d88ad481cbf56d7a2a105" title="Grid::objectDetected" alt="" coords="627,5,768,32"/>
+</map>

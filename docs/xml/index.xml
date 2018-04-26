@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_brick_pi3" kind="class"><name>BrickPi3</name>
+    <member refid="class_brick_pi3_1abd966c52f01fcc176bf613bd993ea793" kind="function"><name>BrickPi3</name></member>
+    <member refid="class_brick_pi3_1a94cb50dd4a9099ad9abf90d43977f3b9" kind="function"><name>~BrickPi3</name></member>
+  </compound>
+  <compound refid="class_grid" kind="class"><name>Grid</name>
+    <member refid="class_grid_1a3b0ef9b59acb432528119aa3a13f2e90" kind="typedef"><name>adjacency_list_t</name></member>
+    <member refid="class_grid_1a92e72f67e1c962cf855660e26ab91bc2" kind="variable"><name>direction</name></member>
+    <member refid="class_grid_1a045f0d44946c9f77caccdafbdc42f54b" kind="variable"><name>counter</name></member>
+    <member refid="class_grid_1a77bacf4c7dc862051118bf863a24bbd5" kind="variable"><name>currentPosition</name></member>
+    <member refid="class_grid_1a98e47596802f26b9f0530da588d88378" kind="variable"><name>nextPosition</name></member>
+    <member refid="class_grid_1ab87ada393b03b007012357b434c6f262" kind="variable"><name>nextAction</name></member>
+    <member refid="class_grid_1ad4f7157dd7336e6fa61b5dd74e4e58d4" kind="variable"><name>nextInstruction</name></member>
+    <member refid="class_grid_1aa060378d94522365054be43e77983eb5" kind="variable"><name>objectDetectedBool</name></member>
+    <member refid="class_grid_1a0c2f7d56a1801e1a39bac59f935c3f07" kind="variable"><name>position</name></member>
+    <member refid="class_grid_1a313d83f6bc2bb98b76c3317bd7a6aeaa" kind="variable"><name>min_distance</name></member>
+    <member refid="class_grid_1aadb5c928ee6aae583ba861e8cc4bae04" kind="variable"><name>previous</name></member>
+    <member refid="class_grid_1a683a3b3d1ceee1728ad35a1d8aee7900" kind="variable"><name>bestPath</name></member>
+    <member refid="class_grid_1a87c5857cbca6ddee171317e0e33b1930" kind="variable"><name>instruction_list</name></member>
+    <member refid="class_grid_1a7c6f3a5b81f452a423f94e7ee193d159" kind="variable"><name>matrix</name></member>
+    <member refid="class_grid_1a5321d2e7fcf7d7f9a25ae1aef379e4df" kind="variable"><name>adjacency_list</name></member>
+    <member refid="class_grid_1a408ce5639cb1d8d336addd4e24670f96" kind="variable"><name>status</name></member>
+    <member refid="class_grid_1a9c46a396042f6fbad8c90db9298457d3" kind="variable"><name>pathHistory</name></member>
+    <member refid="class_grid_1a4ac9ff4f63552b4c61ff90fcb35ad66c" kind="function"><name>Grid</name></member>
+    <member refid="class_grid_1a3661d0a7f998caaaf8627d7a67072116" kind="function"><name>~Grid</name></member>
+    <member refid="class_grid_1ae19d3aca505020b32ea388999221e827" kind="function"><name>DijkstraComputePaths</name></member>
+    <member refid="class_grid_1abebcd16be30b3df71ec1005b8dc77153" kind="function"><name>generate_matrix</name></member>
+    <member refid="class_grid_1a186191d8931c904feedbcfefa2c16105" kind="function"><name>new_path</name></member>
+    <member refid="class_grid_1a2c1dabbb5d95058e3c7f9962c8724a08" kind="function"><name>DijkstraGetShortestPathTo</name></member>
+    <member refid="class_grid_1a8301f35a531a5226aedd2df3f7860675" kind="function"><name>calculateNextPosition</name></member>
+    <member refid="class_grid_1aba2be7da340c9825b81be92f9f56e0e6" kind="function"><name>turnDirection</name></member>
+    <member refid="class_grid_1ad63a2853e95d965f1b6dd62987c51b9e" kind="function"><name>calculateNextAction</name></member>
+    <member refid="class_grid_1a1c09fd1fee8413e9967742682861b282" kind="function"><name>actionExecute</name></member>
+    <member refid="class_grid_1a3baa5137232d88ad481cbf56d7a2a105" kind="function"><name>objectDetected</name></member>
+    <member refid="class_grid_1a1b4bb2bb54227c19247785968cb4ae1f" kind="function"><name>initMatrix</name></member>
+    <member refid="class_grid_1ae698dfc1435020c3486a79bd3b7f0fb6" kind="function"><name>updateWeight</name></member>
+    <member refid="class_grid_1a5e9d6fc011c94711c71e06b3e4f896cf" kind="function"><name>updateStatus</name></member>
+  </compound>
+  <compound refid="class_init" kind="class"><name>Init</name>
+    <member refid="class_init_1a88d70f49371941495c78f10f2a0a5912" kind="variable"><name>sensor</name></member>
+    <member refid="class_init_1ab4680a10867c4cbb1b6ab597afc6c341" kind="variable"><name>motion</name></member>
+    <member refid="class_init_1a06a43f2bcb930e7ebec7d383efc15fd9" kind="function"><name>Init</name></member>
+    <member refid="class_init_1a67d5c94cb965fa3b774e969cfb4969d1" kind="function"><name>~Init</name></member>
+    <member refid="class_init_1a8d5597fb9e9bfb192a235cdee32ede2d" kind="function"><name>get_sensor</name></member>
+    <member refid="class_init_1a2f0137392b84da9c02d9c4d892e44534" kind="function"><name>get_motion</name></member>
+  </compound>
+  <compound refid="class_i_r" kind="class"><name>IR</name>
+    <member refid="class_i_r_1a6fa7e04f917540a79e3c8c2ef1372506" kind="variable"><name>Brick</name></member>
+    <member refid="class_i_r_1ae2dc8682b6fadbf02132cc70e5d70911" kind="variable"><name>PORT</name></member>
+    <member refid="class_i_r_1ad923e4bc11ac29c695e95210e1d98ff3" kind="variable"><name>Light</name></member>
+    <member refid="class_i_r_1ab5f0a0cee6a950f6362be1ee686c28d5" kind="variable"><name>range</name></member>
+    <member refid="class_i_r_1a91cec92a0153ddb09bdfa7f6422db448" kind="variable"><name>detected</name></member>
+    <member refid="class_i_r_1ab286975dd7dc48113ae5189b6c8fa0ba" kind="function"><name>IR</name></member>
+    <member refid="class_i_r_1acc2e758f018c7b069315a826e9ca3043" kind="function"><name>~IR</name></member>
+    <member refid="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95" kind="function"><name>set_current_value</name></member>
+    <member refid="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1" kind="function"><name>get_current_value</name></member>
+    <member refid="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5" kind="function"><name>in_range</name></member>
+    <member refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" kind="function"><name>is_white</name></member>
+    <member refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" kind="function"><name>is_black</name></member>
+    <member refid="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b" kind="function"><name>set_ranges</name></member>
+    <member refid="class_i_r_1ad9c48a5f015b51dbffbdf23534d062c8" kind="function"><name>get_ranges</name></member>
+  </compound>
+  <compound refid="class_log" kind="class"><name>Log</name>
+    <member refid="class_log_1ae05ae05ecdb8091ca2b3f847ce869b05" kind="variable"><name>debugFile</name></member>
+    <member refid="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe" kind="function"><name>Log</name></member>
+    <member refid="class_log_1af056ba4ff9151d69bf1b302a95253c52" kind="function"><name>currentDateTime</name></member>
+    <member refid="class_log_1aeb1d174708785f8f763895ad8e41d580" kind="function"><name>write_line</name></member>
+    <member refid="class_log_1a0fbfda88fbee5027c89f6eb121059360" kind="function"><name>~Log</name></member>
+  </compound>
+  <compound refid="class_motion" kind="class"><name>Motion</name>
+    <member refid="class_motion_1a29e058cf19991e101d2b74a6327031c3" kind="variable"><name>speed</name></member>
+    <member refid="class_motion_1acd3818dff69ef7855db3eb03152940ac" kind="variable"><name>right</name></member>
+    <member refid="class_motion_1abf349487522a73a4741790d668399f2d" kind="variable"><name>left</name></member>
+    <member refid="class_motion_1a846d064099e60104276ed386a7712864" kind="variable"><name>top</name></member>
+    <member refid="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4" kind="function"><name>Motion</name></member>
+    <member refid="class_motion_1a3989871f9b2b9b69c88b5437b40a72c6" kind="function"><name>~Motion</name></member>
+    <member refid="class_motion_1af922ccbd27054420dd1ff679d48f588d" kind="function"><name>turn</name></member>
+    <member refid="class_motion_1a44ce916fa9aad6277f0990b14a4259ef" kind="function"><name>emergency_stop</name></member>
+    <member refid="class_motion_1a343e5cef901d8309b64735b3a0923728" kind="function"><name>drive</name></member>
+    <member refid="class_motion_1a3bc12224ab575f75c71054d547ae0add" kind="function"><name>drive_reverse</name></member>
+    <member refid="class_motion_1a73524a9eb0bf44b4956622fcea759fd0" kind="function"><name>turn_reverse</name></member>
+    <member refid="class_motion_1a92d8f75b0b1343c99fe59a6712ee3eb3" kind="function"><name>degreesTimeC</name></member>
+    <member refid="class_motion_1a8f028fb35644215e4c073772a9c2532d" kind="function"><name>turnDeg</name></member>
+  </compound>
+  <compound refid="struct_grid_1_1neighbor" kind="struct"><name>Grid::neighbor</name>
+    <member refid="struct_grid_1_1neighbor_1abc5e0e8d355a3720fb969d9bc84c3e1f" kind="variable"><name>target</name></member>
+    <member refid="struct_grid_1_1neighbor_1aed3de0e0e13c5da09edcce25728e1fc6" kind="variable"><name>weight</name></member>
+    <member refid="struct_grid_1_1neighbor_1a11b3256c519b7bf6fe36b82ef6c71168" kind="function"><name>neighbor</name></member>
+  </compound>
+  <compound refid="class_notify" kind="class"><name>Notify</name>
+    <member refid="class_notify_1a76566a48401667bd9382a169c2a76ed2" kind="function"><name>Notify</name></member>
+    <member refid="class_notify_1a621d36ca663f0c8460c82611c708b51e" kind="function"><name>~Notify</name></member>
+    <member refid="class_notify_1a7055e1a2409ac4f55021e171ce6942e1" kind="function"><name>screen_render</name></member>
+  </compound>
+  <compound refid="class_sensor" kind="class"><name>Sensor</name>
+    <member refid="class_sensor_1a0b30ca0918f6b808c8e147a3996c47d6" kind="variable"><name>ir</name></member>
+    <member refid="class_sensor_1abe74066f5bf9554608d9611390c8cc18" kind="variable"><name>rgb</name></member>
+    <member refid="class_sensor_1a3d4cefeea113bbd14a8e3b53198b6943" kind="variable"><name>ultrasonic</name></member>
+    <member refid="class_sensor_1a342d6d11ef572c8cba92cb76fb1a294b" kind="function"><name>Sensor</name></member>
+    <member refid="class_sensor_1a47122c90fb62cd4510af51161058953d" kind="function"><name>Sensor</name></member>
+    <member refid="class_sensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" kind="function"><name>~Sensor</name></member>
+    <member refid="class_sensor_1a4f797e3f6a549cfdefab639eb6a86787" kind="function"><name>object_near</name></member>
+    <member refid="class_sensor_1a118f38dcb8a695ad78b7c7d94f508d4f" kind="function"><name>get_distance_object</name></member>
+    <member refid="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba" kind="function"><name>both_black</name></member>
+    <member refid="class_sensor_1add2279da6d407ed7678064ab1fe7d02d" kind="function"><name>both_white</name></member>
+    <member refid="class_sensor_1a03b8f6886c672badadfeef89d069e1ea" kind="function"><name>IR_black_RGB_white</name></member>
+    <member refid="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285" kind="function"><name>RGB_black_IR_white</name></member>
+    <member refid="class_sensor_1a7065fe2dff6107b89d162e59271a9491" kind="function"><name>initializeIR</name></member>
+    <member refid="class_sensor_1a1684cc490c5dd360890d2c0cdfd23fd3" kind="function"><name>initializeRGB</name></member>
+    <member refid="class_sensor_1a77a538443f5e024bbd144cc56eed3319" kind="function"><name>initializeUS</name></member>
+  </compound>
+  <compound refid="class_servo" kind="class"><name>Servo</name>
+    <member refid="class_servo_1ae4cb4af62094196c894f565b74f5d235" kind="variable"><name>PI</name></member>
+    <member refid="class_servo_1a56ab5ba316afabb22fba5a3633337ad5" kind="variable"><name>PORT</name></member>
+    <member refid="class_servo_1a55cadfeaac34e6efa14bc03a9b6a82c7" kind="function"><name>Servo</name></member>
+    <member refid="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" kind="function"><name>Servo</name></member>
+    <member refid="class_servo_1acb51bf4d970b071741ba76349a431fb0" kind="function"><name>~Servo</name></member>
+    <member refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" kind="function"><name>set_speed</name></member>
+    <member refid="class_servo_1a9986e323bf68602b56654a4eb44c683c" kind="function"><name>set_port</name></member>
+    <member refid="class_servo_1a2219362602b79927b5fbd6343799f217" kind="function"><name>halt</name></member>
+  </compound>
+  <compound refid="class_state" kind="class"><name>State</name>
+    <member refid="class_state_1a2c157e70b0d158e0a9460dbb332c7c01" kind="variable"><name>init</name></member>
+    <member refid="class_state_1a1b411401c4bf5691317227067545823d" kind="variable"><name>log</name></member>
+    <member refid="class_state_1a32c7a0c466fe37889b4053d83046b63e" kind="variable"><name>motion</name></member>
+    <member refid="class_state_1adee9d7ef7c6a6946eaa5db31b7959ed3" kind="variable"><name>sensor</name></member>
+    <member refid="class_state_1ab91bb1dd5aa6260ab2a456581daf9ec2" kind="function"><name>State</name></member>
+    <member refid="class_state_1afab438d92b90dc18d194dbd9c9c8bab3" kind="function"><name>~State</name></member>
+    <member refid="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68" kind="function"><name>clear</name></member>
+    <member refid="class_state_1a975afaa8e6091654888d7ed58b8c29c1" kind="function"><name>obstacle_avoid</name></member>
+    <member refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" kind="function"><name>turn</name></member>
+    <member refid="class_state_1a4e9d67c11218113bfa282ddccfd6326a" kind="function"><name>grid_travel</name></member>
+    <member refid="class_state_1ae03eae00675106f8b6b9481c4b0e50dc" kind="function"><name>object_or_turn</name></member>
+    <member refid="class_state_1adcabc610335b5bd9efdf7f908de7dacb" kind="function"><name>getMotion</name></member>
+    <member refid="class_state_1a9195abef447816fe4830f875f0b1dda2" kind="function"><name>getSensor</name></member>
+  </compound>
+  <compound refid="class_ultrasonic" kind="class"><name>Ultrasonic</name>
+    <member refid="class_ultrasonic_1ac2998a44e4be52fe704b1e90ab39b2f7" kind="variable"><name>Brick</name></member>
+    <member refid="class_ultrasonic_1a063ddbf2b01528ca6d693ff06ca5bc73" kind="variable"><name>PORT</name></member>
+    <member refid="class_ultrasonic_1a8e063e8780aa696f2636a38571c35d3a" kind="variable"><name>Sonic</name></member>
+    <member refid="class_ultrasonic_1ac4a422dd82447c177423748fb7b8b97e" kind="variable"><name>detected</name></member>
+    <member refid="class_ultrasonic_1abeb14fe56e8130ce077d7419948c8776" kind="variable"><name>detection_range</name></member>
+    <member refid="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05" kind="function"><name>Ultrasonic</name></member>
+    <member refid="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201" kind="function"><name>object_in_range</name></member>
+    <member refid="class_ultrasonic_1aef69078732d3b74569955c039f50af54" kind="function"><name>set_distance</name></member>
+    <member refid="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6" kind="function"><name>get_distance</name></member>
+    <member refid="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad" kind="function"><name>~Ultrasonic</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_brick_pi3_8cpp" kind="file"><name>BrickPi3.cpp</name>
+  </compound>
+  <compound refid="_brick_pi3_8h" kind="file"><name>BrickPi3.h</name>
+  </compound>
+  <compound refid="_grid_8cpp" kind="file"><name>Grid.cpp</name>
+    <member refid="_grid_8cpp_1af4d7cdf2478501dc15b627a84f3f4073" kind="typedef"><name>vertex_t</name></member>
+    <member refid="_grid_8cpp_1ac7889bf9b3596f63c57011af217212dd" kind="typedef"><name>weight_t</name></member>
+    <member refid="_grid_8cpp_1a0cc7c862d53eee6d6984163e657032c9" kind="variable"><name>max_weight</name></member>
+  </compound>
+  <compound refid="_grid_8hpp" kind="file"><name>Grid.hpp</name>
+    <member refid="_grid_8hpp_1af4d7cdf2478501dc15b627a84f3f4073" kind="typedef"><name>vertex_t</name></member>
+    <member refid="_grid_8hpp_1ac7889bf9b3596f63c57011af217212dd" kind="typedef"><name>weight_t</name></member>
+  </compound>
+  <compound refid="init_8cpp" kind="file"><name>init.cpp</name>
+  </compound>
+  <compound refid="init_8h" kind="file"><name>init.h</name>
+  </compound>
+  <compound refid="_i_r_8cpp" kind="file"><name>IR.cpp</name>
+  </compound>
+  <compound refid="_i_r_8h" kind="file"><name>IR.h</name>
+  </compound>
+  <compound refid="log_8cpp" kind="file"><name>log.cpp</name>
+  </compound>
+  <compound refid="log_8h" kind="file"><name>log.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="motion_8cpp" kind="file"><name>motion.cpp</name>
+  </compound>
+  <compound refid="motion_8h" kind="file"><name>motion.h</name>
+  </compound>
+  <compound refid="notify_8cpp" kind="file"><name>notify.cpp</name>
+    <member refid="notify_8cpp_1ad459b2b66e58dfc51cad1aa928752859" kind="function"><name>screen_render</name></member>
+  </compound>
+  <compound refid="notify_8h" kind="file"><name>notify.h</name>
+  </compound>
+  <compound refid="_r_g_b_8cpp" kind="file"><name>RGB.cpp</name>
+  </compound>
+  <compound refid="_r_g_b_8h" kind="file"><name>RGB.h</name>
+  </compound>
+  <compound refid="sensor_8cpp" kind="file"><name>sensor.cpp</name>
+  </compound>
+  <compound refid="sensor_8h" kind="file"><name>sensor.h</name>
+  </compound>
+  <compound refid="servo_8cpp" kind="file"><name>servo.cpp</name>
+  </compound>
+  <compound refid="servo_8h" kind="file"><name>servo.h</name>
+  </compound>
+  <compound refid="state_8cpp" kind="file"><name>state.cpp</name>
+  </compound>
+  <compound refid="state_8h" kind="file"><name>state.h</name>
+  </compound>
+  <compound refid="ultrasonic_8cpp" kind="file"><name>ultrasonic.cpp</name>
+  </compound>
+  <compound refid="ultrasonic_8h" kind="file"><name>ultrasonic.h</name>
+  </compound>
+</doxygenindex>

@@ -5,7 +5,7 @@
 #include "motion.h"
 
 
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class Init
 {
@@ -20,4 +20,4 @@ public:
 	
 };
 
-#endif // INIT_H
+#endif /// INIT_H

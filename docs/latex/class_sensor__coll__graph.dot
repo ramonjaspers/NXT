@@ -1,6 +1,0 @@
-digraph "Sensor"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{Sensor\n||+ Sensor()\l+ Sensor()\l+ ~Sensor()\l+ object_near()\l+ get_distance_object()\l+ both_black()\l+ both_white()\l+ IR_black_RGB_white()\l+ RGB_black_IR_white()\l+ initializeIR()\l+ initializeRGB()\l+ initializeUS()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}

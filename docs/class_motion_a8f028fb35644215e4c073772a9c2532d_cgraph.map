@@ -1,0 +1,4 @@
+<map id="Motion::turnDeg" name="Motion::turnDeg">
+<area shape="rect" id="node2" href="$class_motion.html#a92d8f75b0b1343c99fe59a6712ee3eb3" title="Motion::degreesTimeC" alt="" coords="168,5,320,32"/>
+<area shape="rect" id="node3" href="$class_servo.html#aecca91f485fc36404ce8cdfcb95f0527" title="Servo::set_speed" alt="" coords="183,56,305,83"/>
+</map>

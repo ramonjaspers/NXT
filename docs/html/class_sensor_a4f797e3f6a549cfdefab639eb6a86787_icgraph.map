@@ -1,5 +1,0 @@
-<map id="Sensor::object_near" name="Sensor::object_near">
-<area shape="rect" id="node2" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="513,5,603,32"/>
-<area shape="rect" id="node3" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="323,31,465,57"/>
-<area shape="rect" id="node4" href="$class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="State::turn" alt="" coords="192,81,275,108"/>
-</map>

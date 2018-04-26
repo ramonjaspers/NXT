@@ -5,7 +5,7 @@
 #include "ultrasonic.h"
 
 
-// initialize all the sensors
+/// initialize all the sensors
 Sensor::Sensor() {
 
 
@@ -21,7 +21,7 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
     IR ir;
     RGB rgb;
     Ultrasonic ultrasonic;
-    // Ultrasonic us;
+    /// Ultrasonic us;
 
     this->ir = ir;
     this->rgb = rgb;
@@ -29,7 +29,7 @@ Sensor::Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const un
 }
 
 
-// checking the ultrasonic sensor if something is withing X range of the device.
+/// checking the ultrasonic sensor if something is withing X range of the device.
 /**
  *
  * @return bool if an object is within the minimum range
@@ -58,9 +58,9 @@ bool Sensor::both_black() {
         return true;
     } else {
 
-        // exception should be thrown
+        /// exception should be thrown
         return true;
-        // throw std::nested_exception( "Sensor data has an unexpected return, neither black nor white even though both black should be easy" );
+        /// throw std::nested_exception( "Sensor data has an unexpected return, neither black nor white even though both black should be easy" );
     }
 
 }
@@ -77,9 +77,9 @@ bool Sensor::both_white() {
     } else if (this->ir.is_white() && this->rgb.is_white()) {
         return true;
     } else {
-        //  TODO: exception throw
+        ///  TODO: exception throw
         return true;
-        // throw std::nested_exception ( "Sensor data has an unexpected return, neither black nor white even though white should be defined" );
+        /// throw std::nested_exception ( "Sensor data has an unexpected return, neither black nor white even though white should be defined" );
     }
 
 }
@@ -88,7 +88,7 @@ bool Sensor::both_white() {
  * Sets ranges for IR sensor
  */
 void Sensor::initializeIR() {
-    // only the ranges are defined for now
+    /// only the ranges are defined for now
     this->ir.set_ranges();
 }
 /**
@@ -102,7 +102,7 @@ void Sensor::initializeRGB() {
  * TODO: Delete
  */
 void Sensor::initializeUS() {
-    // Ultrasonic sensor doesn't actually do a lot, here for consistency sake a.t.m
+    /// Ultrasonic sensor doesn't actually do a lot, here for consistency sake a.t.m
 }
 
 /**
@@ -122,7 +122,7 @@ bool Sensor::RGB_black_IR_white() {
 }
 
 
-// shutting down, resetting all brick pi i/o
+/// shutting down, resetting all brick pi i/o
 Sensor::~Sensor() {
 }
 

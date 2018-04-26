@@ -1,6 +1,0 @@
-digraph "IR"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{IR\n||+ IR()\l+ ~IR()\l+ set_current_value()\l+ get_current_value()\l+ in_range()\l+ is_white()\l+ is_black()\l+ set_ranges()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}

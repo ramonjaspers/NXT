@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_servo" kind="class" language="C++" prot="public">
+    <compoundname>Servo</compoundname>
+    <includes refid="servo_8h" local="no">servo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_servo_1ae4cb4af62094196c894f565b74f5d235" prot="private" static="no" mutable="no">
+        <type><ref refid="class_brick_pi3" kindref="compound">BrickPi3</ref></type>
+        <definition>BrickPi3 Servo::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="8" column="1" bodyfile="servo.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_1a56ab5ba316afabb22fba5a3633337ad5" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Servo::PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="9" column="1" bodyfile="servo.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_servo_1a55cadfeaac34e6efa14bc03a9b6a82c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo::Servo</definition>
+        <argsstring>(uint8_t PORT)</argsstring>
+        <name>Servo</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>PORT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PORT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="11" column="1" bodyfile="servo.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo::Servo</definition>
+        <argsstring>()</argsstring>
+        <name>Servo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="12" column="1" bodyfile="servo.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1acb51bf4d970b071741ba76349a431fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo::~Servo</definition>
+        <argsstring>()</argsstring>
+        <name>~Servo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="13" column="1" bodyfile="servo.cpp" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::set_speed</definition>
+        <argsstring>(int gradient)</argsstring>
+        <name>set_speed</name>
+        <param>
+          <type>int</type>
+          <declname>gradient</declname>
+          <defname>power</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sets the power to execute int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="14" column="1" bodyfile="servo.cpp" bodystart="28" bodyend="31"/>
+        <referencedby refid="class_motion_1af922ccbd27054420dd1ff679d48f588d" compoundref="motion_8cpp" startline="39" endline="58">Motion::turn</referencedby>
+        <referencedby refid="class_motion_1a343e5cef901d8309b64735b3a0923728" compoundref="motion_8cpp" startline="67" endline="72">Motion::drive</referencedby>
+        <referencedby refid="class_motion_1a3bc12224ab575f75c71054d547ae0add" compoundref="motion_8cpp" startline="76" endline="80">Motion::drive_reverse</referencedby>
+        <referencedby refid="class_motion_1a8f028fb35644215e4c073772a9c2532d" compoundref="motion_8cpp" startline="94" endline="108">Motion::turnDeg</referencedby>
+        <referencedby refid="class_motion_1a73524a9eb0bf44b4956622fcea759fd0" compoundref="motion_8cpp" startline="110" endline="132">Motion::turn_reverse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a9986e323bf68602b56654a4eb44c683c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::set_port</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>set_port</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Brick pi interface port </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="15" column="1" bodyfile="servo.cpp" bodystart="36" bodyend="38"/>
+        <referencedby refid="class_motion_1a3ac2f89dcb6ec279fa36ed38b12be3b4" compoundref="motion_8cpp" startline="19" endline="32">Motion::Motion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a2219362602b79927b5fbd6343799f217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::halt</definition>
+        <argsstring>()</argsstring>
+        <name>halt</name>
+        <briefdescription>
+<para>decreases power to 0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="servo.h" line="16" column="1" bodyfile="servo.cpp" bodystart="41" bodyend="43"/>
+        <referencedby refid="class_motion_1a44ce916fa9aad6277f0990b14a4259ef" compoundref="motion_8cpp" startline="60" endline="63">Motion::emergency_stop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>for <ref refid="class_brick_pi3" kindref="compound">BrickPi3</ref> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="servo.h" line="6" column="1" bodyfile="servo.h" bodystart="5" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_servo_1a2219362602b79927b5fbd6343799f217" prot="public" virt="non-virtual"><scope>Servo</scope><name>halt</name></member>
+      <member refid="class_servo_1ae4cb4af62094196c894f565b74f5d235" prot="private" virt="non-virtual"><scope>Servo</scope><name>PI</name></member>
+      <member refid="class_servo_1a56ab5ba316afabb22fba5a3633337ad5" prot="private" virt="non-virtual"><scope>Servo</scope><name>PORT</name></member>
+      <member refid="class_servo_1a55cadfeaac34e6efa14bc03a9b6a82c7" prot="public" virt="non-virtual"><scope>Servo</scope><name>Servo</name></member>
+      <member refid="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" prot="public" virt="non-virtual"><scope>Servo</scope><name>Servo</name></member>
+      <member refid="class_servo_1a9986e323bf68602b56654a4eb44c683c" prot="public" virt="non-virtual"><scope>Servo</scope><name>set_port</name></member>
+      <member refid="class_servo_1aecca91f485fc36404ce8cdfcb95f0527" prot="public" virt="non-virtual"><scope>Servo</scope><name>set_speed</name></member>
+      <member refid="class_servo_1acb51bf4d970b071741ba76349a431fb0" prot="public" virt="non-virtual"><scope>Servo</scope><name>~Servo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

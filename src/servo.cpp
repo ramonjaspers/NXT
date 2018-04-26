@@ -1,8 +1,8 @@
 #include "servo.h"
-#include "BrickPi3.h" // for BrickPi3
+#include "BrickPi3.h" /// for BrickPi3
 #include <iostream>
-#include <unistd.h>     // for usleep
-#include <signal.h>     // for catching exit signals
+#include <unistd.h>     /// for usleep
+#include <signal.h>     /// for catching exit signals
 
 using namespace std;
 
@@ -33,7 +33,7 @@ void Servo::set_port(const uint8_t port){
     this->PORT = port;
 }
 
-// decreases power to 0
+/// decreases power to 0
 void Servo::halt(){
 	this->PI.set_motor_power(this->PORT, 0);
 }

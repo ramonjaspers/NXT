@@ -1,0 +1,70 @@
+.TH "Init" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Init
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <init\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInit\fP ()"
+.br
+.RI "Initialise the sensors and initialise the wheels\&. "
+.ti -1c
+.RI "\fB~Init\fP ()"
+.br
+.ti -1c
+.RI "\fBSensor\fP \fBget_sensor\fP ()"
+.br
+.ti -1c
+.RI "\fBMotion\fP \fBget_motion\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file init\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Init::Init ()"
+
+.PP
+Initialise the sensors and initialise the wheels\&. 
+.PP
+Definition at line 11 of file init\&.cpp\&.
+.SS "Init::~Init ()"
+
+.PP
+Definition at line 35 of file init\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBMotion\fP Init::get_motion ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+a configured motion object that has servos ready to rumble 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file init\&.cpp\&.
+.SS "\fBSensor\fP Init::get_sensor ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+a configured sensor that has done default ranging 
+.RE
+.PP
+
+.PP
+Definition at line 22 of file init\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

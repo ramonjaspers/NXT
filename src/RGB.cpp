@@ -23,8 +23,8 @@ RGB::RGB(uint8_t port){
  * @return
  */
 bool RGB::in_range(unsigned int type_color){
-	//this.reflected
-	//return false;
+	///this.reflected
+	///return false;
     return (this->reflected_red >= this->range[0 + type_color] && this->reflected_red <= this->range[1 + type_color]);
 }
 
@@ -33,7 +33,7 @@ bool RGB::in_range(unsigned int type_color){
  * @return bool whether color is white or not
  */
 bool RGB::is_white(){
-	//return true;
+	///return true;
     return this->in_range(0);
 }
 
@@ -41,14 +41,14 @@ bool RGB::is_white(){
  * @return bool whether color is black or not
  */
 bool RGB::is_black(){
-	//return false;
+	///return false;
     return this->in_range(2);
 }
 
 
 void RGB::set_ranges() {
 
-    // TODO: dynamic ijken
+    /// TODO: dynamic ijken
     std::vector<int16_t> values;
     usleep(1*1000);
     for(unsigned int a=0; a<10; a++){
@@ -96,7 +96,7 @@ int RGB::get_current_value(bool rerun) {
 }
 
 
-// Constructor that will assign the color values after testing for values
+/// Constructor that will assign the color values after testing for values
 RGB::RGB(unsigned int white_min,unsigned int white_max, unsigned int black_min, unsigned int black_max){
 
 }

@@ -1,0 +1,4 @@
+<map id="Sensor::IR_black_RGB_white" name="Sensor::IR_black_RGB_white">
+<area shape="rect" id="node2" href="$class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb" title="IR::is_black" alt="" coords="209,13,300,39"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5" title="IR::in_range" alt="" coords="348,13,439,39"/>
+</map>

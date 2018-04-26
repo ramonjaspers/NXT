@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_notify">
+<title>Notify class Reference</title>
+<para>
+    <programlisting>#include <link linkend="notify_8h">&lt;notify.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Notify</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_notify__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Notify</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_notify__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_notify_1a76566a48401667bd9382a169c2a76ed2">Notify</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_notify_1a621d36ca663f0c8460c82611c708b51e">~Notify</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="class_notify_1a7055e1a2409ac4f55021e171ce6942e1">screen_render</link> (
+std::string st, unsigned int type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>TODO: Doxygen generation. </para>
+    </simplesect>
+            <section xml:id="class_notify_1a76566a48401667bd9382a169c2a76ed2">
+                <title>Notify::Notify ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_notify_1a621d36ca663f0c8460c82611c708b51e">
+                <title>Notify::~Notify ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_notify_1a7055e1a2409ac4f55021e171ce6942e1">
+                <title>std::string Notify::screen_render (std::string st, unsigned int type=0)</title> <emphasis></emphasis>
+                
+            </section>
+</section>
