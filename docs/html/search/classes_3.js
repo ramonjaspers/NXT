@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motion',['Motion',['../class_motion.html',1,'']]]
+  ['log',['Log',['../class_log.html',1,'']]]
 ];

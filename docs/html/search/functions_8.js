@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['motion',['Motion',['../class_motion.html#a3ac2f89dcb6ec279fa36ed38b12be3b4',1,'Motion']]]
+  ['log',['Log',['../class_log.html#af6071a60aa52b6c1b511f99b4bc1b8fe',1,'Log']]]
 ];

@@ -1,0 +1,94 @@
+.TH "Servo" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Servo \- for \fBBrickPi3\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <servo\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBServo\fP (uint8_t PORT)"
+.br
+.ti -1c
+.RI "\fBServo\fP ()"
+.br
+.ti -1c
+.RI "\fB~Servo\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_speed\fP (int gradient)"
+.br
+.ti -1c
+.RI "void \fBset_port\fP (uint8_t port)"
+.br
+.ti -1c
+.RI "void \fBhalt\fP ()"
+.br
+.RI "decreases power to 0 "
+.in -1c
+.SH "Detailed Description"
+.PP 
+for \fBBrickPi3\fP 
+.PP
+Definition at line 5 of file servo\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Servo::Servo (uint8_t PORT)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPORT\fP 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file servo\&.cpp\&.
+.SS "Servo::Servo ()"
+
+.PP
+Definition at line 19 of file servo\&.cpp\&.
+.SS "Servo::~Servo ()"
+
+.PP
+Definition at line 46 of file servo\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Servo::halt ()"
+
+.PP
+decreases power to 0 
+.PP
+Definition at line 41 of file servo\&.cpp\&.
+.SS "void Servo::set_port (uint8_t port)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIport\fP Brick pi interface port 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file servo\&.cpp\&.
+.SS "void Servo::set_speed (int power)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpower\fP sets the power to execute int 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file servo\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

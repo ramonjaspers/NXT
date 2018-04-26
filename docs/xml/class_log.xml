@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_log" kind="class" language="C++" prot="public">
+    <compoundname>Log</compoundname>
+    <includes refid="log_8h" local="no">log.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_log_1ae05ae05ecdb8091ca2b3f847ce869b05" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream Log::debugFile</definition>
+        <argsstring></argsstring>
+        <name>debugFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.h" line="20" column="1" bodyfile="log.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Log::Log</definition>
+        <argsstring>()</argsstring>
+        <name>Log</name>
+        <briefdescription>
+<para>printing all the log data to a file for debugging purposes </para>        </briefdescription>
+        <detaileddescription>
+<para>====================================================== <heading level="1">= ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE = </heading>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.h" line="22" column="1" bodyfile="log.cpp" bodystart="13" bodyend="17"/>
+        <references refid="class_log_1aeb1d174708785f8f763895ad8e41d580" compoundref="log_8cpp" startline="29" endline="32">write_line</references>
+      </memberdef>
+      <memberdef kind="function" id="class_log_1af056ba4ff9151d69bf1b302a95253c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string Log::currentDateTime</definition>
+        <argsstring>()</argsstring>
+        <name>currentDateTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.h" line="23" column="1" bodyfile="log.cpp" bodystart="19" bodyend="27"/>
+        <referencedby refid="class_log_1aeb1d174708785f8f763895ad8e41d580" compoundref="log_8cpp" startline="29" endline="32">write_line</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_1aeb1d174708785f8f763895ad8e41d580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Log::write_line</definition>
+        <argsstring>(std::string ln)</argsstring>
+        <name>write_line</name>
+        <param>
+          <type>std::string</type>
+          <declname>ln</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.h" line="24" column="1" bodyfile="log.cpp" bodystart="29" bodyend="32"/>
+        <references refid="class_log_1af056ba4ff9151d69bf1b302a95253c52" compoundref="log_8cpp" startline="19" endline="27">currentDateTime</references>
+        <referencedby refid="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe" compoundref="log_8cpp" startline="13" endline="17">Log</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_1a0fbfda88fbee5027c89f6eb121059360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Log::~Log</definition>
+        <argsstring>()</argsstring>
+        <name>~Log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.h" line="25" column="1" bodyfile="log.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>================================================== <heading level="1">ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE </heading>
+</para>    </detaileddescription>
+    <location file="log.h" line="18" column="1" bodyfile="log.h" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_log_1af056ba4ff9151d69bf1b302a95253c52" prot="public" virt="non-virtual"><scope>Log</scope><name>currentDateTime</name></member>
+      <member refid="class_log_1ae05ae05ecdb8091ca2b3f847ce869b05" prot="private" virt="non-virtual"><scope>Log</scope><name>debugFile</name></member>
+      <member refid="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe" prot="public" virt="non-virtual"><scope>Log</scope><name>Log</name></member>
+      <member refid="class_log_1aeb1d174708785f8f763895ad8e41d580" prot="public" virt="non-virtual"><scope>Log</scope><name>write_line</name></member>
+      <member refid="class_log_1a0fbfda88fbee5027c89f6eb121059360" prot="public" virt="non-virtual"><scope>Log</scope><name>~Log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

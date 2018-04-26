@@ -1,0 +1,201 @@
+.TH "Grid" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Grid
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Grid\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGrid\fP ()"
+.br
+.ti -1c
+.RI "\fB~Grid\fP ()"
+.br
+.ti -1c
+.RI "void \fBDijkstraComputePaths\fP (\fBvertex_t\fP source)"
+.br
+.ti -1c
+.RI "void \fBgenerate_matrix\fP ()"
+.br
+.ti -1c
+.RI "std::vector< int > \fBnew_path\fP (int start)"
+.br
+.ti -1c
+.RI "std::list< \fBvertex_t\fP > \fBDijkstraGetShortestPathTo\fP (\fBvertex_t\fP vertex)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBcalculateNextPosition\fP (int current, int next)"
+.br
+.ti -1c
+.RI "int \fBturnDirection\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalculateNextAction\fP ()"
+.br
+.ti -1c
+.RI "int \fBactionExecute\fP ()"
+.br
+.ti -1c
+.RI "void \fBobjectDetected\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitMatrix\fP (int start)"
+.br
+.ti -1c
+.RI "void \fBupdateWeight\fP (\fBvertex_t\fP node)"
+.br
+.ti -1c
+.RI "void \fBupdateStatus\fP (int current, int next)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "char \fBstatus\fP"
+.br
+.ti -1c
+.RI "std::vector< int > \fBpathHistory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file Grid\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Grid::Grid ()"
+Instantiate \fBGrid\fP Object 
+.PP
+Definition at line 17 of file Grid\&.cpp\&.
+.SS "Grid::~Grid ()"
+
+.PP
+Definition at line 408 of file Grid\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int Grid::actionExecute ()"
+
+.PP
+Definition at line 369 of file Grid\&.cpp\&.
+.SS "void Grid::calculateNextAction ()"
+
+.PP
+Definition at line 337 of file Grid\&.cpp\&.
+.SS "std::vector< int > Grid::calculateNextPosition (int current, int next)"
+Function holds currren facing direction\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcurrent\fP [in] integer of Current matrix position 
+.br
+\fInext\fP [in] integer of next position goal 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[out] integer of next calculated position 
+.RE
+.PP
+
+.PP
+Definition at line 281 of file Grid\&.cpp\&.
+.SS "void Grid::DijkstraComputePaths (\fBvertex_t\fP source)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP generates the fastest route from the given input source 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file Grid\&.cpp\&.
+.SS "std::list< \fBvertex_t\fP > Grid::DijkstraGetShortestPathTo (\fBvertex_t\fP vertex)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvertex;\fP contains values created by dijkstra algorithm 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[out] vertex; returns the created vector of the dijkstra algorithm 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file Grid\&.cpp\&.
+.SS "void Grid::generate_matrix ()"
+Generates possible positions based on current matrix positions (positions 0 to 24) 5x5 matrix generated 
+.PP
+Definition at line 85 of file Grid\&.cpp\&.
+.SS "void Grid::initMatrix (int start)"
+generates next action integer\&. e\&.g\&.: 1 -> 6 
+.PP
+Definition at line 326 of file Grid\&.cpp\&.
+.SS "std::vector< int > Grid::new_path (int start)"
+
+.PP
+\fBReturns:\fP
+.RS 4
+[out] returns the fastest path in a readable vector int 
+.RE
+.PP
+
+.PP
+Definition at line 178 of file Grid\&.cpp\&.
+.SS "void Grid::objectDetected ()"
+
+.PP
+Definition at line 395 of file Grid\&.cpp\&.
+.SS "int Grid::turnDirection ()"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdirection\fP [in] character; generates the current action based on his current position and facing direction\&. 
+.RE
+.PP
+Kijk welke kant de robot op moet draaien als de directie 'noord' is\&.
+.PP
+Kijk welke kant de robot op moet draaien als de directie 'oost' is\&.
+.PP
+Kijk welke kant de robot op moet draaien als de directie 'west' is\&. 
+.PP
+Definition at line 194 of file Grid\&.cpp\&.
+.SS "void Grid::updateStatus (int current, int next)"
+
+.PP
+Definition at line 304 of file Grid\&.cpp\&.
+.SS "void Grid::updateWeight (\fBvertex_t\fP node)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fInode\fP [in] gives current position 
+.RE
+.PP
+
+.PP
+Definition at line 385 of file Grid\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<int> Grid::pathHistory"
+
+.PP
+Definition at line 59 of file Grid\&.hpp\&.
+.SS "char Grid::status"
+
+.PP
+Definition at line 58 of file Grid\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

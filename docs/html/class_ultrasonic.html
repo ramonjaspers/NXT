@@ -87,7 +87,6 @@ $(document).ready(function(){initNavTree('class_ultrasonic.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ultrasonic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Ultrasonic Class Reference</div>  </div>
@@ -95,14 +94,6 @@ $(document).ready(function(){initNavTree('class_ultrasonic.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Ultrasonic:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_ultrasonic__coll__graph.png" border="0" usemap="#_ultrasonic_coll__map" alt="Collaboration graph"/></div>
-<map name="_ultrasonic_coll__map" id="_ultrasonic_coll__map">
-<area shape="rect" id="node2" href="class_brick_pi3.html" title="{BrickPi3\n||+ BrickPi3()\l+ ~BrickPi3()\l}" alt="" coords="23,5,121,97"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,20 +107,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a07cc45fda7cd672acd96320500d31ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5066b2bfeac723140c18b9f8340abad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#ab5066b2bfeac723140c18b9f8340abad">~Ultrasonic</a> ()</td></tr>
 <tr class="separator:ab5066b2bfeac723140c18b9f8340abad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac2998a44e4be52fe704b1e90ab39b2f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_brick_pi3.html">BrickPi3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#ac2998a44e4be52fe704b1e90ab39b2f7">Brick</a></td></tr>
-<tr class="memdesc:ac2998a44e4be52fe704b1e90ab39b2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: cast to 8 bit.  <a href="#ac2998a44e4be52fe704b1e90ab39b2f7">More...</a><br /></td></tr>
-<tr class="separator:ac2998a44e4be52fe704b1e90ab39b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063ddbf2b01528ca6d693ff06ca5bc73"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#a063ddbf2b01528ca6d693ff06ca5bc73">PORT</a></td></tr>
-<tr class="separator:a063ddbf2b01528ca6d693ff06ca5bc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e063e8780aa696f2636a38571c35d3a"><td class="memItemLeft" align="right" valign="top">sensor_ultrasonic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#a8e063e8780aa696f2636a38571c35d3a">Sonic</a></td></tr>
-<tr class="separator:a8e063e8780aa696f2636a38571c35d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a422dd82447c177423748fb7b8b97e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#ac4a422dd82447c177423748fb7b8b97e">detected</a></td></tr>
-<tr class="separator:ac4a422dd82447c177423748fb7b8b97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeb14fe56e8130ce077d7419948c8776"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ultrasonic.html#abeb14fe56e8130ce077d7419948c8776">detection_range</a></td></tr>
-<tr class="separator:abeb14fe56e8130ce077d7419948c8776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Created by brand on 4/6/2018. </p>
@@ -151,10 +128,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00005">5</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="ultrasonic_8h_source.html#l00016">Brick</a>, <a class="el" href="ultrasonic_8h_source.html#l00017">PORT</a>, and <a class="el" href="ultrasonic_8h_source.html#l00018">Sonic</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00009">9</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +154,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00039">39</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00043">43</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
 
 </div>
 </div>
@@ -194,11 +175,15 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>sensor value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00035">35</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="ultrasonic_8h_source.html#l00019">detected</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="sensor_8cpp_source.html#l00045">Sensor::get_distance_object()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00039">39</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ultrasonic_a07cc45fda7cd672acd96320500d31ec6_icgraph.png" border="0" usemap="#class_ultrasonic_a07cc45fda7cd672acd96320500d31ec6_icgraph" alt=""/></div>
+<map name="class_ultrasonic_a07cc45fda7cd672acd96320500d31ec6_icgraph" id="class_ultrasonic_a07cc45fda7cd672acd96320500d31ec6_icgraph">
+<area shape="rect" id="node2" href="class_sensor.html#a118f38dcb8a695ad78b7c7d94f508d4f" title="Sensor::get_distance\l_object" alt="" coords="216,5,361,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -218,11 +203,19 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>bool if the value is below the expected range </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00017">17</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="ultrasonic_8h_source.html#l00019">detected</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="sensor_8cpp_source.html#l00037">Sensor::object_near()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00021">21</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ultrasonic_aae6ae7ff42f37a52835dc66bba7e0201_icgraph.png" border="0" usemap="#class_ultrasonic_aae6ae7ff42f37a52835dc66bba7e0201_icgraph" alt=""/></div>
+<map name="class_ultrasonic_aae6ae7ff42f37a52835dc66bba7e0201_icgraph" id="class_ultrasonic_aae6ae7ff42f37a52835dc66bba7e0201_icgraph">
+<area shape="rect" id="node2" href="class_sensor.html#a4f797e3f6a549cfdefab639eb6a86787" title="checking the ultrasonic sensor if something is withing X range of the device. " alt="" coords="176,73,315,100"/>
+<area shape="rect" id="node3" href="class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="363,22,452,49"/>
+<area shape="rect" id="node5" href="class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="825,48,968,74"/>
+<area shape="rect" id="node6" href="class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="Driving slower and taking a turn. " alt="" coords="695,73,777,100"/>
+<area shape="rect" id="node4" href="class_state.html#a975afaa8e6091654888d7ed58b8c29c1" title="State::obstacle_avoid" alt="" coords="500,22,647,49"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -243,140 +236,7 @@ Private Attributes</h2></td></tr>
 <p>acquires sensor data and stores in member variable </p>
 <p>code that extracts the range, stores it in detected return this-&gt;detected; </p>
 
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00024">24</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="ultrasonic_8h_source.html#l00016">Brick</a>, <a class="el" href="ultrasonic_8h_source.html#l00019">detected</a>, <a class="el" href="ultrasonic_8h_source.html#l00017">PORT</a>, and <a class="el" href="ultrasonic_8h_source.html#l00018">Sonic</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac2998a44e4be52fe704b1e90ab39b2f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2998a44e4be52fe704b1e90ab39b2f7">&#9670;&nbsp;</a></span>Brick</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_brick_pi3.html">BrickPi3</a> Ultrasonic::Brick</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>TODO: cast to 8 bit. </p>
-
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8h_source.html#l00016">16</a> of file <a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ultrasonic_8cpp_source.html#l00024">set_distance()</a>, and <a class="el" href="ultrasonic_8cpp_source.html#l00005">Ultrasonic()</a>.</p>
-
-</div>
-</div>
-<a id="ac4a422dd82447c177423748fb7b8b97e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4a422dd82447c177423748fb7b8b97e">&#9670;&nbsp;</a></span>detected</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Ultrasonic::detected</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8h_source.html#l00019">19</a> of file <a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ultrasonic_8cpp_source.html#l00035">get_distance()</a>, <a class="el" href="ultrasonic_8cpp_source.html#l00017">object_in_range()</a>, and <a class="el" href="ultrasonic_8cpp_source.html#l00024">set_distance()</a>.</p>
-
-</div>
-</div>
-<a id="abeb14fe56e8130ce077d7419948c8776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeb14fe56e8130ce077d7419948c8776">&#9670;&nbsp;</a></span>detection_range</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; Ultrasonic::detection_range</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8h_source.html#l00020">20</a> of file <a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>.</p>
-
-</div>
-</div>
-<a id="a063ddbf2b01528ca6d693ff06ca5bc73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a063ddbf2b01528ca6d693ff06ca5bc73">&#9670;&nbsp;</a></span>PORT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Ultrasonic::PORT</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8h_source.html#l00017">17</a> of file <a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ultrasonic_8cpp_source.html#l00024">set_distance()</a>, and <a class="el" href="ultrasonic_8cpp_source.html#l00005">Ultrasonic()</a>.</p>
-
-</div>
-</div>
-<a id="a8e063e8780aa696f2636a38571c35d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e063e8780aa696f2636a38571c35d3a">&#9670;&nbsp;</a></span>Sonic</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sensor_ultrasonic_t Ultrasonic::Sonic</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ultrasonic_8h_source.html#l00018">18</a> of file <a class="el" href="ultrasonic_8h_source.html">ultrasonic.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ultrasonic_8cpp_source.html#l00024">set_distance()</a>, and <a class="el" href="ultrasonic_8cpp_source.html#l00005">Ultrasonic()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultrasonic_8cpp_source.html#l00028">28</a> of file <a class="el" href="ultrasonic_8cpp_source.html">ultrasonic.cpp</a>.</p>
 
 </div>
 </div>

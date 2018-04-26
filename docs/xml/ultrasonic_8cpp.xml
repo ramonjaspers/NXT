@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ultrasonic_8cpp" kind="file" language="C++">
+    <compoundname>ultrasonic.cpp</compoundname>
+    <includes refid="ultrasonic_8h" local="yes">ultrasonic.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">unistd.h</includes>
+    <incdepgraph>
+      <node id="275">
+        <label>ultrasonic.cpp</label>
+        <link refid="ultrasonic_8cpp"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>ultrasonic.h</label>
+        <link refid="ultrasonic_8h"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>BrickPi3.h</label>
+        <link refid="_brick_pi3_8h"/>
+      </node>
+      <node id="280">
+        <label>unistd.h</label>
+      </node>
+      <node id="277">
+        <label>vector</label>
+      </node>
+      <node id="279">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ultrasonic_8h" kindref="compound">ultrasonic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05" refkind="member"><highlight class="normal"><ref refid="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05" kindref="member">Ultrasonic::Ultrasonic</ref>(uint8_t<sp/>port)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_brick_pi3" kindref="compound">BrickPi3</ref><sp/>BP;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;Brick<sp/>=<sp/>BP;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;PORT<sp/>=<sp/>port;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;Brick.set_sensor_type(this-&gt;PORT,<sp/>SENSOR_TYPE_NXT_ULTRASONIC);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_ultrasonic_t<sp/>Sonic3;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;Sonic<sp/>=<sp/>Sonic3;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201" kindref="member">Ultrasonic::object_in_range</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;detected<sp/>&lt;=<sp/>50);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_ultrasonic_1aef69078732d3b74569955c039f50af54" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1aef69078732d3b74569955c039f50af54" kindref="member">Ultrasonic::set_distance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;Brick.get_sensor(this-&gt;PORT,<sp/>this-&gt;Sonic);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;detected<sp/>=<sp/>this-&gt;Sonic.cm;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>this-&gt;Sonic.cm<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6" kindref="member">Ultrasonic::get_distance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;detected;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad" refkind="member"><highlight class="normal"><ref refid="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad" kindref="member">Ultrasonic::~Ultrasonic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ultrasonic.cpp"/>
+  </compounddef>
+</doxygen>

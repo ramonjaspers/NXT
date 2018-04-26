@@ -4,6 +4,8 @@ var files_dup =
     [ "BrickPi3.h", "_brick_pi3_8h.html", [
       [ "BrickPi3", "class_brick_pi3.html", "class_brick_pi3" ]
     ] ],
+    [ "Grid.cpp", "_grid_8cpp.html", "_grid_8cpp" ],
+    [ "Grid.hpp", "_grid_8hpp.html", "_grid_8hpp" ],
     [ "init.cpp", "init_8cpp.html", null ],
     [ "init.h", "init_8h.html", [
       [ "Init", "class_init.html", "class_init" ]

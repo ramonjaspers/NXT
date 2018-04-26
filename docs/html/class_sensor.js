@@ -11,8 +11,5 @@ var class_sensor =
     [ "initializeUS", "class_sensor.html#a77a538443f5e024bbd144cc56eed3319", null ],
     [ "IR_black_RGB_white", "class_sensor.html#a03b8f6886c672badadfeef89d069e1ea", null ],
     [ "object_near", "class_sensor.html#a4f797e3f6a549cfdefab639eb6a86787", null ],
-    [ "RGB_black_IR_white", "class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285", null ],
-    [ "ir", "class_sensor.html#a0b30ca0918f6b808c8e147a3996c47d6", null ],
-    [ "rgb", "class_sensor.html#abe74066f5bf9554608d9611390c8cc18", null ],
-    [ "ultrasonic", "class_sensor.html#a3d4cefeea113bbd14a8e3b53198b6943", null ]
+    [ "RGB_black_IR_white", "class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285", null ]
 ];

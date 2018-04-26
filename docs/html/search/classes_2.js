@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['log',['Log',['../class_log.html',1,'']]]
+  ['init',['Init',['../class_init.html',1,'']]],
+  ['ir',['IR',['../class_i_r.html',1,'']]]
 ];

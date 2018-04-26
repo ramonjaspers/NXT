@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_brick_pi3" kind="class" language="C++" prot="public">
+    <compoundname>BrickPi3</compoundname>
+    <includes refid="_brick_pi3_8h" local="no">BrickPi3.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_brick_pi3_1abd966c52f01fcc176bf613bd993ea793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BrickPi3::BrickPi3</definition>
+        <argsstring>()</argsstring>
+        <name>BrickPi3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrickPi3.h" line="7" column="1" bodyfile="BrickPi3.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_brick_pi3_1a94cb50dd4a9099ad9abf90d43977f3b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BrickPi3::~BrickPi3</definition>
+        <argsstring>()</argsstring>
+        <name>~BrickPi3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrickPi3.h" line="8" column="1" bodyfile="BrickPi3.cpp" bodystart="6" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BrickPi3.h" line="5" column="1" bodyfile="BrickPi3.h" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_brick_pi3_1abd966c52f01fcc176bf613bd993ea793" prot="public" virt="non-virtual"><scope>BrickPi3</scope><name>BrickPi3</name></member>
+      <member refid="class_brick_pi3_1a94cb50dd4a9099ad9abf90d43977f3b9" prot="public" virt="non-virtual"><scope>BrickPi3</scope><name>~BrickPi3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,179 @@
+.TH "Sensor" 3 "Thu Apr 26 2018" "Waarde Luitjes" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sensor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <sensor\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSensor\fP ()"
+.br
+.RI "initialize all the sensors "
+.ti -1c
+.RI "\fBSensor\fP (const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US)"
+.br
+.ti -1c
+.RI "\fB~Sensor\fP ()"
+.br
+.RI "shutting down, resetting all brick pi i/o "
+.ti -1c
+.RI "bool \fBobject_near\fP ()"
+.br
+.RI "checking the ultrasonic sensor if something is withing X range of the device\&. "
+.ti -1c
+.RI "int \fBget_distance_object\fP ()"
+.br
+.ti -1c
+.RI "bool \fBboth_black\fP ()"
+.br
+.ti -1c
+.RI "bool \fBboth_white\fP ()"
+.br
+.ti -1c
+.RI "bool \fBIR_black_RGB_white\fP ()"
+.br
+.ti -1c
+.RI "bool \fBRGB_black_IR_white\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitializeIR\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitializeRGB\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitializeUS\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 10 of file sensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Sensor::Sensor ()"
+
+.PP
+initialize all the sensors 
+.PP
+Definition at line 9 of file sensor\&.cpp\&.
+.SS "Sensor::Sensor (const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIPORT_IR\fP 
+.br
+\fIPORT_RGB\fP 
+.br
+\fIPORT_US\fP 
+.br
+\fIPORT_IR\fP port for the \fBIR\fP sensor 
+.br
+\fIPORT_RGB\fP port for the RGB sensor 
+.br
+\fIPORT_US\fP port for the ultrasonic sensor 
+.RE
+.PP
+\fBUltrasonic\fP us; 
+.PP
+Definition at line 19 of file sensor\&.cpp\&.
+.SS "Sensor::~Sensor ()"
+
+.PP
+shutting down, resetting all brick pi i/o 
+.PP
+Definition at line 122 of file sensor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Sensor::both_black ()"
+Tells us if we passed a crossroad 
+.PP
+\fBReturns:\fP
+.RS 4
+if both sensors are black, return true 
+.RE
+.PP
+exception should be thrown
+.PP
+throw std::nested_exception( 'Sensor data has an unexpected return, neither black nor white even though both black should be easy' ); 
+.PP
+Definition at line 52 of file sensor\&.cpp\&.
+.SS "bool Sensor::both_white ()"
+Tells us if we're in the clear 
+.PP
+\fBReturns:\fP
+.RS 4
+if both sensors are white, return true 
+.RE
+.PP
+throw std::nested_exception ( 'Sensor data has an unexpected return, neither black nor white even though white should be defined' ); 
+.PP
+Definition at line 71 of file sensor\&.cpp\&.
+.SS "int Sensor::get_distance_object ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+requesting the sonic sensor to tell us how far away we are from an object\&. 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file sensor\&.cpp\&.
+.SS "void Sensor::initializeIR ()"
+Sets ranges for \fBIR\fP sensor only the ranges are defined for now 
+.PP
+Definition at line 89 of file sensor\&.cpp\&.
+.SS "void Sensor::initializeRGB ()"
+Sets ranges for RGB sensor 
+.PP
+Definition at line 96 of file sensor\&.cpp\&.
+.SS "void Sensor::initializeUS ()"
+\fBUltrasonic\fP sensor doesn't actually do a lot, here for consistency sake a\&.t\&.m 
+.PP
+Definition at line 100 of file sensor\&.cpp\&.
+.SS "bool Sensor::IR_black_RGB_white ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool \fBIR\fP black RGB white 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file sensor\&.cpp\&.
+.SS "bool Sensor::object_near ()"
+
+.PP
+checking the ultrasonic sensor if something is withing X range of the device\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+bool if an object is within the minimum range 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file sensor\&.cpp\&.
+.SS "bool Sensor::RGB_black_IR_white ()"
+
+.PP
+\fBReturns:\fP
+.RS 4
+bool RGB black \fBIR\fP white 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file sensor\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Waarde Luitjes from the source code\&.

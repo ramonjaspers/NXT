@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="init_8h" kind="file" language="C++">
+    <compoundname>init.h</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+    <includes refid="motion_8h" local="yes">motion.h</includes>
+    <includedby refid="init_8cpp" local="yes">init.cpp</includedby>
+    <includedby refid="state_8h" local="yes">state.h</includedby>
+    <includedby refid="state_8cpp" local="yes">state.cpp</includedby>
+    <incdepgraph>
+      <node id="66">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>ultrasonic.h</label>
+        <link refid="ultrasonic_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>BrickPi3.h</label>
+        <link refid="_brick_pi3_8h"/>
+      </node>
+      <node id="70">
+        <label>RGB.h</label>
+        <link refid="_r_g_b_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>unistd.h</label>
+      </node>
+      <node id="75">
+        <label>servo.h</label>
+        <link refid="servo_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>vector</label>
+      </node>
+      <node id="74">
+        <label>motion.h</label>
+        <link refid="motion_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>iostream</label>
+      </node>
+      <node id="67">
+        <label>IR.h</label>
+        <link refid="_i_r_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="76">
+        <label>init.h</label>
+        <link refid="init_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>init.cpp</label>
+        <link refid="init_8cpp"/>
+      </node>
+      <node id="80">
+        <label>state.cpp</label>
+        <link refid="state_8cpp"/>
+      </node>
+      <node id="79">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="78">
+        <label>state.h</label>
+        <link refid="state_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_init" prot="public">Init</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sensor_8h" kindref="compound">sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="motion_8h" kindref="compound">motion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_init" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_init" kindref="compound">Init</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/>sensor;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion" kindref="compound">Motion</ref><sp/>motion;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_init_1a06a43f2bcb930e7ebec7d383efc15fd9" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_init_1a67d5c94cb965fa3b774e969cfb4969d1" kindref="member">~Init</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/><ref refid="class_init_1a8d5597fb9e9bfb192a235cdee32ede2d" kindref="member">get_sensor</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motion" kindref="compound">Motion</ref><sp/><ref refid="class_init_1a2f0137392b84da9c02d9c4d892e44534" kindref="member">get_motion</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="init.h"/>
+  </compounddef>
+</doxygen>

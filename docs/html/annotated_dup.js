@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "BrickPi3", "class_brick_pi3.html", "class_brick_pi3" ],
+    [ "Grid", "class_grid.html", "class_grid" ],
     [ "Init", "class_init.html", "class_init" ],
     [ "IR", "class_i_r.html", "class_i_r" ],
     [ "Log", "class_log.html", "class_log" ],
