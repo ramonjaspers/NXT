@@ -1,0 +1,9 @@
+<map id="init.h" name="init.h">
+<area shape="rect" id="node2" href="$sensor_8h.html" title="sensor.h" alt="" coords="231,80,303,107"/>
+<area shape="rect" id="node10" href="$motion_8h.html" title="motion.h" alt="" coords="355,80,427,107"/>
+<area shape="rect" id="node3" href="$_i_r_8h.html" title="IR.h" alt="" coords="309,155,354,181"/>
+<area shape="rect" id="node6" href="$_r_g_b_8h.html" title="RGB.h" alt="" coords="85,155,146,181"/>
+<area shape="rect" id="node9" href="$ultrasonic_8h.html" title="ultrasonic.h" alt="" coords="195,155,284,181"/>
+<area shape="rect" id="node5" href="$_brick_pi3_8h.html" title="BrickPi3.h" alt="" coords="291,229,374,256"/>
+<area shape="rect" id="node11" href="$servo_8h.html" title="servo.h" alt="" coords="429,155,492,181"/>
+</map>

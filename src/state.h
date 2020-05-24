@@ -5,7 +5,7 @@
 #include "motion.h"
 #include "sensor.h"
 #include "log.h"
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class State
 {
@@ -28,4 +28,4 @@ public:
 
 };
 
-#endif // STATE_H
+#endif /// STATE_H

@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_i_r">
+<title>IR class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_i_r_8h">&lt;IR.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for IR</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_i_r__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for IR</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_i_r__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BrickPi3 Brick</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t PORT</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sensor_light_t Light</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; uint16_t &gt; range</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int detected<para><emphasis>bool run = false;</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_i_r_1ab286975dd7dc48113ae5189b6c8fa0ba">IR</link> (
+uint8_t port)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_i_r_1acc2e758f018c7b069315a826e9ca3043">~IR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95">set_current_value</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1">get_current_value</link> (
+bool rerun)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5">in_range</link> (
+unsigned int type_color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_i_r_1ae05cf1ad5888262586007946f21ac14e">is_white</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb">is_black</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b">set_ranges</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; uint16_t &gt; <link linkend="class_i_r_1ad9c48a5f015b51dbffbdf23534d062c8">get_ranges</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>TODO: Doxygen generation. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>std::vector&lt;uint16_t&gt; IR::range</title>                
+<para>index [0] and index[1] both contain the white colors min and max index [2] and index[3] both contain the black colors min and max </para>
+
+                <para>Definition at line 16 of file IR.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IR.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>unsigned int IR::detected</title>                
+<para>private variable that stores the detected value </para>
+
+                <para>Definition at line 20 of file IR.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IR.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_i_r_1ab286975dd7dc48113ae5189b6c8fa0ba">
+                <title>IR::IR (uint8_t port)</title> <emphasis></emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>port</entry>
+                                <entry>
+<para>is the port corresponding to the brick-pi port </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_i_r_1acc2e758f018c7b069315a826e9ca3043">
+                <title>IR::~IR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95">
+                <title>void IR::set_current_value ()</title> <emphasis></emphasis>
+                
+<para>sets the current value to the current sensor data </para>
+
+            </section>
+            <section xml:id="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1">
+                <title>int IR::get_current_value (bool rerun=false)</title> <emphasis></emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rerun</entry>
+                                <entry>
+<para>allow a new set to be run for receiving data from sensor </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>the found color value </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5">
+                <title>bool IR::in_range (unsigned int type_color)</title> <emphasis></emphasis>
+                
+<para>returns if the detected color is within the range of the requested color 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>type_color</entry>
+                                <entry>
+<para>is an int that contains 0 for white and 1 for black </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para></para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_i_r_1ae05cf1ad5888262586007946f21ac14e">
+                <title>bool IR::is_white ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool whether color is white or not </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb">
+                <title>bool IR::is_black ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool whether color is black or not </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b">
+                <title>void IR::set_ranges ()</title> <emphasis></emphasis>
+                
+<para>Set&apos;s the default ranges of colors </para>
+
+            </section>
+            <section xml:id="class_i_r_1ad9c48a5f015b51dbffbdf23534d062c8">
+                <title>std::vector&lt; uint16_t &gt; IR::get_ranges ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>the minimum and maximum ranges for colors </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

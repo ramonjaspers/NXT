@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_i_r" kind="class" language="C++" prot="public">
+    <compoundname>IR</compoundname>
+    <includes refid="_i_r_8h" local="no">IR.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_i_r_1a6fa7e04f917540a79e3c8c2ef1372506" prot="private" static="no" mutable="no">
+        <type><ref refid="class_brick_pi3" kindref="compound">BrickPi3</ref></type>
+        <definition>BrickPi3 IR::Brick</definition>
+        <argsstring></argsstring>
+        <name>Brick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="10" column="1" bodyfile="IR.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i_r_1ae2dc8682b6fadbf02132cc70e5d70911" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IR::PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="11" column="1" bodyfile="IR.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i_r_1ad923e4bc11ac29c695e95210e1d98ff3" prot="private" static="no" mutable="no">
+        <type>sensor_light_t</type>
+        <definition>sensor_light_t IR::Light</definition>
+        <argsstring></argsstring>
+        <name>Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="12" column="1" bodyfile="IR.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i_r_1ab5f0a0cee6a950f6362be1ee686c28d5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint16_t &gt;</type>
+        <definition>std::vector&lt;uint16_t&gt; IR::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index [0] and index[1] both contain the white colors min and max index [2] and index[3] both contain the black colors min and max </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="15" column="1" bodyfile="IR.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_i_r_1a91cec92a0153ddb09bdfa7f6422db448" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IR::detected</definition>
+        <argsstring></argsstring>
+        <name>detected</name>
+        <briefdescription>
+<para>bool run = false; </para>        </briefdescription>
+        <detaileddescription>
+<para>private variable that stores the detected value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="19" column="1" bodyfile="IR.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_r_1ab286975dd7dc48113ae5189b6c8fa0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IR::IR</definition>
+        <argsstring>(uint8_t port)</argsstring>
+        <name>IR</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the port corresponding to the brick-pi port </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="21" column="1" bodyfile="IR.cpp" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1acc2e758f018c7b069315a826e9ca3043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IR::~IR</definition>
+        <argsstring>()</argsstring>
+        <name>~IR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="22" column="1" bodyfile="IR.cpp" bodystart="101" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IR::set_current_value</definition>
+        <argsstring>()</argsstring>
+        <name>set_current_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets the current value to the current sensor data </para>        </detaileddescription>
+        <inbodydescription>
+<para>refreshing the current value and acquiring a new one</para><para>std::cout &lt;&lt; this-&gt;Light.reflected &lt;&lt; std::endl; </para>        </inbodydescription>
+        <location file="IR.h" line="23" column="1" bodyfile="IR.cpp" bodystart="41" bodyend="46"/>
+        <referencedby refid="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1" compoundref="_i_r_8cpp" startline="53" endline="58">get_current_value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int IR::get_current_value</definition>
+        <argsstring>(bool rerun=false)</argsstring>
+        <name>get_current_value</name>
+        <param>
+          <type>bool</type>
+          <declname>rerun</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rerun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allow a new set to be run for receiving data from sensor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the found color value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="24" column="1" bodyfile="IR.cpp" bodystart="53" bodyend="58"/>
+        <references refid="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95" compoundref="_i_r_8cpp" startline="41" endline="46">set_current_value</references>
+        <referencedby refid="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b" compoundref="_i_r_8cpp" startline="70" endline="91">set_ranges</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IR::in_range</definition>
+        <argsstring>(unsigned int type_color)</argsstring>
+        <name>in_range</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>type_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns if the detected color is within the range of the requested color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an int that contains 0 for white and 1 for black </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="25" column="1" bodyfile="IR.cpp" bodystart="27" bodyend="29"/>
+        <referencedby refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" compoundref="_i_r_8cpp" startline="34" endline="36">is_white</referencedby>
+        <referencedby refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" compoundref="_i_r_8cpp" startline="63" endline="65">is_black</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1ae05cf1ad5888262586007946f21ac14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IR::is_white</definition>
+        <argsstring>()</argsstring>
+        <name>is_white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool whether color is white or not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="26" column="1" bodyfile="IR.cpp" bodystart="34" bodyend="36"/>
+        <references refid="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5" compoundref="_i_r_8cpp" startline="27" endline="29">in_range</references>
+        <referencedby refid="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba" compoundref="sensor_8cpp" startline="52" endline="66">Sensor::both_black</referencedby>
+        <referencedby refid="class_sensor_1add2279da6d407ed7678064ab1fe7d02d" compoundref="sensor_8cpp" startline="71" endline="84">Sensor::both_white</referencedby>
+        <referencedby refid="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285" compoundref="sensor_8cpp" startline="116" endline="118">Sensor::RGB_black_IR_white</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IR::is_black</definition>
+        <argsstring>()</argsstring>
+        <name>is_black</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool whether color is black or not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="27" column="1" bodyfile="IR.cpp" bodystart="63" bodyend="65"/>
+        <references refid="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5" compoundref="_i_r_8cpp" startline="27" endline="29">in_range</references>
+        <referencedby refid="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba" compoundref="sensor_8cpp" startline="52" endline="66">Sensor::both_black</referencedby>
+        <referencedby refid="class_sensor_1add2279da6d407ed7678064ab1fe7d02d" compoundref="sensor_8cpp" startline="71" endline="84">Sensor::both_white</referencedby>
+        <referencedby refid="class_sensor_1a03b8f6886c672badadfeef89d069e1ea" compoundref="sensor_8cpp" startline="108" endline="110">Sensor::IR_black_RGB_white</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IR::set_ranges</definition>
+        <argsstring>()</argsstring>
+        <name>set_ranges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set&apos;s the default ranges of colors </para>        </detaileddescription>
+        <inbodydescription>
+<para>minimum value found from all the measurements</para><para>maximum value found from all the measurements</para><para>assigning to the ranges vector[0] min</para><para>assigning to the ranges vector[1] max </para>        </inbodydescription>
+        <location file="IR.h" line="28" column="1" bodyfile="IR.cpp" bodystart="70" bodyend="91"/>
+        <references refid="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1" compoundref="_i_r_8cpp" startline="53" endline="58">get_current_value</references>
+        <referencedby refid="class_sensor_1a7065fe2dff6107b89d162e59271a9491" compoundref="sensor_8cpp" startline="89" endline="92">Sensor::initializeIR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_r_1ad9c48a5f015b51dbffbdf23534d062c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; uint16_t &gt;</type>
+        <definition>std::vector&lt; uint16_t &gt; IR::get_ranges</definition>
+        <argsstring>()</argsstring>
+        <name>get_ranges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the minimum and maximum ranges for colors </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IR.h" line="29" column="1" bodyfile="IR.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="IR.h" line="8" column="1" bodyfile="IR.h" bodystart="7" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_i_r_1a6fa7e04f917540a79e3c8c2ef1372506" prot="private" virt="non-virtual"><scope>IR</scope><name>Brick</name></member>
+      <member refid="class_i_r_1a91cec92a0153ddb09bdfa7f6422db448" prot="private" virt="non-virtual"><scope>IR</scope><name>detected</name></member>
+      <member refid="class_i_r_1a5b71d10f57e8dbb76cdf01e043cfdda1" prot="public" virt="non-virtual"><scope>IR</scope><name>get_current_value</name></member>
+      <member refid="class_i_r_1ad9c48a5f015b51dbffbdf23534d062c8" prot="public" virt="non-virtual"><scope>IR</scope><name>get_ranges</name></member>
+      <member refid="class_i_r_1a388cfd7a959fa4a24d8e2bad1e9d95d5" prot="public" virt="non-virtual"><scope>IR</scope><name>in_range</name></member>
+      <member refid="class_i_r_1ab286975dd7dc48113ae5189b6c8fa0ba" prot="public" virt="non-virtual"><scope>IR</scope><name>IR</name></member>
+      <member refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" prot="public" virt="non-virtual"><scope>IR</scope><name>is_black</name></member>
+      <member refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" prot="public" virt="non-virtual"><scope>IR</scope><name>is_white</name></member>
+      <member refid="class_i_r_1ad923e4bc11ac29c695e95210e1d98ff3" prot="private" virt="non-virtual"><scope>IR</scope><name>Light</name></member>
+      <member refid="class_i_r_1ae2dc8682b6fadbf02132cc70e5d70911" prot="private" virt="non-virtual"><scope>IR</scope><name>PORT</name></member>
+      <member refid="class_i_r_1ab5f0a0cee6a950f6362be1ee686c28d5" prot="private" virt="non-virtual"><scope>IR</scope><name>range</name></member>
+      <member refid="class_i_r_1a2d60cbf66f48bad8167e2c4231ed3f95" prot="public" virt="non-virtual"><scope>IR</scope><name>set_current_value</name></member>
+      <member refid="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b" prot="public" virt="non-virtual"><scope>IR</scope><name>set_ranges</name></member>
+      <member refid="class_i_r_1acc2e758f018c7b069315a826e9ca3043" prot="public" virt="non-virtual"><scope>IR</scope><name>~IR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

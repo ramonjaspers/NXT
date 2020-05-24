@@ -6,7 +6,7 @@
 #include "ultrasonic.h"
 
 
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class Sensor
 {
@@ -16,7 +16,7 @@ private:
     RGB rgb;
     Ultrasonic ultrasonic;
 
-// TODO: Update the header file
+/// TODO: Update the header file
 public:
     Sensor();
     Sensor(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US );
@@ -34,4 +34,4 @@ public:
     void initializeUS();
 };
 
-#endif // SENSOR_H
+#endif /// SENSOR_H

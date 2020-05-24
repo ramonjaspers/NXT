@@ -5,7 +5,7 @@
 #include "init.h"
 #include <iostream>
 
-// The different types of states are 
+/// The different types of states are
 State::State() {
     Log log;
     Init it;
@@ -40,7 +40,7 @@ void State::clear() {
         this->object_or_turn();
     }
 
-    // TODO: default motion
+    /// TODO: default motion
     this->motion.default_speed();
 }
 
@@ -70,7 +70,7 @@ bool State::obstacle_avoid() {
                     break;
                 }
             case 2:
-                turn(45); //45 naar graden rechts
+                turn(45); ///45 naar graden rechts
                 SForwards();
                 cout << "STATE 2" << endl;
                 STATE = 3;
@@ -98,7 +98,7 @@ bool State::obstacle_avoid() {
             case 6:
                 usleep(1.5 * 1000000);
                 cout << "STATE 6" << endl;
-                turn(-50); //50  graden naar links
+                turn(-50); ///50  graden naar links
                 SForwards();
                 STATE = 7;
 
@@ -112,10 +112,10 @@ bool State::obstacle_avoid() {
     }
 }
 
-// Driving slower and taking a turn
+/// Driving slower and taking a turn
     void State::turn() {
-        // IR Left
-        // RGB Right
+        /// IR Left
+        /// RGB Right
 
         while (!this->sensor.both_white()) {
             if (this->sensor.object_near()) {
@@ -128,7 +128,7 @@ bool State::obstacle_avoid() {
         }
     }
 
-// driving through a grid storing the directions driven.
+/// driving through a grid storing the directions driven.
     bool State::grid_travel() {
         return true;
     }

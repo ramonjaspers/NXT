@@ -1,0 +1,5 @@
+<map id="State::obstacle_avoid" name="State::obstacle_avoid">
+<area shape="rect" id="node2" href="$class_state.html#ae03eae00675106f8b6b9481c4b0e50dc" title="State::object_or_turn" alt="" coords="331,20,473,47"/>
+<area shape="rect" id="node4" href="$class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="Driving slower and taking a turn. " alt="" coords="200,20,283,47"/>
+<area shape="rect" id="node3" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="521,46,611,72"/>
+</map>

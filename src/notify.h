@@ -3,7 +3,7 @@
 
 #include <string>
 
-//TODO: Doxygen generation
+///TODO: Doxygen generation
 
 class Notify
 {
@@ -14,4 +14,4 @@ public:
 
 };
 
-#endif // NOTIFY_H
+#endif /// NOTIFY_H

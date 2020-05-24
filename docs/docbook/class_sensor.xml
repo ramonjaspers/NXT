@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_sensor">
+<title>Sensor class Reference</title>
+<para>
+    <programlisting>#include <link linkend="sensor_8h">&lt;sensor.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Sensor</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_sensor__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Sensor</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_sensor__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IR ir</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RGB rgb</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ultrasonic ultrasonic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_sensor_1a342d6d11ef572c8cba92cb76fb1a294b">Sensor</link> (
+)<para><emphasis>TODO: Update the header file.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_sensor_1a47122c90fb62cd4510af51161058953d">Sensor</link> (
+const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_sensor_1aee8c70e7ef05ce65e7ee33686b5d7db2">~Sensor</link> (
+)<para><emphasis>shutting down, resetting all brick pi i/o</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_sensor_1a4f797e3f6a549cfdefab639eb6a86787">object_near</link> (
+)<para><emphasis>checking the ultrasonic sensor if something is withing X range of the device.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_sensor_1a118f38dcb8a695ad78b7c7d94f508d4f">get_distance_object</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba">both_black</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_sensor_1add2279da6d407ed7678064ab1fe7d02d">both_white</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_sensor_1a03b8f6886c672badadfeef89d069e1ea">IR_black_RGB_white</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285">RGB_black_IR_white</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_sensor_1a7065fe2dff6107b89d162e59271a9491">initializeIR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_sensor_1a1684cc490c5dd360890d2c0cdfd23fd3">initializeRGB</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_sensor_1a77a538443f5e024bbd144cc56eed3319">initializeUS</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>TODO: Doxygen generation. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_sensor_1a342d6d11ef572c8cba92cb76fb1a294b">
+                <title>Sensor::Sensor ()</title> <emphasis>TODO: Update the header file.</emphasis>
+                
+<para>initialize all the sensors </para>
+
+            </section>
+            <section xml:id="class_sensor_1a47122c90fb62cd4510af51161058953d">
+                <title>Sensor::Sensor (const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US)</title> <emphasis></emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>PORT_IR</entry>
+                                <entry>
+<para>port for the <link linkend="class_i_r">IR</link> sensor </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>PORT_RGB</entry>
+                                <entry>
+<para>port for the RGB sensor </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>PORT_US</entry>
+                                <entry>
+<para>port for the ultrasonic sensor </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_sensor_1aee8c70e7ef05ce65e7ee33686b5d7db2">
+                <title>Sensor::~Sensor ()</title> <emphasis>shutting down, resetting all brick pi i/o</emphasis>
+                
+            </section>
+            <section xml:id="class_sensor_1a4f797e3f6a549cfdefab639eb6a86787">
+                <title>bool Sensor::object_near ()</title> <emphasis>checking the ultrasonic sensor if something is withing X range of the device.</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool if an object is within the minimum range </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1a118f38dcb8a695ad78b7c7d94f508d4f">
+                <title>int Sensor::get_distance_object ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>requesting the sonic sensor to tell us how far away we are from an object. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba">
+                <title>bool Sensor::both_black ()</title> <emphasis></emphasis>
+                
+<para>Tells us if we passed a crossroad <formalpara><title>Returns: </title>
+
+<para>if both sensors are black, return true </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1add2279da6d407ed7678064ab1fe7d02d">
+                <title>bool Sensor::both_white ()</title> <emphasis></emphasis>
+                
+<para>Tells us if we&apos;re in the clear <formalpara><title>Returns: </title>
+
+<para>if both sensors are white, return true </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1a03b8f6886c672badadfeef89d069e1ea">
+                <title>bool Sensor::IR_black_RGB_white ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool <link linkend="class_i_r">IR</link> black RGB white </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285">
+                <title>bool Sensor::RGB_black_IR_white ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool RGB black <link linkend="class_i_r">IR</link> white </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_sensor_1a7065fe2dff6107b89d162e59271a9491">
+                <title>void Sensor::initializeIR ()</title> <emphasis></emphasis>
+                
+<para>Sets ranges for <link linkend="class_i_r">IR</link> sensor </para>
+
+            </section>
+            <section xml:id="class_sensor_1a1684cc490c5dd360890d2c0cdfd23fd3">
+                <title>void Sensor::initializeRGB ()</title> <emphasis></emphasis>
+                
+<para>Sets ranges for RGB sensor </para>
+
+            </section>
+            <section xml:id="class_sensor_1a77a538443f5e024bbd144cc56eed3319">
+                <title>void Sensor::initializeUS ()</title> <emphasis></emphasis>
+                
+<para>TODO: Delete </para>
+
+            </section>
+</section>

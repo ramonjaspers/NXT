@@ -1,0 +1,5 @@
+<map id="IR::set_current_value" name="IR::set_current_value">
+<area shape="rect" id="node2" href="$class_i_r.html#a5b71d10f57e8dbb76cdf01e043cfdda1" title="IR::get_current_value" alt="" coords="196,5,339,32"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a8bcc5c0570384da5a39e395b91bc2d2b" title="IR::set_ranges" alt="" coords="387,5,493,32"/>
+<area shape="rect" id="node4" href="$class_sensor.html#a7065fe2dff6107b89d162e59271a9491" title="Sensor::initializeIR" alt="" coords="541,5,672,32"/>
+</map>

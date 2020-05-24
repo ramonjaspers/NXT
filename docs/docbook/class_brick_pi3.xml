@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_brick_pi3">
+<title>BrickPi3 class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_brick_pi3_8h">&lt;BrickPi3.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for BrickPi3</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_brick_pi3__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for BrickPi3</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_brick_pi3__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_brick_pi3_1abd966c52f01fcc176bf613bd993ea793">BrickPi3</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_brick_pi3_1a94cb50dd4a9099ad9abf90d43977f3b9">~BrickPi3</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_brick_pi3_1abd966c52f01fcc176bf613bd993ea793">
+                <title>BrickPi3::BrickPi3 ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_brick_pi3_1a94cb50dd4a9099ad9abf90d43977f3b9">
+                <title>BrickPi3::~BrickPi3 ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

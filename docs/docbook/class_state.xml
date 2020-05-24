@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_state">
+<title>State class Reference</title>
+<para>
+    <programlisting>#include <link linkend="state_8h">&lt;state.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for State</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_state__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for State</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_state__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Init init</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Log log</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Motion motion</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Sensor sensor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_state_1ab91bb1dd5aa6260ab2a456581daf9ec2">State</link> (
+)<para><emphasis>The different types of states are.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_state_1afab438d92b90dc18d194dbd9c9c8bab3">~State</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_state_1a975afaa8e6091654888d7ed58b8c29c1">obstacle_avoid</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5">turn</link> (
+)<para><emphasis>Driving slower and taking a turn.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_state_1a4e9d67c11218113bfa282ddccfd6326a">grid_travel</link> (
+)<para><emphasis>driving through a grid storing the directions driven.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_state_1ae03eae00675106f8b6b9481c4b0e50dc">object_or_turn</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_motion">Motion</link> <link linkend="class_state_1adcabc610335b5bd9efdf7f908de7dacb">getMotion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_sensor">Sensor</link> <link linkend="class_state_1a9195abef447816fe4830f875f0b1dda2">getSensor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>TODO: Doxygen generation. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_state_1ab91bb1dd5aa6260ab2a456581daf9ec2">
+                <title>State::State ()</title> <emphasis>The different types of states are.</emphasis>
+                
+            </section>
+            <section xml:id="class_state_1afab438d92b90dc18d194dbd9c9c8bab3">
+                <title>State::~State ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68">
+                <title>void State::clear ()</title> <emphasis></emphasis>
+                
+<para>When the system is proceeding as expected </para>
+
+            </section>
+            <section xml:id="class_state_1a975afaa8e6091654888d7ed58b8c29c1">
+                <title>bool State::obstacle_avoid ()</title> <emphasis></emphasis>
+                
+<para>Function that will try to run around an obstacle <formalpara><title>Returns: </title>
+
+<para>if the obstacle has been avoided </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5">
+                <title>void State::turn ()</title> <emphasis>Driving slower and taking a turn.</emphasis>
+                
+            </section>
+            <section xml:id="class_state_1a4e9d67c11218113bfa282ddccfd6326a">
+                <title>bool State::grid_travel ()</title> <emphasis>driving through a grid storing the directions driven.</emphasis>
+                
+            </section>
+            <section xml:id="class_state_1ae03eae00675106f8b6b9481c4b0e50dc">
+                <title>void State::object_or_turn ()</title> <emphasis></emphasis>
+                
+<para>Decides whether or not the turns should be made or if the obstacle avoid run needs to be made </para>
+
+            </section>
+            <section xml:id="class_state_1adcabc610335b5bd9efdf7f908de7dacb">
+                <title>Motion State::getMotion ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>motion object that contains the control of the servo&apos;s </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_state_1a9195abef447816fe4830f875f0b1dda2">
+                <title>Sensor State::getSensor ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>sensor object that contains the control of the RGB, <link linkend="class_i_r">IR</link> and <link linkend="class_ultrasonic">Ultrasonic</link> </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

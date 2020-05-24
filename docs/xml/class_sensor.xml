@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_sensor" kind="class" language="C++" prot="public">
+    <compoundname>Sensor</compoundname>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sensor_1a0b30ca0918f6b808c8e147a3996c47d6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_r" kindref="compound">IR</ref></type>
+        <definition>IR Sensor::ir</definition>
+        <argsstring></argsstring>
+        <name>ir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="12" column="1" bodyfile="sensor.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensor_1abe74066f5bf9554608d9611390c8cc18" prot="private" static="no" mutable="no">
+        <type>RGB</type>
+        <definition>RGB Sensor::rgb</definition>
+        <argsstring></argsstring>
+        <name>rgb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="13" column="1" bodyfile="sensor.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensor_1a3d4cefeea113bbd14a8e3b53198b6943" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ultrasonic" kindref="compound">Ultrasonic</ref></type>
+        <definition>Ultrasonic Sensor::ultrasonic</definition>
+        <argsstring></argsstring>
+        <name>ultrasonic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="14" column="1" bodyfile="sensor.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensor_1a342d6d11ef572c8cba92cb76fb1a294b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sensor::Sensor</definition>
+        <argsstring>()</argsstring>
+        <name>Sensor</name>
+        <briefdescription>
+<para>initialize all the sensors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="17" column="1" bodyfile="sensor.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a47122c90fb62cd4510af51161058953d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sensor::Sensor</definition>
+        <argsstring>(const unsigned int PORT_IR, const unsigned int PORT_RGB, const unsigned int PORT_US)</argsstring>
+        <name>Sensor</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>PORT_IR</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>PORT_RGB</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>PORT_US</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PORT_IR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PORT_RGB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PORT_US</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PORT_IR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port for the <ref refid="class_i_r" kindref="compound">IR</ref> sensor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PORT_RGB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port for the RGB sensor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PORT_US</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>port for the ultrasonic sensor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><ref refid="class_ultrasonic" kindref="compound">Ultrasonic</ref> us; </para>        </inbodydescription>
+        <location file="sensor.h" line="24" column="1" bodyfile="sensor.cpp" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sensor::~Sensor</definition>
+        <argsstring>()</argsstring>
+        <name>~Sensor</name>
+        <briefdescription>
+<para>shutting down, resetting all brick pi i/o </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="25" column="1" bodyfile="sensor.cpp" bodystart="122" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a4f797e3f6a549cfdefab639eb6a86787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sensor::object_near</definition>
+        <argsstring>()</argsstring>
+        <name>object_near</name>
+        <briefdescription>
+<para>checking the ultrasonic sensor if something is withing X range of the device. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool if an object is within the minimum range </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="26" column="1" bodyfile="sensor.cpp" bodystart="37" bodyend="39"/>
+        <references refid="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201" compoundref="ultrasonic_8cpp" startline="21" endline="23">Ultrasonic::object_in_range</references>
+        <referencedby refid="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68" compoundref="state_8cpp" startline="38" endline="44">State::clear</referencedby>
+        <referencedby refid="class_state_1ae03eae00675106f8b6b9481c4b0e50dc" compoundref="state_8cpp" startline="49" endline="55">State::object_or_turn</referencedby>
+        <referencedby refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" compoundref="state_8cpp" startline="115" endline="128">State::turn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a118f38dcb8a695ad78b7c7d94f508d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sensor::get_distance_object</definition>
+        <argsstring>()</argsstring>
+        <name>get_distance_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>requesting the sonic sensor to tell us how far away we are from an object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="27" column="1" bodyfile="sensor.cpp" bodystart="45" bodyend="47"/>
+        <references refid="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6" compoundref="ultrasonic_8cpp" startline="39" endline="41">Ultrasonic::get_distance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sensor::both_black</definition>
+        <argsstring>()</argsstring>
+        <name>both_black</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells us if we passed a crossroad <simplesect kind="return"><para>if both sensors are black, return true </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>exception should be thrown</para><para>throw std::nested_exception( &quot;Sensor data has an unexpected return, neither black nor white even though both black should be easy&quot; ); </para>        </inbodydescription>
+        <location file="sensor.h" line="28" column="1" bodyfile="sensor.cpp" bodystart="52" bodyend="66"/>
+        <references refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" compoundref="_i_r_8cpp" startline="34" endline="36">IR::is_white</references>
+        <references refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" compoundref="_i_r_8cpp" startline="63" endline="65">IR::is_black</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1add2279da6d407ed7678064ab1fe7d02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sensor::both_white</definition>
+        <argsstring>()</argsstring>
+        <name>both_white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells us if we&apos;re in the clear <simplesect kind="return"><para>if both sensors are white, return true </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>throw std::nested_exception ( &quot;Sensor data has an unexpected return, neither black nor white even though white should be defined&quot; ); </para>        </inbodydescription>
+        <location file="sensor.h" line="29" column="1" bodyfile="sensor.cpp" bodystart="71" bodyend="84"/>
+        <references refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" compoundref="_i_r_8cpp" startline="63" endline="65">IR::is_black</references>
+        <references refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" compoundref="_i_r_8cpp" startline="34" endline="36">IR::is_white</references>
+        <referencedby refid="class_state_1aed3bf8334ee32e0cccba11fc2dc42b68" compoundref="state_8cpp" startline="38" endline="44">State::clear</referencedby>
+        <referencedby refid="class_state_1ae03eae00675106f8b6b9481c4b0e50dc" compoundref="state_8cpp" startline="49" endline="55">State::object_or_turn</referencedby>
+        <referencedby refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" compoundref="state_8cpp" startline="115" endline="128">State::turn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a03b8f6886c672badadfeef89d069e1ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sensor::IR_black_RGB_white</definition>
+        <argsstring>()</argsstring>
+        <name>IR_black_RGB_white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool <ref refid="class_i_r" kindref="compound">IR</ref> black RGB white </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="31" column="1" bodyfile="sensor.cpp" bodystart="108" bodyend="110"/>
+        <references refid="class_i_r_1a2f62691ee90ca2a9035c088029dab4bb" compoundref="_i_r_8cpp" startline="63" endline="65">IR::is_black</references>
+        <referencedby refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" compoundref="state_8cpp" startline="115" endline="128">State::turn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sensor::RGB_black_IR_white</definition>
+        <argsstring>()</argsstring>
+        <name>RGB_black_IR_white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool RGB black <ref refid="class_i_r" kindref="compound">IR</ref> white </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="32" column="1" bodyfile="sensor.cpp" bodystart="116" bodyend="118"/>
+        <references refid="class_i_r_1ae05cf1ad5888262586007946f21ac14e" compoundref="_i_r_8cpp" startline="34" endline="36">IR::is_white</references>
+        <referencedby refid="class_state_1ae5ed95e28512e11f7cc41c603ca58ad5" compoundref="state_8cpp" startline="115" endline="128">State::turn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a7065fe2dff6107b89d162e59271a9491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensor::initializeIR</definition>
+        <argsstring>()</argsstring>
+        <name>initializeIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets ranges for <ref refid="class_i_r" kindref="compound">IR</ref> sensor </para>        </detaileddescription>
+        <inbodydescription>
+<para>only the ranges are defined for now </para>        </inbodydescription>
+        <location file="sensor.h" line="34" column="1" bodyfile="sensor.cpp" bodystart="89" bodyend="92"/>
+        <references refid="class_i_r_1a8bcc5c0570384da5a39e395b91bc2d2b" compoundref="_i_r_8cpp" startline="70" endline="91">IR::set_ranges</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a1684cc490c5dd360890d2c0cdfd23fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensor::initializeRGB</definition>
+        <argsstring>()</argsstring>
+        <name>initializeRGB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets ranges for RGB sensor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="35" column="1" bodyfile="sensor.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a77a538443f5e024bbd144cc56eed3319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sensor::initializeUS</definition>
+        <argsstring>()</argsstring>
+        <name>initializeUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><ref refid="class_ultrasonic" kindref="compound">Ultrasonic</ref> sensor doesn&apos;t actually do a lot, here for consistency sake a.t.m </para>        </inbodydescription>
+        <location file="sensor.h" line="36" column="1" bodyfile="sensor.cpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sensor.h" line="10" column="1" bodyfile="sensor.h" bodystart="10" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_sensor_1a32ebdbb3ba6fbe19739a10b17dc11cba" prot="public" virt="non-virtual"><scope>Sensor</scope><name>both_black</name></member>
+      <member refid="class_sensor_1add2279da6d407ed7678064ab1fe7d02d" prot="public" virt="non-virtual"><scope>Sensor</scope><name>both_white</name></member>
+      <member refid="class_sensor_1a118f38dcb8a695ad78b7c7d94f508d4f" prot="public" virt="non-virtual"><scope>Sensor</scope><name>get_distance_object</name></member>
+      <member refid="class_sensor_1a7065fe2dff6107b89d162e59271a9491" prot="public" virt="non-virtual"><scope>Sensor</scope><name>initializeIR</name></member>
+      <member refid="class_sensor_1a1684cc490c5dd360890d2c0cdfd23fd3" prot="public" virt="non-virtual"><scope>Sensor</scope><name>initializeRGB</name></member>
+      <member refid="class_sensor_1a77a538443f5e024bbd144cc56eed3319" prot="public" virt="non-virtual"><scope>Sensor</scope><name>initializeUS</name></member>
+      <member refid="class_sensor_1a0b30ca0918f6b808c8e147a3996c47d6" prot="private" virt="non-virtual"><scope>Sensor</scope><name>ir</name></member>
+      <member refid="class_sensor_1a03b8f6886c672badadfeef89d069e1ea" prot="public" virt="non-virtual"><scope>Sensor</scope><name>IR_black_RGB_white</name></member>
+      <member refid="class_sensor_1a4f797e3f6a549cfdefab639eb6a86787" prot="public" virt="non-virtual"><scope>Sensor</scope><name>object_near</name></member>
+      <member refid="class_sensor_1abe74066f5bf9554608d9611390c8cc18" prot="private" virt="non-virtual"><scope>Sensor</scope><name>rgb</name></member>
+      <member refid="class_sensor_1aa75ec0ed5bd2782f726f7e01796b2285" prot="public" virt="non-virtual"><scope>Sensor</scope><name>RGB_black_IR_white</name></member>
+      <member refid="class_sensor_1a342d6d11ef572c8cba92cb76fb1a294b" prot="public" virt="non-virtual"><scope>Sensor</scope><name>Sensor</name></member>
+      <member refid="class_sensor_1a47122c90fb62cd4510af51161058953d" prot="public" virt="non-virtual"><scope>Sensor</scope><name>Sensor</name></member>
+      <member refid="class_sensor_1a3d4cefeea113bbd14a8e3b53198b6943" prot="private" virt="non-virtual"><scope>Sensor</scope><name>ultrasonic</name></member>
+      <member refid="class_sensor_1aee8c70e7ef05ce65e7ee33686b5d7db2" prot="public" virt="non-virtual"><scope>Sensor</scope><name>~Sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

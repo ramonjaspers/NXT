@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_log">
+<title>Log class Reference</title>
+<para>
+    <programlisting>#include <link linkend="log_8h">&lt;log.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Log</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_log__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Log</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_log__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ofstream debugFile</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe">Log</link> (
+)<para><emphasis>printing all the log data to a file for debugging purposes</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::string <link linkend="class_log_1af056ba4ff9151d69bf1b302a95253c52">currentDateTime</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_log_1aeb1d174708785f8f763895ad8e41d580">write_line</link> (
+std::string ln)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_log_1a0fbfda88fbee5027c89f6eb121059360">~Log</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>TODO: Doxygen generation. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>================================================== <formalpara><title>ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE </title></formalpara>
+</para>
+                <para>Definition at line 19 of file log.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>log.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_log_1af6071a60aa52b6c1b511f99b4bc1b8fe">
+                <title>Log::Log ()</title> <emphasis>printing all the log data to a file for debugging purposes</emphasis>
+                
+<para>====================================================== <formalpara><title>= ONLY DEV DEPENDENCY SHOULD BE REMOVED FROM RELEASE = </title></formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_log_1af056ba4ff9151d69bf1b302a95253c52">
+                <title>const std::string Log::currentDateTime ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_log_1aeb1d174708785f8f763895ad8e41d580">
+                <title>void Log::write_line (std::string ln)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_log_1a0fbfda88fbee5027c89f6eb121059360">
+                <title>Log::~Log ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,3 @@
+<map id="Motion::emergency_stop" name="Motion::emergency_stop">
+<area shape="rect" id="node2" href="$class_servo.html#a2219362602b79927b5fbd6343799f217" title="decreases power to 0 " alt="" coords="219,5,301,32"/>
+</map>

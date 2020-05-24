@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_ultrasonic">
+<title>Ultrasonic class Reference</title>
+<para>
+    <programlisting>#include <link linkend="ultrasonic_8h">&lt;ultrasonic.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Ultrasonic</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_ultrasonic__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Ultrasonic</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_ultrasonic__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BrickPi3 Brick<para><emphasis>TODO: cast to 8 bit.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t PORT</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sensor_ultrasonic_t Sonic</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float detected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; int &gt; detection_range</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05">Ultrasonic</link> (
+uint8_t port)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201">object_in_range</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_ultrasonic_1aef69078732d3b74569955c039f50af54">set_distance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6">get_distance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad">~Ultrasonic</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Created by brand on 4/6/2018. </para>
+                <para>Definition at line 12 of file ultrasonic.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>ultrasonic.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_ultrasonic_1a780b97f3357351da4e4f2716feff5d05">
+                <title>Ultrasonic::Ultrasonic (uint8_t port)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_ultrasonic_1aae6ae7ff42f37a52835dc66bba7e0201">
+                <title>bool Ultrasonic::object_in_range ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>bool if the value is below the expected range </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_ultrasonic_1aef69078732d3b74569955c039f50af54">
+                <title>void Ultrasonic::set_distance ()</title> <emphasis></emphasis>
+                
+<para>acquires sensor data and stores in member variable </para>
+
+            </section>
+            <section xml:id="class_ultrasonic_1a07cc45fda7cd672acd96320500d31ec6">
+                <title>int Ultrasonic::get_distance ()</title> <emphasis></emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>sensor value </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_ultrasonic_1ab5066b2bfeac723140c18b9f8340abad">
+                <title>Ultrasonic::~Ultrasonic ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

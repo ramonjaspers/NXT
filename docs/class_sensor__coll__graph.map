@@ -1,0 +1,5 @@
+<map id="Sensor" name="Sensor">
+<area shape="rect" id="node2" href="$class_ultrasonic.html" title="{Ultrasonic\n|&#45; PORT\l&#45; Sonic\l&#45; detected\l&#45; detection_range\l|+ Ultrasonic()\l+ object_in_range()\l+ set_distance()\l+ get_distance()\l+ ~Ultrasonic()\l}" alt="" coords="5,189,139,369"/>
+<area shape="rect" id="node3" href="$class_brick_pi3.html" title="{BrickPi3\n||+ BrickPi3()\l+ ~BrickPi3()\l}" alt="" coords="115,5,213,97"/>
+<area shape="rect" id="node4" href="$class_i_r.html" title="TODO: Doxygen generation. " alt="" coords="163,160,306,399"/>
+</map>

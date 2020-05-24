@@ -1,0 +1,15 @@
+<map id="State::object_or_turn" name="State::object_or_turn">
+<area shape="rect" id="node2" href="$class_sensor.html#add2279da6d407ed7678064ab1fe7d02d" title="Sensor::both_white" alt="" coords="539,123,673,149"/>
+<area shape="rect" id="node6" href="$class_state.html#a975afaa8e6091654888d7ed58b8c29c1" title="State::obstacle_avoid" alt="" coords="196,139,343,165"/>
+<area shape="rect" id="node7" href="$class_state.html#ae5ed95e28512e11f7cc41c603ca58ad5" title="Driving slower and taking a turn. " alt="" coords="394,127,477,153"/>
+<area shape="rect" id="node8" href="$class_sensor.html#a4f797e3f6a549cfdefab639eb6a86787" title="checking the ultrasonic sensor if something is withing X range of the device. " alt="" coords="537,240,675,267"/>
+<area shape="rect" id="node3" href="$class_i_r.html#a2f62691ee90ca2a9035c088029dab4bb" title="IR::is_black" alt="" coords="748,97,839,124"/>
+<area shape="rect" id="node5" href="$class_i_r.html#ae05cf1ad5888262586007946f21ac14e" title="IR::is_white" alt="" coords="749,148,838,175"/>
+<area shape="rect" id="node4" href="$class_i_r.html#a388cfd7a959fa4a24d8e2bad1e9d95d5" title="IR::in_range" alt="" coords="903,123,993,149"/>
+<area shape="rect" id="node14" href="$class_state.html#aed3bf8334ee32e0cccba11fc2dc42b68" title="State::clear" alt="" coords="391,185,480,212"/>
+<area shape="rect" id="node10" href="$class_sensor.html#a03b8f6886c672badadfeef89d069e1ea" title="Sensor::IR_black_RGB\l_white" alt="" coords="528,57,684,98"/>
+<area shape="rect" id="node11" href="$class_motion.html#af922ccbd27054420dd1ff679d48f588d" title="Motion::turn" alt="" coords="561,5,651,32"/>
+<area shape="rect" id="node13" href="$class_sensor.html#aa75ec0ed5bd2782f726f7e01796b2285" title="Sensor::RGB_black_IR\l_white" alt="" coords="528,174,684,215"/>
+<area shape="rect" id="node9" href="$class_ultrasonic.html#aae6ae7ff42f37a52835dc66bba7e0201" title="Ultrasonic::object\l_in_range" alt="" coords="732,233,855,274"/>
+<area shape="rect" id="node12" href="$class_servo.html#aecca91f485fc36404ce8cdfcb95f0527" title="Servo::set_speed" alt="" coords="732,5,855,32"/>
+</map>
